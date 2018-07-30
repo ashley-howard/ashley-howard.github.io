@@ -47,13 +47,14 @@
                 <div class="heading">
                     <h2>Contattami</h2>
                 </div><form action="https://formspree.io/contact@ashley.how" method="post">
-    <div class="form-group"><label for="name">Il tuo nome</label><input type="text" class="form-control item" id="name" name="name" /></div>
-    <div class="form-group"><label for="subject">Oggetto</label><input type="text" class="form-control item" id="subject" name="subject" /></div>
-    <div class="form-group"><label for="email">Email</label><input type="email" class="form-control item" id="email" name="email" /></div>
-    <div class="form-group"><label for="message">Messaggio</label><textarea class="form-control item" id="message" name="message"></textarea></div>
+    <div class="form-group"><label for="name">Il tuo nome*</label><input type="text" class="form-control item" id="name" name="name" required /></div>
+    <div class="form-group"><label for="email">Email*</label><input type="email" class="form-control item" id="email" name="email" required /></div>
+    <div class="form-group"><label for="subject">Oggetto</label><input type="text" class="form-control item" id="subject" name="subject" /></div>    
+    <div class="form-group"><label for="message">Messaggio*</label><textarea class="form-control item" id="message" name="message" required></textarea></div>
     <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Invia</button></div>
-    <input type="hidden" name="_next" value="modulo-inviato" />
-</form></div>
+    <input type="hidden" name="_next" value="it/modulo-inviato" />
+</form>
+</div>
         </section>
     </main>
     <hr style="margin-top:40px;margin-bottom:40px;"><div class="footer-clean" style="padding-top:0px;margin-top:0px;">
