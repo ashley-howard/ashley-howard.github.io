@@ -1,0 +1,18 @@
+.hey {
+  font-family: "Caveat";
+}
+
+.col, .col-3 {
+  padding: 20px;
+}
+
+.col-about, .col-current, .col-tutor {
+  border-right: 1px solid #bdbdbd;
+}
+.col-maps {
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.col-about img {
+  border-radius: 7px;
+}
