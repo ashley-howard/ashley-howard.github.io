@@ -1,0 +1,226 @@
+@media only screen and (max-width: 991px),
+(orientation: portrait) {
+
+    .hide-mob {
+        display: none;
+    }
+
+    .bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        background: linear-gradient(#bfc5ff, #6c6c6c);
+    }
+
+    .pc {
+        width: 90%;
+        height: 90%;
+        position: initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+
+        &--screen {
+            position: initial;
+            transform: initial;
+            width: 90%;
+            height: 90%;
+        }
+    }
+
+    #folders {
+        width: 100%;
+        height: calc(81vh - 40px);
+    }
+
+    .row.row-top {
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .folders svg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .folders svg.bottom-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .desk--bottom {
+        background: none;
+        box-shadow: none;
+    }
+
+    #screen-projects,
+    #screen-about,
+    #screen-skills,
+    #screen-contact {
+        margin-top: 0;
+        position: initial;
+        width: 100%;
+        height: calc(81vh - 40px);
+    }
+
+    #explorer-url {
+        position: initial;
+        width: 100%;
+        margin: 0;
+    }
+
+    .explorer-bar {
+        display: flex;
+        margin: 5px 6px 5px 6px;
+    }
+
+    #back-button {
+        display: none;
+        position: initial;
+        width: 11%;
+        background: #ffffff;
+        color: #838383;
+        border-right: 1px solid #c7c7c7;
+    }
+
+    .man {
+        display: none;
+    }
+
+    div#github {
+        color: black;
+        background: #ffffffbd;
+    }
+
+    .pc--button {
+        display: none;
+    }
+
+    .about-social {
+        text-align: center;
+    }
+
+    .about-container {
+        margin: 10px;
+        font-size: 24px;
+
+        & ul {
+            font-size: 23px;
+            font-style: italic;
+            padding: 30px 0;
+            line-height: 33px;
+            list-style: square inside;
+
+            li {
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    #screen-skills .column {
+        width: 100%;
+    }
+
+    .skills-icon-container {
+        flex-wrap: wrap;
+    }
+
+    .email-container button {
+        align-self: initial;
+        margin: 13px;
+        font-size: 2em;
+        background: #65c7fa;
+        background: linear-gradient(45deg, #65c7fa, #8b3737);
+        padding: 5px 13px;
+        border-radius: 12px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .project-tile {
+        width: 90%;
+        font-size: 1.5em;
+    }
+
+    .project-tile-inner {
+        width: inherit;
+    }
+
+    #github {
+        color: #000000;
+        background: #a8a8a8e3;
+        height: 50px;
+        line-height: 18px;
+        border-radius: 30px;
+    }
+
+    .project-tile-tags {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .row.row-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & .column {
+            height: 114px;
+        }
+    }
+
+    .row.row-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column {
+        width: 50%;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 35px !important;
+    }
+
+    .email-container {
+        height: 100%;
+    }
+
+    .email-container input,
+    .email-container textarea {
+        font-size: 20px;
+    }
+
+    .email-container button {
+        font-size: 1em;
+    }
+
+    .skills-icon-group {
+        width: 50%;
+    }
+
+    #screen-skills img {
+        height: 60%;
+    }
+
+    .about-social {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 550px),
+(orientation: landscape) {
+    .folders svg.bottom-icon {
+        width: 30px;
+        height: 30px;
+    }
+}

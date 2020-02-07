@@ -1,252 +1,622 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Ashley Howard | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.min.css">
     <meta name="theme-color" content="#6e8a9f">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Qwigley">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.min.css">
-<meta name="description" content="Hi! I'm Ashley. I work as a front-end web developer in Trieste, Italy. I also teach English." />
+    <meta name="description" content="Hi! I'm Ashley. I'm a front-end web developer from London." />
+    <meta name="keywords" content="front, end, web, developer, development, designer, designing, london" />
 
-<meta name="keywords" content="front, end, web, developer, development, designer, designing, native, english, tutor, tutoring, teacher, teaching" />
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Ashley Howard Front-end Web Developer">
+    <meta itemprop="description" content="Hi! I'm Ashley. I'm a front-end web developer from London.">
+    <meta itemprop="image" content="https://ashley.how/img/headshot.jpg">
 
-<!-- Schema.org markup for Google+ -->
-<meta itemprop="name" content="Ashley Howard Web Design & Tutoring">
-<meta itemprop="description" content="Hi! I'm Ashley. I work as a front-end web developer in Trieste, Italy. I also teach English.">
-<meta itemprop="image" content="https://ashley.how/assets/img/headshot-firenze.jpg">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@shleyhoward">
+    <meta name="twitter:title" content="Ashley Howard Front-end Web Developer">
+    <meta name="twitter:description" content="Hi! I'm Ashley. I'm a front-end web developer from London.">
+    <meta name="twitter:creator" content="@shleyhow">
+    <meta name="twitter:image" content="https://ashley.how/img/headshot.jpg">
 
-<!-- Twitter Card data -->
-<meta name="twitter:card" content="product">
-<meta name="twitter:site" content="@shleyhoward">
-<meta name="twitter:title" content="Ashley Howard Web Design & Tutoring">
-<meta name="twitter:description" content="Hi! I'm Ashley. I work as a front-end web developer in Trieste, Italy. I also teach English.">
-<meta name="twitter:creator" content="@shleyhoward">
-<meta name="twitter:image" content="https://ashley.how/assets/img/headshot-firenze.jpg">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Ashley Howard Front-end Web Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ashley.how" />
+    <meta property="og:image" content="https://ashley.how/img/headshot.jpg" />
+    <meta property="og:description" content="Hi! I'm Ashley. I'm a front-end web developer from London." />
+    <meta property="og:site_name" content="Ashley Howard" />
 
-<!-- Open Graph data -->
-<meta property="og:title" content="Ashley Howard Web Design & Tutoring" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ashley.how" />
-<meta property="og:image" content="https://ashley.how/assets/img/headshot-firenze.jpg" />
-<meta property="og:description" content="Hi! I'm Ashley. I work as a front-end web developer in Trieste, Italy. I also teach English." />
-<meta property="og:site_name" content="Ashley Howard" /><!-- Shortcut icons -->
-<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+    <!-- Shortcut icons -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
 
-<script>
-(function(i,s,o,g,r,a,m){
-  i['GoogleAnalyticsObject']=r;
-  i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},
-  i[r].l=1*new Date();
-  a=s.createElement(o),m=s.getElementsByTagName(o)[0];
-  a.async=1;
-  a.src=g;
-  m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-36937888-2', 'auto');
-ga('send', 'pageview');
-</script>
+    <title>Ashley Howard // Front-end Dev</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="height:66px;">
-        <div class="container"><a class="navbar-brand logo" style="font-family:Qwigley, cursive;font-size:33px;color:rgb(255,255,255);" href="/">Ashley Howard</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navbarNav" style="font-size:32px;margin-top:5px;">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" style="font-family:Qwigley, cursive;font-weight:normal;" href="projects">Projects</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" style="font-family:Qwigley, cursive;font-weight:normal;" href="contact">Contact</a></li>
-                </ul>
-        </div>
-        </div>
-    </nav><div class="team-boxed team-boxed-mobile" style="padding:0;padding-top:60px;background-color:rgba(238,244,247,0);">
-    <div class="container" style="color:#313437;">
-        <div class="intro"></div>
-        <div class="row people">
-            <div class="col-md-6 col-lg-4 item">
-                <div class="box">
-                    
-                    <a href="/">
-                    <img src="/assets/img/headshot-firenze.jpg" class="rounded-circle" style="width:150px;height:160px;" />
-                    
-                    <h3 class="name" style="color: black">Ashley Howard</h3>
-                    </a>
-                    
-                    <div role="group" class="btn-group" style="padding-bottom:5px;"><a class="btn btn-primary" role="button" href="developer" style="font-size:15px;">Developer</a><a class="btn btn-primary" role="button" href="tutor" style="font-size:15px;">Tutor</a></div>
-                    <p class="title">ABOUT ME</p>
-                    <p class="description">28 years old<br />Likes pizza<br />Based in London
-                         <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle available" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  language
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<body unselectable="on" class="extendable">
+    <div class="bg">
 
-        <a class="dropdown-item" href="/">English</a>
-        <a class="dropdown-item" href="it/home">Italiano</a>
+        <div class="desk-wrapper" id="desk">
+            <div class="desk hide-mob"></div>
         </div>
-     </div>
-     </p>
-     </div>
-</div>        
- </div>      
-    </div>
-</div><div class="team-boxed team-boxed-web" style="padding:0;padding-top:60px;background-color:rgba(238,244,247,0);">
-    <div class="container" style="color:#313437;">
-        <div class="intro"></div>
-        <div class="row people">
-            <div class="col-md-6 col-lg-4 item">
-                <div class="box" style="padding-bottom:0px;"><img src="/assets/img/headshot-firenze.jpg" class="rounded-circle" style="width:150px;height:160px;" alt="portrait shot with florence behind"/></div>
-            </div>
-        </div>
-    </div>
-</div><main class="page lanidng-page web">
-    <section class="portfolio-block block-intro">
-        <div class="container" style="margin-top:-110px;">
-            <div class="about-me" style="margin-top:-150px;">
-                <p>Hi! I&#39;m <strong>Ashley</strong>. I'm a front-end web developer from London.<br /></p>
-                
-                
-                <div>
-  <a class="btn btn-outline-primary" role="button" href="projects">
-    View Projects
-  </a>
 
- 
-</div>
-              
-            
-            
-            
-            </div>          
-        </div>
-        
-        
-    </section>
-    
-    
-    <section class="portfolio-block skills">
-        <div class="container" style="margin-top:-100px;">
-            <div class="heading">
-                <h2>Special Skills</h2>
+        <!-- PC -->
+        <div class="pc extendable">
+            <div class="pc--screen extendable">
+
+                <div class="top-bar extendable">
+                    <div class="hide-screen-icon" onclick="minimise()" title="Minimise">_</div>
+                    <div class="close-screen-icon" onclick="closeScreen()" title="Close window">X</div>
+                </div>
+
+                <div class="explorer-bar extendable">
+                    <div id="back-button" title="Go back" onclick="openScreen('main')">←</div>
+                    <span id="explorer-url">
+                        <div id="typed-strings">
+                        </div>
+                        <span id="prepend-typed"></span><span id="typed"></span>
+                    </span>
+                </div>
+
+                <!-- small screen -->
+                <div class="folders extendable" id="folders">
+                    <div class="row row-top extendable">
+                        <!-- About -->
+                        <div class="column column-3" onclick="openScreen('about')">
+                            <svg class="top-icon about-icon" width="132" height="138" viewBox="0 0 132 138"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path id="head"
+                                    d="M90.75 74.52C90.75 79.0906 87.67 82.8 83.875 82.8C80.08 82.8 77 79.0906 77 74.52C77 69.9494 80.08 66.24 83.875 66.24C87.67 66.24 90.75 69.9494 90.75 74.52ZM48.125 66.24C44.33 66.24 41.25 69.9494 41.25 74.52C41.25 79.0906 44.33 82.8 48.125 82.8C51.92 82.8 55 79.0906 55 74.52C55 69.9494 51.92 66.24 48.125 66.24ZM132 79.0078C132 88.7506 126.583 101.038 114.736 106.089C103.389 124.277 87.307 138 66 138C45.4245 138 28.347 123.858 17.2645 106.089C5.4175 101.033 0 88.745 0 79.0078C0 67.6752 4.147 62.3042 7.7935 59.7485C5.6485 51.336 2.1285 31.3426 13.09 18.8508C18.249 12.972 26.642 10.35 35.75 11.8183C39.7045 3.36168 55.616 0 66 0C82.5 0 102.35 3.53832 116.276 19.4083C127.105 31.751 125.339 51.0986 123.91 59.5332C127.627 61.9951 132 67.3661 132 79.0078ZM79.2 104.88H52.8C52.8 104.88 56.529 115.274 66 115.274C75.834 115.274 79.2 104.88 79.2 104.88ZM118.046 68.9558C95.4415 71.1252 75.2675 52.0757 68.145 39.8434C67.6995 44.309 69.168 53.958 73.4745 58.363C56.012 58.7162 41.382 49.5751 32.4445 37.0116C27.841 44.7341 25.6135 54.0574 25.6135 63.3696C25.6135 67.355 21.5105 70.0378 17.8805 68.4149C17.1105 68.0671 15.4825 67.8574 14.19 68.7074C8.69 72.2844 9.2675 91.7976 22.7315 96.3737C23.9635 96.7932 25.003 97.6322 25.6795 98.7473C29.282 104.742 33.1265 109.677 37.1525 113.773C42.2235 117.267 42.9605 103.423 46.321 98.7583C50.094 93.5198 59.8235 92.5428 66 96.9809C72.182 92.5428 81.906 93.5198 85.679 98.7583C89.0395 103.428 89.7765 117.272 94.8475 113.773C98.868 109.682 102.712 104.742 106.32 98.7473C106.997 97.6322 108.042 96.7932 109.269 96.3737C122.265 91.9577 123.546 73.2725 118.046 68.9558Z" />
+                                <path id="glasses"
+                                    d="M89.5277 57C84.9242 57 79.9207 57.516 75.8062 58.964C66.5791 62.276 64.526 62.316 55.1857 58.964C51.0793 57.516 46.0636 57 41.4723 57C33.5062 57 24.6185 58.548 17 60.512V67.668C20.4273 68.688 21.3165 70.176 21.8621 73.64C23.402 83.412 26.9385 93 42.3453 93C54.6198 93 58.7181 83.964 61.4341 75.62C62.8083 71.38 68.1513 71.272 69.5497 75.56C72.2738 83.916 76.3478 93 88.6466 93C104.062 93 107.598 83.412 109.138 73.636C109.684 70.172 110.573 68.688 114 67.664V60.512C106.373 58.548 97.4938 57 89.5277 57ZM26.995 76.66C26.5222 75.232 26.0938 73.764 25.734 72.256C24.3114 66.364 25.5602 65.1 27.4881 63.96C30.2971 62.288 35.4623 61.3 40.8054 61.032C30.9559 63.248 26.7647 65.5 26.995 76.66ZM74.4846 76.66C74.0117 75.232 73.5833 73.764 73.2236 72.256C71.801 66.364 73.0498 65.1 74.9777 63.96C77.7867 62.288 82.9519 61.3 88.295 61.032C78.4455 63.248 74.2542 65.5 74.4846 76.66Z" />
+                            </svg>
+                            <p>About</p>
+                        </div>
+
+                        <!-- Projects -->
+                        <div class="column column-3" onclick="openScreen('projects')">
+                            <svg class="top-icon projects-icon" width="153" height="159" viewBox="0 0 190 150"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path id="svg-folder-main"
+                                    d="M88.8274 22.541C75.6729 22.541 70.2141 14.5915 56.5266 0H0V165H193.805V22.541H88.8274Z" />
+                                <path id="svg-folder-open" d="M0 36.3661H193.805V164.399H0V36.3661Z" />
+                            </svg>
+                            <p>Projects</p>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="column column-3" onclick="openScreen('skills')">
+                            <svg class="top-icon skills-icon" width="155" height="156" viewBox="0 0 155 156"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect id="bar-0" y="146" width="155" height="10" />
+                                <rect id="bar-1" y="110" width="32" height="28" />
+                                <rect id="bar-2" x="41" y="82" width="32" height="56" />
+                                <rect id="bar-3" x="82" y="42" width="32" height="96" />
+                                <rect id="bar-4" x="123" width="32" height="138" />
+                            </svg>
+                            <p>Skills</p>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="column column-3" onclick="openScreen('contact')">
+                            <svg class="top-icon letter-icon" width="153" height="159" viewBox="0 0 153 159"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path id="Polygon 1" d="M76.5 8L153.143 62H-0.14325L76.5 8Z" fill="#1B1B1B" />
+                                <rect id="Rectangle 8" y="62" width="153" height="84" fill="#ADADAD" />
+                                <g id="paper">
+                                    <rect id="Rectangle 7" x="24" y="18" width="105" height="117" fill="white" />
+                                    <line id="Line 1" x1="13" y1="12.5" x2="140" y2="12.5" stroke="#242424"
+                                        stroke-width="11" />
+                                    <line id="Line 2" x1="18.5" y1="8" x2="18.5" y2="135" stroke="#242424"
+                                        stroke-width="11" />
+                                    <line id="Line 3" x1="134.5" y1="8" x2="134.5" y2="135" stroke="#242424"
+                                        stroke-width="11" />
+                                    <rect id="Rectangle 1" x="38" y="32" width="32" height="19" fill="#242424" />
+                                    <rect id="Rectangle 2" x="77" y="32" width="37" height="6" fill="#242424" />
+                                    <rect id="Rectangle 3" x="77" y="45" width="37" height="6" fill="#242424" />
+                                    <rect id="paper-line-1" x="38" y="57" width="76" height="6" fill="#242424" />
+                                    <rect id="paper-line-2" x="38" y="70" width="76" height="6" fill="#242424" />
+                                </g>
+                                <path id="Rectangle 6" d="M0 62L76.5 100.5L153 62V146H0V62Z" fill="#242424" />
+                            </svg>
+                            <p>Contact</p>
+                        </div>
+                    </div>
+
+                    <!-- Social media row -->
+                    <div class="row row-bottom">
+                        <!-- Instagram -->
+                        <div class="column column-3">
+                            <a href="https://www.instagram.com/shley.how/" target="_blank">
+                                <svg class="bottom-icon ig-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- Github -->
+                        <div class="column column-3">
+                            <a href="https://github.com/ashley-howard" target="_blank">
+                                <svg class="bottom-icon gh-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- Twitter -->
+                        <div class="column column-3">
+                            <a href="https://twitter.com/shleyhow" target="_blank">
+                                <svg class="bottom-icon tw-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- Linkedin -->
+                        <div class="column column-3">
+                            <a href="https://www.linkedin.com/in/ashlward/" target="_blank">
+                                <svg class="bottom-icon li-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Minimised screen -->
+                <div id="minimised" onclick="maximise()">
+                    <p>Screen minimised</p>
+                    <p>Click here to continue where you left off</p>
+                </div>
+
+                <!-- Projects -->
+                <div id="screen-projects">
+                    <div class="large-grid-container" id="project-tiles">
+
+                        <!-- Ribbit -->
+                        <div class="project-tile" id="ribbit">
+                            <div class="project-tile-inner">
+                                <div class="project-tile-name">Ribbit.</div>
+                                <div class="project-tile-info">
+                                    <p>A different kind of to-do app with a built-in pomodoro timer.</p>
+                                </div>
+                                <div class="project-tile-tags">
+                                    <div class="tag tag-bs"></div>
+                                    <div class="tag tag-html"></div>
+                                    <div class="tag tag-css"></div>
+                                    <div class="tag tag-js"></div>
+                                </div>
+                                <div class="project-tile-links">
+                                    <a href="https://ashley.how/ribbit-app" target="_blank">Website</a>
+                                    <a href="https://github.com/ashley-howard/ribbit-app" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Meme -->
+                        <div class="project-tile" id="meme-generator">
+                            <div class="project-tile-inner">
+                                <div class="project-tile-name">Meme Generator</div>
+                                <div class="project-tile-info">
+                                    <p>Create and save memes using the Imgflip API.</p>
+                                </div>
+                                <div class="project-tile-tags">
+                                    <div class="tag tag-react"></div>
+                                    <div class="tag tag-html"></div>
+                                    <div class="tag tag-css"></div>
+                                    <div class="tag tag-js"></div>
+                                </div>
+                                <div class="project-tile-links">
+                                    <a href="https://ashley.how/meme-generator" target="_blank">Website</a>
+                                    <a href="https://github.com/ashley-howard/meme-generator" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- NoteConvert -->
+                        <div class="project-tile" id="note-convert">
+                            <div class="project-tile-inner">
+                                <div class="project-tile-name">NoteConvert</div>
+                                <div class="project-tile-info">
+                                    <p>Convert musical notes using regex.</p>
+                                </div>
+                                <div class="project-tile-tags">
+                                    <div class="tag tag-bs"></div>
+                                    <div class="tag tag-html"></div>
+                                    <div class="tag tag-css"></div>
+                                    <div class="tag tag-js"></div>
+                                </div>
+                                <div class="project-tile-links">
+                                    <a href="https://www.noteconvert.com" target="_blank">Website</a>
+                                    <a href="https://github.com/noteconvert/noteconvert.github.io"
+                                        target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Shopping app -->
+                        <div class="project-tile" id="shopping">
+                            <div class="project-tile-inner">
+                                <div class="project-tile-name">Smartshop</div>
+                                <div class="project-tile-info">
+                                    <p>A shopping list app which automatically sorts items by category.</p>
+                                </div>
+                                <div class="project-tile-tags">
+                                    <div class="tag tag-bs"></div>
+                                    <div class="tag tag-html"></div>
+                                    <div class="tag tag-css"></div>
+                                    <div class="tag tag-js"></div>
+                                </div>
+                                <div class="project-tile-links">
+                                    <a href="https://ashley.how/shopping-app" target="_blank">Website</a>
+                                    <a href="https://github.com/ashley-howard/shopping-app" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- A-KIN -->
+                        <div class="project-tile" id="a-kin">
+                            <div class="project-tile-inner">
+                                <div class="project-tile-name">A-KIN</div>
+                                <div class="project-tile-info">
+                                    <p>Portfolio for an experimental-electronic composer/installation artist.
+                                    </p>
+                                </div>
+                                <div class="project-tile-tags">
+                                    <div class="tag tag-bs"></div>
+                                    <div class="tag tag-html"></div>
+                                    <div class="tag tag-css"></div>
+                                </div>
+                                <div class="project-tile-links">
+                                    <a href="https://ashley.how/a-kin" target="_blank">Website</a>
+                                    <a href="https://github.com/ashley-howard/a-kin" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Flashcard app -->
+                        <div class="project-tile" id="flashcard">
+                            <div class="project-tile-inner">
+                                <div class="project-tile-name">Flashcards</div>
+                                <div class="project-tile-info">
+                                    <p>A flashcard app for studying using localhost to remember cards.</p>
+                                </div>
+                                <div class="project-tile-tags">
+                                    <div class="tag tag-bs"></div>
+                                    <div class="tag tag-html"></div>
+                                    <div class="tag tag-css"></div>
+                                    <div class="tag tag-js"></div>
+                                </div>
+                                <div class="project-tile-links">
+                                    <a href="https://ashley.how/flashcard-app" target="_blank">Website</a>
+                                    <a href="https://github.com/ashley-howard/flashcard-app" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- JD -->
+                        <div class="project-tile" id="jack-daniels">
+                            <div class="project-tile-inner">
+                                <div class="project-tile-name">Jack's Portfolio</div>
+                                <div class="project-tile-info">
+                                    <p>Fictional portfolio which uses a weather API.</p>
+                                </div>
+                                <div class="project-tile-tags">
+                                    <div class="tag tag-bs"></div>
+                                    <div class="tag tag-html"></div>
+                                    <div class="tag tag-css"></div>
+                                    <div class="tag tag-js"></div>
+                                </div>
+                                <div class="project-tile-links">
+                                    <a href="https://ashley.how/jackdaniels" target="_blank">Website</a>
+                                    <a href="https://github.com/ashley-howard/jackdaniels" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project - Github -->
+                        <a href="https://github.com/ashley-howard" target="_blank">
+                            <div class="project-tile project-git" id="github">
+                                <div class="project-tile-inner">
+                                    <div class="project-tile-info">
+                                        <p>View more projects on Github</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- About -->
+                <div id="screen-about">
+                    <div class="large-grid-container">
+                        <h2>About</h2>
+                        <img class="man" src="img/about/standing-man.svg" alt="An illustrated man standing">
+
+                        <div class="about-container">
+                            <p>Hi! I'm Ashley. I've been coding for over 5 years using
+                                <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. In the more recent years I have
+                                expanded out to <b>React</b>, <b>SCSS</b>, <b>TypeScript</b>, as well as
+                                some other smaller libraries.</p>
+
+                            <ul>
+                                <li>I believe in creating bigger ideas from smaller ideas</li>
+                                <li>Through simplicity we can say as much as we need to</li>
+                                <li>That perfectionism isn't a drawback but advantageous</li>
+                                <li>In experimenting to reach new heights</li>
+                            </ul>
+
+                            <div class="about-social">
+                                <div class="about-social--links">
+
+                                    <a href="https://www.instagram.com/shley.how/" target="_blank">
+                                        <svg class="bottom-icon ig-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="https://github.com/ashley-howard" target="_blank">
+                                        <svg class="bottom-icon gh-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="https://twitter.com/shleyhow" target="_blank">
+                                        <svg class="bottom-icon tw-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="https://www.linkedin.com/in/ashlward/" target="_blank">
+                                        <svg class="bottom-icon li-icon" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="https://codepen.io/shley" target="_blank">
+                                        <img src="./img/social/codepen.png" alt="Codepen logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div id="screen-skills">
+                    <div class="large-grid-container">
+                        <h2>Skills</h2>
+                        <div class="row">
+                            <!-- Languages -->
+                            <div class="column">
+                                <h3>Languages</h3>
+
+                                <div class="skills-icon-container">
+                                    <div class="skills-icon-group">
+                                        <img src="./img/skills/html.svg" alt="HTML logo">
+                                        <p>HTML5</p>
+                                    </div>
+
+                                    <div class="skills-icon-group">
+                                        <img src="./img/skills/css.svg" alt="CSS logo">
+                                        <p>CSS3</p>
+                                    </div>
+
+                                    <div class="skills-icon-group">
+                                        <img src="./img/skills/es6.svg" alt="Javascript logo">
+                                        <p>JS / E6+</p>
+                                    </div>
+
+                                    <div class="skills-icon-group">
+                                        <img src="./img/skills/sass.svg" alt="Sass logo">
+                                        <p>SCSS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Frameworks / Libraries -->
+                            <div class="column">
+                                <h3>Frameworks / Libraries</h3>
+
+                                <div class="skills-icon-container">
+                                    <div class="skills-icon-group">
+                                        <img src="./img/skills/react.svg" alt="React logo">
+                                        <p>React</p>
+                                    </div>
+
+                                    <!-- <div class="skills-icon-group">
+                                        <img src="./img/skills/redux.svg" alt="Redux logo">
+                                        <p>Redux</p>
+                                    </div> -->
+
+                                    <div class="skills-icon-group">
+                                        <img src="./img/skills/bootstrap.svg" alt="Bootstrap logo">
+                                        <p>Bootstrap 4+</p>
+                                    </div>
+                                    <div class="skills-icon-group">
+                                        <img src="./img/skills/tone.svg" alt="Tone JS logo">
+                                        <p>Tone JS</p>
+                                    </div>
+                                    <div class="skills-icon-group">
+                                        <span style="
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            height: 68%;
+                                            font-weight: 500;
+                                            text-shadow: 2px 2px 4px black;
+                                        ">Typed.js|</span>
+                                        <p>Typed.js</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Software -->
+                            <div class="column">
+                                <h3>Software</h3>
+                                <div class="skills-icon-container">
+                                    <div class="skills-icon-group">
+                                        <img src="./img/skills/photoshop.svg" alt="Adobe Photoshop logo">
+                                        <p>Photoshop</p>
+                                    </div>
+
+                                    <div class="skills-icon-group">
+                                        <img src="./img/skills/xd.svg" alt="Adobe XD logo">
+                                        <p>XD</p>
+                                    </div>
+
+                                    <div class="skills-icon-group">
+                                        <img src="./img/skills/illustrator.svg" alt="Adobe Illustrator logo">
+                                        <p>Illustrator</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div id="screen-contact">
+                    <div class="large-grid-container">
+                        <h2>Get in contact</h2>
+                        <div class="email-container">
+                            <form action="https://formspree.io/xyyekpbw" method="POST">
+                                <input required autofocus type="email" class="lined" name="_replyto"
+                                    placeholder="Email">
+                                <input type="text" class="lined" name="_subject" placeholder="Subject">
+                                <textarea required rows="4" cols="50" name="message"
+                                    placeholder="Type your message here..."></textarea>
+                                <button type="submit" value="Send">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card special-skill-item border-0">
-                        <div class="card-header bg-transparent border-0"><i class="icon ion-android-phone-portrait"></i></div>
-                        <div class="card-body">
-                            <h3 class="card-title">Responsive Design</h3>
-                            <p class="card-text">Putting mobile first.<br />Collapsible menus and automatic image resizing.</p>
+
+            <div class="pc--button extendable"></div>
+            <div class="pc--stand-bottom hide-mob"></div>
+            <div class="pc--stand-top extendable hide-mob"></div>
+        </div>
+
+        <!-- G Hub -->
+        <div class="hub hide-mob">
+            <div class="hub--speakers"></div>
+            <div class="hub--screen">
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="" id="hub-bg" alt="Background illustration">
+                        <div class="hub--welcome">
+                            <div id="welcome-text"></div>Ash!
                         </div>
+                        <div class="hub--day" id="day"></div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card special-skill-item border-0">
-                        <div class="card-header bg-transparent border-0">
-                            <p class="cursiveA">A</p>
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Typography</h3>
-                            <p class="card-text">Carefully handpicked typefaces to give some personality to your website.</p>
-                        </div>
+
+                    <div class="mySlides fade" id="weather-slide">
+                        <div class="hub--weather-cond" id="weather-cond"></div>
+                        <p>London</p>
+                        <div class="hub--weather-temp" id="weather-temp"></div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card special-skill-item border-0">
-                        <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline"></i></div>
-                        <div class="card-body">
-                            <h3 class="card-title">Accessibility and ARIA</h3>
-                            <p class="card-text">All of my sites are accessible to everyone. Screen readers should not have a problem.</p>
+
+                    <div class="mySlides fade">
+                        <div class="hub--calendar">
+                            <p>Coming up</p>
+                            <div class="calendar-item">
+                                <div class="calendar-item-date">Event • March 9</div>
+                                <div class="calendar-item-task">Do that thing</div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="calendar-item-date">Event • March 15</div>
+                                <div class="calendar-item-task">Finish that project</div>
+                            </div>
+                        </div>
+
+                        <div class="hub--music">
+                            <p><img src="./img/music/spotify.png" alt="Spotify logo"> Spotify</p>
+                            <div class="track-info">
+                                <div class="album"><img src="./img/music/juno.jfif" alt="Tesseract album cover"></div>
+                                <div class="track">Juno</div>
+
+                            </div>
+                            <div class="track-info">
+                                <div class="album"><img src="./img/music/tjom.jpg" alt="Animals as Leaders album cover"></div>
+                                <div class="track">The Woven Web</div>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-</main>
-    <section class="portfolio-block website gradient">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12 col-lg-5 offset-lg-1 text">
-                    <h3>Latest Project</h3><p style="color:rgb(255,255,255);"><a href="a-kin" target="_blank" style="color: #fff"><strong>A-KIN</strong></a><br />An experimental-electronic composer/installation artist who creates mixes exploring a range of different subjects and ideas.<br /></p></div>
-                <div class="col-md-12 col-lg-5">
-                    <div class="portfolio-laptop-mockup"><div data-ride="carousel" class="carousel slide" id="carousel-1">
-    <div role="listbox" class="carousel-inner">
-        <div class="carousel-item web active"><a href="a-kin" target="_blank"><img src="/assets/img/laptop-drew.png" alt="a preview of Akin's website" class="w-100 d-block" /></a></div>
-        <div class="carousel-item web"><a href="a-kin" target="_blank"><img src="/assets/img/laptop-akin.png" alt="a preview of Akin's website" class="w-100 d-block" /></a></div>
-        <div class="carousel-item mobile"><a href="a-kin" target="_blank"><img src="/assets/img/mobile.png" alt="a preview of Akin's mobile website" /></a></div>
+
+        <!-- Post-it note -->
+        <div class="note hide-mob">
+            <ul>
+                <li id="coffee-note">Drink coffee</li>
+                <li>Fix bugs</li>
+                <li>Code</li>
+                <li>Repeat</li>
+            </ul>
+        </div>
+
+        <!-- Poster -->
+        <div class="poster hide-mob"></div>
+
+        <!-- Lamp -->
+        <div class="lamp hide-mob">
+            <img src="./img/lamp.svg" alt="Desktop lamp illustration">
+        </div>
+
+        <!-- Coffee Cup -->
+        <div class="coffee-cup hide-mob" onclick="drinkCoffee()">
+            <img src="./img/coffee.svg" alt="Coffee cup illustration">
+        </div>
+
     </div>
-    <div><a href="#carousel-1" role="button" data-slide="prev" class="carousel-control-prev"><span aria-hidden="true" class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a href="#carousel-1" role="button" data-slide="next" class="carousel-control-next"><span aria-hidden="true" class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
-    <ol
-        class="carousel-indicators">
-        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-1" data-slide-to="1"></li>
-        <li data-target="#carousel-1" data-slide-to="2"></li>
-        </ol>
-</div></div>
-                </div>
-            </div>
+
+    <!-- Desk bottom -->
+    <div class="desk--bottom">
+        <div class="copyright">&copy; Ashley Howard
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
         </div>
-    </section>
-    <hr style="margin-top: 40px;margin-bottom: 40px;"><div class="footer-clean" style="padding-top:0px;margin-top:0px;">
-    <footer>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="/packages/tutoring/lessons">English Lessons</a></li>
-                        <li><a href="/packages/tutoring/corrections">Essay Corrections</a></li>
-                         <li><a href="/policy">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>Links</h3>
-                    <ul>
-                       <li><a href="https://superprof.ashley.how" target="_blank">Superprof</a></li>
-                        <li><a href="https://italki.ashley.how" target="_blank">Italki</a></li>
-                        <li><a href="https://linkedin.ashley.how" target="_blank">Linkedin</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>Language</h3>
-                    <ul>
-                        <li><a href="/">English</a></li>
-                        <li><a href="it/home">Italiano</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 item social">
-                    <a href="https://github.ashley.how" target="_blank"><i class="fab fa-github" style="color:#0ea0ff;"></i></a>
-                    
-                    <a href="https://dribbble.ashley.how" target="_blank"><i class="fab fa-dribbble" style="color:#0ea0ff;"></i></a>
-                    <p class="copyright">Ashley Howard © 2018</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="/assets/js/script.min.js"></script>
+    </div>
+
+    <div class="construction">
+        Site under construction, come back soon!
+    </div>
+
+    <script src="scripts/main.min.js"></script>
+
+    <noscript>Please enable JavaScript for the best viewing experience.</noscript>
 </body>
 
 </html>

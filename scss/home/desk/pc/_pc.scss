@@ -1,0 +1,466 @@
+@import 'grid';
+@import 'large/large-screen';
+
+.pc {
+    position: absolute;
+    // background: #171717;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 70%, rgba(46, 46, 46, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 70%, rgba(46, 46, 46, 1) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 70%, rgba(46, 46, 46, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#2e2e2e", GradientType=1);
+    // width: 87vw; // large
+    // height: 74vh; // large
+    // left: 5%; // large
+    // bottom: 0; // large 
+    width: 400px; // small
+    height: 230px; // small
+    left: 28vw;
+    // bottom: 120px;
+    top: calc(100vh - 380px);
+    // top: 10%;
+    z-index: 1;
+    // box-shadow: -17px 12px 4px 0px #00000017;
+    // box-shadow: 0 0 20px 20px #0072ff40;
+    border-radius: 4px;
+    box-shadow: -20px -13px 20px #181818;
+    box-shadow: -20px -13px 20px #000000b3;
+
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: -114px;
+    //     background: #18181a;
+    //     width: 384px;
+    //     height: 70px;
+    //     border-radius: 50%;
+    //     left: -28px;
+    // }
+
+    &.extended {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        left: 0;
+        top: 0;
+        background: none;
+        z-index: 2;
+    }
+
+
+    &--screen {
+        position: absolute;
+        // opacity: 0;
+        background-color: #1e1e1e;
+        // border: 15px solid #1e1e1e;
+        // border-radius: 5px;
+        // width: 86vw;
+        // height: 67vh;
+        background-image: url('../img/pc-bg.jpg');
+        background-size: cover;
+        width: 380px;
+        height: 210px;
+        transform: translate(10px, 10px);
+        animation: fade-in 4s forwards;
+        animation-timing-function: ease-in;
+
+        &.extended {
+            width: 92.5vw;
+            height: 88vh;
+            position: absolute;
+            z-index: 2;
+            background: url('../img/pc-bg-large.jpg');
+            background-size: cover;
+            animation: screen-enlarge 3s forwards;
+        }
+
+
+        @keyframes screen-enlarge {
+            0% {
+                width: 382px;
+                height: 211px;
+                transform: translate(-10vw, 20%);
+            }
+
+            100% {
+                width: 92.5vw;
+                height: 88vh;
+                transform: translate(0);
+                box-shadow: 0 0 20px 6px #ffffff63;
+            }
+        }
+    }
+
+
+    &--button {
+        position: absolute;
+        width: 13px;
+        height: 2px;
+        bottom: -4px;
+        border-radius: 0 0 5px 5px;
+        right: 35px;
+        // border: 1px solid #1111111f;
+        animation: pc-button 3s forwards;
+
+        &.extended {
+            display: none;
+        }
+
+    }
+
+
+
+    // &--keyboard {
+    //     position: absolute;
+    //     background: url('../img/keyboard.jpg');
+    //     background-size: contain;
+    //     width: 214px;
+    //     height: 73px;
+    //     bottom: -149px;
+    //     right: 95px;
+    //     box-shadow: 6px -4px 8px #00000094;
+    // }
+
+    &--stand-top {
+        position: absolute;
+        background: inherit;
+        width: 30px;
+        height: 70px;
+        transform: translate(187px, 230px);
+        box-shadow: 7px -4px 4px 0px #00000038;
+        border-radius: 0 0 5px 5px;
+
+        &.extended {
+            display: none;
+        }
+    }
+
+    &--stand-bottom {
+        position: absolute;
+        background: inherit;
+        width: 138px;
+        height: 60px;
+        bottom: -105px;
+        left: 133px;
+        border-radius: 100%;
+        box-shadow: 0px 5px #0f0f0f, -20px 2px 13px #000000;
+    }
+
+    // .taskbar {
+    //     position: absolute;
+    //     width: 100%;
+    //     bottom: 0;
+    //     left: 0;
+    //     height: 10px;
+    //     background: #00000054;
+    //     color: #2c2c2c;
+    //     font-size: 0.5em;
+    // }
+}
+
+
+
+.folders {
+    // padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: inherit;
+    justify-content: space-between;
+    // background: #ffffff6e; // or only on hover?
+
+    &.extended {
+        display: none;
+    }
+}
+
+// .folders:hover {
+//     animation: fade-in 50s forwards;
+// }
+
+// @keyframes fade-in {
+//     0% {
+
+//         background: transparent;
+//     }
+
+//     100% {
+//         background: #ffffff6e;
+//     }
+// }
+
+.folder {
+    position: absolute;
+    height: 45px;
+    width: 68px;
+    background: #bcbcbc;
+    border-top-right-radius: 2px;
+    cursor: pointer;
+    box-shadow: inset -8px -6px 12px #9b9b9b;
+
+    &::after {
+        position: absolute;
+        font-size: 13px;
+        text-align: center;
+        left: 0;
+        bottom: -14px;
+        width: 100%;
+        color: #666666;
+        font-weight: 500;
+    }
+
+    &::before {
+        @extend %pseudo;
+        background: #a3a3a3;
+        height: 4px;
+        top: -3px;
+        left: 0;
+        width: 20px;
+        border-top-right-radius: 2px;
+    }
+
+    &-projects {
+        &::after {
+            content: "Projects";
+        }
+    }
+
+    &-2 {
+        &::after {
+            content: "Folder2";
+        }
+    }
+
+    &-3 {
+        &::after {
+            content: "Folder3";
+        }
+    }
+}
+
+#minimised {
+    background: #000000d9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    display: none; // flex
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    p {
+        padding: 10px;
+
+        &:first-child {
+            font-size: 2em;
+        }
+    }
+}
+
+.folder.contact-button::before {
+    background: transparent;
+}
+
+.contact-button {
+    position: absolute;
+    background: white;
+    height: 45px;
+    width: 52px;
+    border-radius: 100% 100% 100% 0;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    // border: 2.5px solid #707070;
+
+    &::before {
+        @extend %pseudo;
+        // border-top: 2.5px solid #494949;
+        // border-bottom: 2.5px solid #494949;
+        width: 25px;
+        height: 7px;
+        left: 10px;
+        top: 14px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "Contact";
+        // background: #494949;
+        // border-radius: 100%;
+        // width: 4px;
+        // height: 4px;
+        // right: 10px;
+        // top: 23px;
+        // box-shadow: 1px 0px 0px 5px white;
+    }
+}
+
+
+
+
+.folders svg {
+    width: 50px;
+    height: 50px;
+    overflow: visible;
+    cursor: pointer;
+
+    .extended>& {
+        width: 80px;
+        height: 80px;
+    }
+
+    &.top-icon {
+        fill: #242424;
+        // stroke: white;
+        // stroke-width: 0.5;
+    }
+
+    &.bottom-icon {
+        width: 25px;
+        fill: #bebebe;
+        height: 25px;
+
+        .extended>& {
+            width: 45px;
+            height: 45px;
+        }
+
+        // &:hover {
+        //     animation: bounce 1s;
+        //     animation-timing-function: ease-in-out;
+        //     animation-iteration-count: infinite;
+        //     animation-direction: alternate;
+        //     // animation-fill-mode: both;}
+        // }
+    }
+
+    // &.github-icon {
+    //     fill: #555555;
+    //     stroke: white;
+    //     stroke-width: 0.5;
+    // }
+
+    // &.skills-icon:hover {
+    //     animation: change-color 5s;
+    //     animation-timing-function: linear;
+    //     animation-iteration-count: infinite;
+    //     animation-direction: alternate;
+    //     // animation-fill-mode: both;
+    // }
+
+
+    &.projects-icon:hover #svg-folder-open {
+        animation: svg-folder-open 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        // animation-fill-mode: both;
+    }
+
+
+    #glasses {
+        opacity: 0;
+        // transform: translateY(-93px);
+        fill: #1c1c1c;
+        stroke: white;
+    }
+
+    &.about-icon:hover #glasses {
+        animation: glasses 2s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        // animation-direction: alternate;
+        animation-fill-mode: both;
+    }
+
+    &.gh-icon:hover,
+    &.tw-icon:hover,
+    &.ig-icon:hover,
+    &.li-icon:hover {
+        fill: rgb(36, 36, 36);
+    }
+
+    // &.contact-icon {
+    //     fill: white;
+    //     stroke: #c8c8c8;
+    //     stroke-width: 0.5;
+    // }
+}
+
+.skills-icon:hover #bar-0 {
+    animation: graph-line 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    // animation-fill-mode: both;
+}
+
+.skills-icon:hover #bar-1 {
+    animation: graph 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    // animation-fill-mode: both;
+}
+
+.skills-icon:hover #bar-2 {
+    animation: graph 3s;
+    animation-delay: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    // animation-fill-mode: both;
+}
+
+.skills-icon:hover #bar-3 {
+    animation: graph 3s;
+    animation-delay: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    // animation-fill-mode: both;
+}
+
+.skills-icon:hover #bar-4 {
+    animation: graph 3s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    // animation-fill-mode: both;
+}
+
+
+.letter-icon:hover {
+    #paper {
+        animation: paper 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        // animation-fill-mode: both;
+    }
+
+    #paper-line-1 {
+        animation: paper-lines 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        // animation-direction: alternate;
+        // animation-fill-mode: both;
+    }
+
+    #paper-line-2 {
+        width: 0;
+        animation: paper-lines 4s;
+        animation-delay: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        // animation-direction: alternate;
+        animation-fill-mode: both;
+    }
+}

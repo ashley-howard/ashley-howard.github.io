@@ -1,0 +1,141 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pc-button {
+    0% {
+        background-color: #ff5b5b;
+        box-shadow: 0 0 4px 1px #ff5b5b;
+    }
+
+    100% {
+        background-color: #75b9d9;
+        box-shadow: 0 0 4px 1px #75b9d9;
+    }
+}
+
+@keyframes svg-folder-open {
+    from {
+        transform: skew(0) translateX(0);
+    }
+
+    to {
+        fill: #4f4f4f;
+        transform: skew(-15deg, 0deg) translateX(43px);
+    }
+}
+
+@keyframes glasses {
+    from {
+        opacity: 0;
+        transform: translateY(-93px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes graph-line {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 155px;
+        opacity: 1;
+    }
+}
+
+@keyframes graph {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes paper {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-7px);
+    }
+}
+
+@keyframes paper-lines {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75px;
+    }
+}
+
+
+@keyframes hub-welcome {
+    0% {
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hub-screen {
+    0% {
+        opacity: 0;
+    }
+
+    3% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes line-through {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 45px;
+    }
+}

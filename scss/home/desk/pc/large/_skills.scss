@@ -1,0 +1,52 @@
+#screen-skills {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    img {
+        width: 52%;
+        max-width: 110px;
+        height: 67%;
+    }
+
+    .column {
+        display: flex;
+        padding: 5px;
+        min-height: 30px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        background: #ffffff0a;
+        margin: 5px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 3em;
+        margin: 20px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+}
+
+.skills-icon {
+    &-container {
+        display: flex;
+    }
+
+    &-group {
+        width: 33%;
+        margin-bottom: 20px;
+
+        p {
+            color: white;
+            font-weight: 400;
+        }
+    }
+}

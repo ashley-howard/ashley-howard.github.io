@@ -1,0 +1,13 @@
+@import 'notes';
+@import 'poster';
+
+.bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(83, 109, 161);
+    background: -moz-radial-gradient(circle, rgba(83, 109, 161, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(83, 109, 161, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(83, 109, 161, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#536da1", endColorstr="#000000", GradientType=1);
+}

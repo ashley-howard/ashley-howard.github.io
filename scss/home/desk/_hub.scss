@@ -1,0 +1,226 @@
+.hub {
+    position: absolute;
+    background: #151515;
+    width: 170px;
+    height: 108px;
+    top: calc(100vh - 170px);
+    left: calc(20vw - 120px);
+    border-radius: 10px;
+    box-shadow: -20px -8px 20px 0px #0c0c0c, inset 0 0px 0px 10px #2d2d2d;
+    box-shadow: -20px -8px 20px 0px #00000054, inset 0 0px 0px 10px #2d2d2d;
+    z-index: 1;
+
+    &--speakers {
+        position: absolute;
+        background: #848484;
+        width: 8px;
+        height: 5px;
+        left: 80px;
+        top: 2.5px;
+        border-radius: 5px;
+        box-shadow: inset 0px 1px 0px #2e2e2e;
+
+        &::before {
+            @extend %pseudo;
+            background: #848484;
+            width: 6px;
+            height: 3px;
+            border-radius: 5px;
+            left: -30px;
+            top: 1px;
+        }
+
+        &::after {
+            @extend %pseudo;
+            background: #848484;
+            width: 6px;
+            height: 3px;
+            border-radius: 5px;
+            right: -30px;
+            top: 1px;
+        }
+    }
+
+    &--screen {
+        position: absolute;
+        width: 152px;
+        height: 89px;
+        left: 9px;
+        top: 10px;
+        border-radius: 2px;
+    }
+
+    &::after {
+        @extend %pseudo;
+        background: #3a3a3a;
+        width: 110px;
+        height: 13px;
+        bottom: -13px;
+        left: 30px;
+        border-radius: 0 0 40px 40px;
+        box-shadow: inset 2px 5px 0px #0d0c0c6b;
+    }
+
+    &--weather {
+        display: flex;
+        height: 87%;
+        padding: 5px;
+    }
+
+    &--welcome {
+        opacity: 0;
+        position: absolute;
+        top: 3px;
+        left: 5px;
+        color: white;
+        text-shadow: 0 0 20px #3f3f3f;
+        font-size: 1.1em;
+        animation: hub-welcome 2s forwards;
+    }
+
+    &--day {
+        position: absolute;
+        right: 5px;
+        bottom: 3px;
+        font-size: 3em;
+        color: white;
+        text-shadow: 0 0 20px #3f3f3f;
+    }
+
+    &--slides {
+        width: inherit;
+        height: inherit;
+        background-size: contain;
+        position: absolute;
+    }
+
+    &--weather-cond {
+        position: absolute;
+        top: 4px;
+        left: 5px;
+        color: white;
+        font-size: 0.8em;
+    }
+
+    &--weather-temp {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        color: white;
+        font-size: 3em;
+    }
+}
+
+.slideshow-container {
+    img {
+        width: 100%;
+    }
+}
+
+.mySlides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &:nth-child(2) {
+        p {
+            position: absolute;
+            top: 21px;
+            left: 5px;
+            font-size: 10px;
+            color: #eaeaea;
+        }
+    }
+
+    &:nth-child(3) {
+        background-color: white;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+.hub--calendar,
+.hub--music {
+    width: 55px;
+    height: 65px;
+    border-radius: 5px;
+    padding: 5px;
+    background: white;
+    box-shadow: 0 0 20px 0px #a7a7a7;
+
+    p {
+        display: flex;
+        font-size: 7px;
+        color: #3f3f3f;
+        align-items: center;
+    }
+}
+
+.hub--calendar {
+    .calendar-item {
+        padding: 6px 0;
+
+        &-date {
+            font-size: 7px;
+        }
+
+        &-task {
+            font-size: 8px;
+        }
+    }
+}
+
+.hub--music {
+    p {
+        padding-bottom: 5px;
+
+        img {
+            width: 7px;
+            padding-right: 2px;
+        }
+    }
+}
+
+.track-info {
+    display: flex;
+    align-items: center;
+    font-size: 9px;
+    padding: 3px 0;
+
+    .album {
+        img {
+            width: 20px;
+        }
+    }
+
+    .artist {
+        color: #666666;
+        font-size: 8px;
+    }
+
+    .track {
+        font-size: 6px;
+        padding-left: 2px;
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+// //DEV ONLY
+// #weather-slide {
+//     display: flex !important;
+//     z-index: 99;
+// }

@@ -1,0 +1,177 @@
+@import 'projects';
+@import 'about';
+@import 'skills';
+@import 'contact';
+
+.large-screen-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+#large-screen {
+    display: none; // change back to none
+    position: absolute;
+    z-index: 2;
+    background: url('/img/pc-bg-large.jpg');
+    background-size: cover;
+    animation: screen-enlarge 3s forwards;
+
+}
+
+.top-bar {
+    display: none;
+
+    &.extended {
+        position: absolute;
+        background: #303030;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.hide-screen-icon {
+    position: absolute;
+    color: white;
+    width: 22px;
+    height: 22px;
+    right: 38px;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:active {
+        background: #414141;
+    }
+}
+
+.close-screen-icon {
+    position: absolute;
+    background: #e33b3b;
+    color: white;
+    width: 22px;
+    height: 22px;
+    right: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:active {
+        background: #b83131;
+    }
+}
+
+.explorer-bar {
+    display: none;
+
+    &.extended {
+        position: absolute;
+        background: #0000007a;
+        width: 100%;
+        height: 40px;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#explorer-url {
+    position: absolute;
+    background: white;
+    color: #7a7a7a;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    width: 96.5%;
+    padding-left: 5px;
+    right: 0px;
+    margin-right: 5px;
+}
+
+#back-button {
+    position: absolute;
+    width: 3%;
+    height: 30px;
+    cursor: pointer;
+    left: 0;
+    justify-content: center;
+    display: flex;
+    font-size: 28px;
+    color: #ffffff;
+
+    &:hover,
+    &:active {
+        background: #0000005c;
+    }
+}
+
+#screen-home,
+#screen-projects,
+#screen-about,
+#screen-skills,
+#screen-contact {
+    display: none;
+    margin-top: 70px;
+    height: calc(88vh - 70px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    color: white;
+}
+
+#screen-projects,
+#screen-about,
+#screen-skills,
+#screen-contact {
+    overflow-y: auto;
+    position: relative;
+    height: calc(88vh - 70px);
+    flex-direction: column;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 0.59) 0%, rgba(0, 80, 158, 0.68) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.59) 0%, rgba(0, 80, 158, 0.68) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.59) 0%, rgba(0, 80, 158, 0.68) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#00509e", GradientType=1);
+}
+
+#project-tiles,
+#about-tiles,
+#skills-tiles,
+#contact-tiles {
+    display: flex;
+}
+
+.large-grid-container {
+    display: flex;
+    align-items: center;
+    background: rgba(114, 186, 94, 0.05);
+    animation: projects-enlarge 5s forwards;
+    width: 100%;
+    overflow-y: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    #screen-projects &,
+    #screen-about & {
+        height: 100%;
+
+    }
+}

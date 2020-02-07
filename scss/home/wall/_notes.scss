@@ -1,0 +1,28 @@
+.note {
+    position: absolute;
+    background: #dfba35;
+    width: 50px;
+    height: 43px;
+    left: calc(35vw + 360px);
+    top: calc(100vh - 330px);
+    border-radius: 1px;
+    box-shadow: -3px 5px 8px #333333;
+    box-shadow: -3px 5px 8px #0000005e;
+    border-bottom: 2px solid #93820b;
+    font-size: 0.56em;
+    font-family: 'Gochi Hand', cursive;
+    padding: 6px;
+
+    li {
+        padding-bottom: 3px;
+    }
+}
+
+.strike::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid black;
+    top: 8px;
+    left: 5px;
+    animation: line-through 4s forwards;
+}

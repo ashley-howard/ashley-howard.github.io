@@ -1,0 +1,25 @@
+.coffee-cup {
+    position: absolute;
+    left: calc(30vw + 431px);
+    top: calc(100vh - 160px);
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: #0c0c0c;
+        background: #00000087;
+        width: 79px;
+        height: 11px;
+        border-radius: 50%;
+        bottom: -1px;
+        left: -25px;
+        z-index: -1;
+        box-shadow: 0 0px 20px 14px #0a0a0a;
+        box-shadow: 0 0px 20px 14px #000000a8;
+    }
+
+    img {
+        width: 80px;
+    }
+}
