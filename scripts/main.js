@@ -139,6 +139,8 @@ var screenCache, typed, typedString, typedStartDelay, timeout;
 
 if (window.matchMedia("(max-width: 991px)").matches || window.matchMedia("(orientation: portrait)").matches) {
     prependTyped.innerHTML = `https://ashley.how`;
+} else {
+    document.getElementById('screen').style.backgroundImage = "url('../img/pc-bg-large.jpg')"
 }
 
 function openScreen(screen) {
