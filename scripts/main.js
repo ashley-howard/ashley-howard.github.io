@@ -2,10 +2,10 @@ function drinkCoffee() {
     document.getElementById("coffee-note").classList.add("strike");
 }
 
-window.addEventListener('resize', () => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+// window.addEventListener('resize', () => {
+//     let vh = window.innerHeight * 0.01;
+//     document.documentElement.style.setProperty('--vh', `${vh}px`);
+// });
 
 // slideshow
 var slideIndex = 0;
