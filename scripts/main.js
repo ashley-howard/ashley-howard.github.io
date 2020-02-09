@@ -1,5 +1,3 @@
-window.scrollTo(0,1);
-
 function drinkCoffee() {
     document.getElementById("coffee-note").classList.add("strike");
 }
