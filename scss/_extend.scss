@@ -1,0 +1,46 @@
+%trio-view {
+    display: flex;
+    text-align: center;
+    padding-bottom: 40px;
+    justify-content: center;
+
+    img {
+        width: 100%;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+
+        span {
+            color: #a6a6a6;
+            font-size: 0.8em;
+        }
+    }
+}
+
+%container-type-1 {    
+
+    .content {
+
+        h2 {
+            margin-bottom: 0px;
+        }
+
+        
+        a {
+            color: $primary-colour;
+        }
+
+        p {
+            font-size: 1.5m;
+            // font-weight: initial;
+            padding-bottom: 0;
+        }
+
+        img {
+            width: 350px;
+        }
+    }
+}

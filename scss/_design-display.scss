@@ -1,0 +1,29 @@
+#design-display {
+    .inner-container {
+        flex-direction: column;
+        padding-top: 0;
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h3 {
+        font-size: 4em;
+        border-bottom: 6px solid $primary-colour;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #design-display {
+        .container {
+            align-items: center;
+            text-align: center;
+        }
+
+        .inner-container {
+            width: 90% !important;
+        }
+    }
+}

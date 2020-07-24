@@ -1,0 +1,9 @@
+#legal-page {
+    .inner-container {
+        flex-direction: column;
+
+        a {
+            color: $primary-colour;
+        }
+    }
+}

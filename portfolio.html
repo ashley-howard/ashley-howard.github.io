@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.min.css">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <meta name="theme-color" content="#2C9AFF">
+    <title>Web Design Work | Ashley Howard</title>
+</head>
+
+<body id="work-page">
+     <div class="logo">
+        <span>A.H.</span>        
+    </div>
+
+    <div id="password">
+        <input id="password-text" type="text">
+        <button id="password-btn" onclick="passwordSubmit()">Submit</button>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/portfolio" class="active">Portfolio</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="header">
+        <div id="typed-strings">
+            <h1>Portfolio</h1>
+        </div>
+        <h1 id="typed"></h1>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h1>Selected Work</h1>
+        </div>
+    </div>
+
+    <div class="container projects">
+        <div class="inner-container">
+
+            <div id="myBtnContainer">
+                <button class="btn active-choice" onclick="filterSelection('all')"> All</button>
+                <button class="btn" onclick="filterSelection('website')"> Websites</button>
+                <button class="btn" onclick="filterSelection('design')"> Designs</button>
+            </div>
+
+            <div class="project filterDiv website">
+                <div class="img-container">
+                    <img src="/img/work/a-kin-web-1.jpg" alt="musician website design">
+                    <div class="project--details">
+                        <h3>A-KIN</h3>
+                        <h4>an experimental-electronic composer/installation artist</h4>
+                        <div class="project--links">
+                            <a href="work/a-kin" target="_blank" rel="noopener noreferrer">View case study</a>
+                            <a href="https://ashley.how/a-kin" target="_blank" rel="noopener noreferrer">View
+                                website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project filterDiv design">
+                <div class="img-container">
+                    <img src="/img/work/dah-633w.jpg" alt="dog related website design">
+                    <div class="project--details">
+                        <h3>Dogs as Humans</h3>
+                        <h4>a design for a dog-themed shopify store</h4>
+                        <div class="project--links">
+                            <a href="work/dogs-as-humans" target="_blank" rel="noopener noreferrer">View design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project filterDiv website">
+                <div class="img-container">
+                    <img src="/img/work/portfolio-desk-web-1.jpg" alt="photorealistic website design">
+                    <div class="project--details">
+                        <h3>My Desk</h3>
+                        <h4>an interactive representation of my bedroom desk</h4>
+                        <div class="project--links">
+                            <a href="work/desk" target="_blank" rel="noopener noreferrer">View case study</a>
+                            <a href="https://ashley.how/portfolio-desk" target="_blank" rel="noopener noreferrer">View
+                                website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project filterDiv website">
+                <div class="img-container">
+                    <img src="/img/work/jack-web-1.jpg" alt="fictional portfolio website design">
+                    <div class="project--details">
+                        <h3>Jack Daniels</h3>
+                        <h4>a fictional portfolio which includes a weather API</h4>
+                        <div class="project--links">
+                            <a href="work/jack-daniels" target="_blank" rel="noopener noreferrer">View case study</a>
+                            <a href="https://ashley.how/jackdaniels" target="_blank" rel="noopener noreferrer">View
+                                website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project filterDiv design">
+                <div class="img-container">
+                    <img src="/img/work/outings-634w.jpg" alt="outings website mock up">
+                    <div class="project--details">
+                        <h3>Outings</h3>
+                        <h4>a mock-up for an outings website</h4>
+                        <div class="project--links">
+                            <a href="work/outings" target="_blank" rel="noopener noreferrer">View design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project filterDiv design">
+                <div class="img-container">
+                    <img src="/img/work/hotchoco-634w.jpg" alt="hot chocolate website mock up">
+                    <div class="project--details">
+                        <h3>Hotchoco</h3>
+                        <h4>a mock-up for a hot chocolate website</h4>
+                        <div class="project--links">
+                            <a href="work/hotchoco" target="_blank" rel="noopener noreferrer">View design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project filterDiv website">
+                <div class="img-container">
+                    <img src="/img/work/noteconvert-web-1.jpg" alt="music converter website design">
+                    <div class="project--details">
+                        <h3>Noteconvert</h3>
+                        <h4>a website which converts musical notes using regex</h4>
+                        <div class="project--links">
+                            <a href="work/noteconvert" target="_blank" rel="noopener noreferrer">View case study</a>
+                            <a href="https://noteconvert.com" target="_blank" rel="noopener noreferrer">View
+                                website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project filterDiv design">
+                <div class="img-container">
+                    <img src="/img/work/art-634w.jpg" alt="art festival website mock up">
+                    <div class="project--details">
+                        <h3>London Art Festival</h3>
+                        <h4>a mock-up for an art festival website</h4>
+                        <div class="project--links">
+                            <a href="work/art-festival" target="_blank" rel="noopener noreferrer">View design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project filterDiv design">
+                <div class="img-container">
+                    <img src="/img/work/easybook-634w.jpg" alt="booking website mock up">
+                    <div class="project--details">
+                        <h3>Easybook</h3>
+                        <h4>a mock-up for a booking website</h4>
+                        <div class="project--links">
+                            <a href="work/easybook" target="_blank" rel="noopener noreferrer">View design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project filterDiv design">
+                <div class="img-container">
+                    <img src="/img/work/wearmeout-634w.jpg" alt="online clothing website mock up">
+                    <div class="project--details">
+                        <h3>Wearmeout</h3>
+                        <h4>a mock-up for a clothing website</h4>
+                        <div class="project--links">
+                            <a href="work/wearmeout" target="_blank" rel="noopener noreferrer">View design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project filterDiv design">
+                <div class="img-container">
+                    <img src="/img/work/cofi-634w.jpg" alt="coffee website mock up">
+                    <div class="project--details">
+                        <h3>Cofi</h3>
+                        <h4>a mock-up for a coffee website</h4>
+                        <div class="project--links">
+                            <a href="work/cofi" target="_blank" rel="noopener noreferrer">View design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer__links">
+            <div><a href="/about">About</a></div>
+            <div><a href="/work">Work</a></div>
+            <div><a href="/services">Services</a></div>
+            <div><a href="/contact">Get in touch</a></div>
+            <div id="footer__contact">
+                <a href="mailto:hi@ashley.how">hi@ashley.how</a>
+                <a href="tel:+447709282684">07709282684</a>
+            </div>
+        </div>
+
+        <div id="footer__message">
+            <span>Let's work together</span>
+            <span><a href="/contact">Drop me a message</a></span>
+        </div>
+
+        <div id="footer__legal">
+            <a href="/policies/terms">Terms & Conditions</a> | <a href="/policies/privacy">Privacy Policy</a>
+        </div>
+
+        <div id="footer__bottom">
+            <div id="copy">&copy;
+                <script defer type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> Ashley Howard. All rights reserved.</div>
+            <div id="footer__palette">
+                <div title="#ffffff"></div>
+                <div title="#000000"></div>
+                <div title="#2C9AFF"></div>
+            </div>
+            <div id="footer__social">
+                <ul>
+                    <li><a href="https://m.me/shleyhoward" rel="noopener noreferrer" target="_blank">Messenger</a></li>
+                    <li><a href="https://twitter.com/shleyhow" rel="noopener noreferrer" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/shley.how" rel="noopener noreferrer" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="/scripts/typed.js"></script>
+    <script src="/scripts/filter.js"></script>
+    <script src="/scripts/password.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.min.css">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <meta name="theme-color" content="#2C9AFF">
+    <title>My Desk | Ashley Howard | Case Study</title>
+</head>
+
+<body id="web-design-page">
+     <div class="logo">
+        <span>A.H.</span>        
+    </div>
+
+    <div id="password">
+        <input id="password-text" type="text">
+        <button id="password-btn" onclick="passwordSubmit()">Submit</button>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/portfolio" class="active">Portfolio</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="header">
+        <div id="typed-strings">
+            <h1>Case Study</h1>
+        </div>
+        <h1 id="typed"></h1>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h1>My Desk</h1>
+            <p>An interactive representation of my bedroom desk</p>
+        </div>
+    </div>
+
+    <div class="web-design-imgs">
+        <div>
+            <img src="/img/work/portfolio-desk-mobile.jpg" alt="photorealistic website mobile design">
+            <span>mobile view</span>
+        </div>
+
+        <div>
+            <img src="/img/work/portfolio-desk-web-1.jpg" alt="photorealistic website design">
+            <span>web view // home</span>
+        </div>
+
+        <div>
+            <img src="/img/work/portfolio-desk-web-2.jpg" alt="photorealistic website design">
+            <span>web view // projects</span>
+        </div>
+    </div>
+
+    <div class="container" id="type">
+        <div class="sidebar">
+            <span>About</span>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>Brief</h2>
+                <p>For this project, I wanted to recreate my bedroom desk in a
+                    photorealistic style. So I grabbed the closest notebook to me and drew a quick
+                    sketch (and added some extra gadgets). At the
+                    time, I was really into creating CSS
+                    objects, and loved how
+                    they could easily be manipulated using animations and JavaScript. I also loved how they didn't
+                    take that much
+                    space as compared to image files.
+                </p>
+                <p>
+                    From the beginning I loved the idea of everything being interactive. I wanted the PC to open in
+                    fullscreen when clicking on something. I also wanted something similar to Google Hub to show
+                    information. As well as this, I included some hidden <a
+                        href="https://en.wikipedia.org/wiki/Easter_egg_(media)" target="_blank"
+                        rel="noopener noreferrer">Easter eggs</a> too.
+                </p>
+
+                <h2>Result</h2>
+                <p>A challenge was understanding how to make the entire desk fit onto a mobile screen. I overcame
+                    this by removing the desk, and making the computer screen change its dimensions to fit the
+                    user's device
+                    to imitate the device that they're using - an idea which is rather meta.</p>
+
+                <p> When I finally
+                    finished, I realised I had learnt a lot. I learnt that some things are
+                    easier to recreate as SVGs, so some things (like the lamp) are actually SVGs. I used a lot of
+                    JavaScript (and lots of trial and error!). If you're interested in seeing objects that I've created, you can visit this <a
+                        href="https://ashley.how/objects/" target="_blank" rel="noopener noreferrer">link</a>.
+                </p>
+
+                <h2>Info</h2>
+                <ul>
+                    <li>Completed: 2020</li>
+                    <li><a href="https://ashley.how/portfolio-desk" target="_blank">Visit site</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer__links">
+            <div><a href="/about">About</a></div>
+            <div><a href="/work">Work</a></div>
+            <div><a href="/services">Services</a></div>
+            <div><a href="/contact">Get in touch</a></div>
+            <div id="footer__contact">
+                <a href="mailto:hi@ashley.how">hi@ashley.how</a>
+                <a href="tel:+447709282684">07709282684</a>
+            </div>
+        </div>
+
+        <div id="footer__message">
+            <span>Let's work together</span>
+            <span><a href="/contact">Drop me a message</a></span>
+        </div>
+
+        <div id="footer__legal">
+            <a href="/policies/terms">Terms & Conditions</a> | <a href="/policies/privacy">Privacy Policy</a>
+        </div>
+
+        <div id="footer__bottom">
+            <div id="copy">&copy;
+                <script defer type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> Ashley Howard. All rights reserved.</div>
+            <div id="footer__palette">
+                <div title="#ffffff"></div>
+                <div title="#000000"></div>
+                <div title="#2C9AFF"></div>
+            </div>
+            <div id="footer__social">
+                <ul>
+                    <li><a href="https://m.me/shleyhoward" rel="noopener noreferrer" target="_blank">Messenger</a></li>
+                    <li><a href="https://twitter.com/shleyhow" rel="noopener noreferrer" target="_blank">Twitter</a>
+                    </li>
+                    <li><a href="https://www.instagram.com/shley.how" rel="noopener noreferrer"
+                            target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="/scripts/typed.js"></script>
+    <script src="/scripts/password.js"></script>
+</body>
+
+</html>

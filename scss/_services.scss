@@ -1,0 +1,27 @@
+#services-page {
+    @extend %container-type-1;
+
+    .example-types {
+        @extend %trio-view;
+    }
+}
+
+@media (max-width: 1540px) {
+    #services-page .example-types {
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            width: 78%;
+
+            span {
+                font-size: 3vw;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

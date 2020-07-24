@@ -1,0 +1,126 @@
+#contact-page {
+    @extend %container-type-1;
+
+
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .example-types {
+        @extend %trio-view;
+    }
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+fieldset#fs-frm-inputs {
+    border: 0;
+    display: flex;
+    padding: 10px 0;
+    margin: 0;
+    width: 600px;
+    align-items: center;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    width: 95%;
+    padding: 10px 8px;
+    margin: 5px 0;
+    border: 1px solid #e3e3e3;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    font-weight: 600;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background: $primary-colour;
+    color: white;
+    border: 0;
+    width: 600px;
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: 500;
+    border: 2px solid transparent;
+
+    &:hover {
+        background: #57afff;
+        border: 2px solid #7eb9ef;
+    }
+}
+
+.form-details {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 600px;
+    border-top: 2px solid #c5c5c5;
+    margin-top: 30px;
+    border-bottom: 2px solid #c5c5c5;
+    margin-bottom: 30px;
+
+    h2 {
+        font-size: 2.5em;
+
+        span {
+            color: $primary-colour;
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        display: block;
+    }
+}
+
+// @media (orientation: portrait),
+// (max-width: 780px) {
+//     #contact-page {
+//         .inner-container {
+//             flex-direction: column;
+//             margin: 3em 1em 1em 1em;
+//             width: 92%;
+//         }
+
+//         .container {
+//             height: 100%;
+//         }
+
+//         fieldset#fs-frm-inputs {
+//             width: 90%;
+//         }
+
+//         .column.form-details p {
+//             width: 100%;
+//             padding: 0;
+//         }
+//     }
+// }
+
+@media (orientation: portrait),
+(max-width: 780px) {
+
+    fieldset#fs-frm-inputs,
+    input[type="submit"],
+    .form-details {
+        width: 80%,
+    }
+
+}
