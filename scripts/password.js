@@ -1,14 +1,14 @@
-var devPass = localStorage.getItem('dev') ? localStorage.getItem('dev') : 'no';
+var devPass = localStorage.getItem('has_access') ? localStorage.getItem('has_access') : 'no';
 
-if (localStorage.getItem('dev') == 'yes') {
+if (localStorage.getItem('has_access') == 'yes') {
     document.getElementById('password').style.display = "none"
     document.body.style.overflow = 'auto'
 }
 
 function passwordSubmit() {
-    if (document.getElementById('password-text').value == "dev-only" && !localStorage.getItem('dev')) {
+    if (document.getElementById('password-text').value == "dev-only" && !localStorage.getItem('has_access')) {
         document.getElementById('password').style.display = "none"
         document.body.style.overflow = 'auto'
-        localStorage.setItem('dev', 'yes');
+        localStorage.setItem('has_access', 'yes');
     }
 }

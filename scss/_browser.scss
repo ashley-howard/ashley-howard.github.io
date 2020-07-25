@@ -302,3 +302,31 @@
 .column-remove {
     animation-name: column-remove;
 }
+
+@media (orientation: portrait),
+(max-width: 780px) {
+
+    .browser {
+        height: 230px;
+
+        &__main {
+            height: 195px;
+        }
+
+        &.browser-transform {
+            @keyframes browser-transform {
+                0% {
+                    width: 360px;
+                }
+
+                50% {
+                    width: 220px;
+                }
+
+                100% {
+                    width: 130px;
+                }
+            }
+        }
+    }
+}
