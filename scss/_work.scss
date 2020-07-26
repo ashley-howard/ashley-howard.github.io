@@ -167,4 +167,12 @@ div#myBtnContainer {
         box-shadow: none;
         border: 2px solid #dedede;
     }
+
+    div#myBtnContainer {
+        margin-top: -25px;
+
+        button {
+            font-size: 1.3em;
+        }
+    }
 }
