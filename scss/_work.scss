@@ -158,21 +158,27 @@ div#myBtnContainer {
 
 @media (orientation: portrait),
 (max-width: 780px) {
-    #work-page .container {
-        justify-items: center;
-        align-items: center;
-    }
+    #work-page {
+        .container {
+            justify-items: center;
+            align-items: center;
+        }
 
-    #work-page .project {
-        box-shadow: none;
-        border: 2px solid #dedede;
-    }
+        .project {
+            box-shadow: none;
+            border: 2px solid #dedede;
+        }
 
-    div#myBtnContainer {
-        margin-top: -25px;
+        h3 {
+            font-size: 2em;
+        }
 
-        button {
-            font-size: 1.3em;
+        #myBtnContainer {
+            margin-top: -25px;
+
+            button {
+                font-size: 1.3em;
+            }
         }
     }
 }
