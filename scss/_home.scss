@@ -78,14 +78,25 @@
         }
     }
 
+    .fullscreen {
+        height: 100% !important;
+    }
+
     .container {
         flex-direction: column;
         // font-size: 4vw;
 
-        #index & {
-            // margin-top: 24px;
-            margin-top: 0;
-        }
+        // #index & {
+        //     // margin-top: 24px;
+        //     // margin-top: 0;
+        //     // margin-top: 50px;
+
+
+        // }
+    }
+
+    #hero {
+        margin-top: 115px;
     }
 
     .special {
@@ -98,7 +109,9 @@
 
         &.img {
             img {
-                max-width: 100%;
+                // max-width: 100%;
+                max-width: 95%;
+                margin-top: 20px;
             }
         }
     }
@@ -124,5 +137,11 @@
         a {
             font-size: 5vw !important;
         }
+    }
+}
+
+@media(max-width: 500px) {
+    #hero {
+        margin-top: 50px;
     }
 }
