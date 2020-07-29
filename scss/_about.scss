@@ -29,60 +29,12 @@
         margin-top: 120px;
     }
 
-    h3,
-    h4 {
-        margin: 0
-    }
-
     h1 {
         margin-bottom: -10px;
     }
 
-    h3 {
-        font-size: 1.5em;
-    }
-
-    h4 {
-        color: #646464;
-        font-weight: 400;
-    }
-
     p {
         font-size: 1.3em;
-    }
-
-    #contact-bar {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-evenly;
-
-        * {
-            margin: 15px 0 !important;
-        }
-
-        h2 {
-            font-weight: normal;
-            margin: 0;
-        }
-
-        button {
-            background: transparent;
-            border: 2px solid white;
-            border-radius: 22px;
-            font-size: 1.2em;
-            color: white;
-            padding: 7px 10px;
-            font-family: $primary-font;
-
-            a {
-                color: white;
-            }
-
-            &:hover {
-                background: #63b5ff;
-            }
-        }
     }
 }
 

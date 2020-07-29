@@ -1,8 +1,6 @@
 #contact-page {
     @extend %container-type-1;
 
-
-
     .container {
         flex-direction: column;
         align-items: center;
@@ -89,30 +87,6 @@ input[type="submit"] {
         display: block;
     }
 }
-
-// @media (orientation: portrait),
-// (max-width: 780px) {
-//     #contact-page {
-//         .inner-container {
-//             flex-direction: column;
-//             margin: 3em 1em 1em 1em;
-//             width: 92%;
-//         }
-
-//         .container {
-//             height: 100%;
-//         }
-
-//         fieldset#fs-frm-inputs {
-//             width: 90%;
-//         }
-
-//         .column.form-details p {
-//             width: 100%;
-//             padding: 0;
-//         }
-//     }
-// }
 
 @media (orientation: portrait),
 (max-width: 780px) {
