@@ -123,12 +123,13 @@ div#typed-strings {
 
     span {
         font-size: 1.2em;
-        font-weight: 500;
+        // font-weight: 500;
+        font-weight: 600;
     }
 }
 
 .content {
-    max-width: 50%;
+    width: 50%;
 
     h1,
     h2 {
@@ -260,6 +261,19 @@ div#typed-strings {
         width: 95%;
         position: absolute;
         z-index: 1;
+    }
+}
+
+// IE
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .header {
+
+        &::after {
+            position: relative;
+            left: 0;
+            top: 85px;
+        }
     }
 }
 

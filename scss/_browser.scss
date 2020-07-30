@@ -330,3 +330,20 @@
         }
     }
 }
+
+.browser-gif {
+    display: none;
+    text-align: center;
+}
+
+// IE
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .browser-gif {
+        display: block;
+    }
+
+    .column-browser {
+        display: none;
+    }
+}

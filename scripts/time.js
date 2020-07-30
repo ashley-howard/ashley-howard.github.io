@@ -1,14 +1,14 @@
 const schedule = document.getElementById("schedule");
 var today = new Date();
 var h = today.getHours();
-var m = today.getMinutes(); 
+var m = today.getMinutes();
 var time;
 var plan;
 
 if (m < 10) {
-    time = `${h}:0${m}`;
+    time = h + ":0" + m;
 } else {
-    time = `${h}:${m}`;
+    time = h + ":" + m;
 }
 
 if (h >= 20 & h <= 23) {
@@ -36,4 +36,4 @@ else {
     plan = "asleep";
 }
 
-schedule.innerText = `(It's ${time} so I'm probably ${plan})`;
+schedule.innerText = "(It's " + time + " so I'm probably " + plan + ")";

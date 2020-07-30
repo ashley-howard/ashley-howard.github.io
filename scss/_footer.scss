@@ -2,8 +2,9 @@ footer {
     background: #000;
     color: white;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around; // for IE
     justify-content: space-evenly;
+    flex-direction: column;
     height: 340px;
 
     a {
@@ -27,6 +28,7 @@ footer {
     &__links {
         display: flex;
         align-items: center;
+        justify-content: space-around; // for IE
         justify-content: space-evenly;
 
         & div {
