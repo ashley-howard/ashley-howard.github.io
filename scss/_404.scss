@@ -1,0 +1,22 @@
+#page-404 {
+    .container {
+        background-image: url(/img/error.gif);
+        background-color: #141019;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        text-align: center;
+
+        a,
+        div {
+            color: white;
+        }
+
+        a:hover {
+            color: #ff7575;
+        }
+    }
+}
