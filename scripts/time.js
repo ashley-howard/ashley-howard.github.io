@@ -1,7 +1,6 @@
 const schedule = document.getElementById("schedule");
 var today = new Date();
-// var h = today.getHours();
-var h = +today.getHours().toLocaleString("en-UK", { timeZone: 'Europe/London' })
+var h = today.getHours();
 var m = today.getMinutes();
 var time;
 var plan;
