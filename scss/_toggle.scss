@@ -1,0 +1,32 @@
+#dark-mode {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 1;
+
+    &.light {
+
+        #moon {
+            display: block;
+            fill: black;
+        }
+
+        #sun {
+            display: none;
+        }
+    }
+
+    &.dark {
+
+        #moon {
+            display: none;
+        }
+
+        #sun {
+            display: block;
+            fill: white;
+        }
+    }
+}

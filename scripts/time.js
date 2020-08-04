@@ -34,6 +34,7 @@ else if (h == 9 && m >= 31) {
 }
 else {
     plan = "asleep";
+    document.body.setAttribute("class", "dark")
 }
 
 schedule.innerText = "(It's " + time + " so I'm probably " + plan + ")";

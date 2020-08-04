@@ -1,0 +1,24 @@
+const darkMode = document.getElementById('dark-mode');
+var isDark = localStorage.getItem('isDark') ? localStorage.getItem('isDark') : 'no';
+
+if (localStorage.getItem('isDark') == 'yes') {
+    darkMode.removeAttribute("class", "light")
+    darkMode.setAttribute("class", "dark")
+    document.body.setAttribute("class", "dark")
+}
+
+function toggleDarkMode() {
+    if (darkMode.classList.contains('light')) {
+        darkMode.removeAttribute("class", "light")
+        darkMode.setAttribute("class", "dark")
+
+        document.body.setAttribute("class", "dark")
+        localStorage.setItem('isDark', 'yes');
+    } else {
+        darkMode.removeAttribute("class", "dark")
+        darkMode.setAttribute("class", "light")
+
+        document.body.removeAttribute("class", "dark")
+        localStorage.setItem('isDark', 'no');
+    }
+}
