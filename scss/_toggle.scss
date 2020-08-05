@@ -5,12 +5,12 @@
     padding: 12px;
     cursor: pointer;
     z-index: 1;
+    fill: #e9aa71;
 
     &.light {
 
         #moon {
             display: block;
-            fill: black;
         }
 
         #sun {
@@ -26,7 +26,6 @@
 
         #sun {
             display: block;
-            fill: white;
         }
     }
 }
