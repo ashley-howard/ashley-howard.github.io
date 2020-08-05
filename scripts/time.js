@@ -1,6 +1,7 @@
 const schedule = document.getElementById("schedule");
 var today = new Date();
-var h = today.getHours();
+var offset = today.getTimezoneOffset();
+var h = (today.getHours() - Math.abs((offset / 60) + 1));
 var m = today.getMinutes();
 var time;
 var plan;
