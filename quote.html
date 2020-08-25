@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36937888-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-36937888-3');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Description"
+        content="I'm a London-based freelance web designer and developer, creating modern and mobile-ready websites for customers small and large.">
+
+    <meta name="keywords" content="front, end, web, developer, development, designer, designing, london, essex" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Ashley Howard Front-end Web Developer">
+    <meta itemprop="description" content="Hi! I'm Ashley. I'm a front-end web developer from London.">
+    <meta itemprop="image" content="https://ashley.how/apple-touch-icon-180x180.png">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@shleyhoward">
+    <meta name="twitter:title" content="Ashley Howard Front-end Web Developer">
+    <meta name="twitter:description" content="Hi! I'm Ashley. I'm a front-end web developer from London.">
+    <meta name="twitter:creator" content="@shleyhow">
+    <meta name="twitter:image" content="https://ashley.how/apple-touch-icon-180x180.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Ashley Howard Front-end Web Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ashley.how" />
+    <meta property="og:image" content="https://ashley.how/apple-touch-icon-180x180.png" />
+    <meta property="og:description" content="Hi! I'm Ashley. I'm a front-end web developer from London." />
+    <meta property="og:site_name" content="Ashley Howard" />
+
+    <!-- Shortcut icons -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+    <meta name="theme-color" content="#2b97fb">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.min.css">
+    <title>Submit a quote | Ashley Howard</title>
+</head>
+
+<body id="quote-page">
+    <div class="logo">
+        <span>Ashley Howard // London Web Designer</span>
+    </div>
+
+    <div id="password">
+        <input id="password-text" aria-label="input password" type="text">
+        <button id="password-btn" onclick="passwordSubmit()">Submit</button>
+    </div>
+
+    <div id="dark-mode" class="light" title="Toggle dark mode" onclick="toggleDarkMode()">
+        <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24">
+            <path
+                d="M12 10.999c1.437.438 2.562 1.564 2.999 3.001.44-1.437 1.565-2.562 3.001-3-1.436-.439-2.561-1.563-3.001-3-.437 1.436-1.562 2.561-2.999 2.999zm8.001.001c.958.293 1.707 1.042 2 2.001.291-.959 1.042-1.709 1.999-2.001-.957-.292-1.707-1.042-2-2-.293.958-1.042 1.708-1.999 2zm-1-9c-.437 1.437-1.563 2.562-2.998 3.001 1.438.44 2.561 1.564 3.001 3.002.437-1.438 1.563-2.563 2.996-3.002-1.433-.437-2.559-1.564-2.999-3.001zm-7.001 22c-6.617 0-12-5.383-12-12s5.383-12 12-12c1.894 0 3.63.497 5.37 1.179-2.948.504-9.37 3.266-9.37 10.821 0 7.454 5.917 10.208 9.37 10.821-1.5.846-3.476 1.179-5.37 1.179z" />
+        </svg>
+
+        <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+            <path
+                d="M4.069 13h-4.069v-2h4.069c-.041.328-.069.661-.069 1s.028.672.069 1zm3.034-7.312l-2.881-2.881-1.414 1.414 2.881 2.881c.411-.529.885-1.003 1.414-1.414zm11.209 1.414l2.881-2.881-1.414-1.414-2.881 2.881c.528.411 1.002.886 1.414 1.414zm-6.312-3.102c.339 0 .672.028 1 .069v-4.069h-2v4.069c.328-.041.661-.069 1-.069zm0 16c-.339 0-.672-.028-1-.069v4.069h2v-4.069c-.328.041-.661.069-1 .069zm7.931-9c.041.328.069.661.069 1s-.028.672-.069 1h4.069v-2h-4.069zm-3.033 7.312l2.88 2.88 1.415-1.414-2.88-2.88c-.412.528-.886 1.002-1.415 1.414zm-11.21-1.415l-2.88 2.88 1.414 1.414 2.88-2.88c-.528-.411-1.003-.885-1.414-1.414zm6.312-10.897c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6z" />
+        </svg>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="header">
+        <div id="typed-strings">
+            <h1>Quote Estimator</h1>
+        </div>
+        <h1 id="typed"></h1>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h1>Submit a quote</h1>
+            <p>Get an idea</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <form action="https://formspree.io/mpzynbpg" method="POST">
+            <div class="quote">
+                Estimated Total:
+                <!-- <div id="total"></div> -->
+
+                <input id="total" type="text" name="estimated-total" readonly />
+
+                <br><br>
+
+                <button type="submit">Submit Quote</button>
+            </div>
+
+            <div class="form-items">
+
+                <!-- PAGES -->
+                <div class="item">
+                    <div class="icon">
+                        <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M68.7083 97H28.2917V91.5761C35.599 87.595 36.3952 82.6642 36.375 76.7917H4.04167C2.97062 76.7917 1.94 76.3673 1.18421 75.6075C0.424375 74.8517 0 73.821 0 72.75V4.04167C0 2.97062 0.424375 1.94 1.18421 1.18421C1.94 0.424375 2.97062 0 4.04167 0H92.9583C94.0294 0 95.06 0.424375 95.8158 1.18421C96.5756 1.94 97 2.97062 97 4.04167V72.75C97 73.821 96.5756 74.8517 95.8158 75.6075C95.06 76.3673 94.0294 76.7917 92.9583 76.7917H60.625C60.6412 82.3449 61.2515 87.5425 68.7083 91.5761V97ZM52.6063 76.7917H44.3452C44.2845 80.0331 44.3613 84.8871 41.4392 88.9167H55.5567C52.4972 84.7942 52.6629 79.8229 52.6063 76.7917ZM88.9167 56.5833H8.08333V68.7083H88.9167V56.5833ZM48.5 58.7537C50.731 58.7537 52.5417 60.5644 52.5417 62.7954C52.5417 65.0264 50.731 66.837 48.5 66.837C46.269 66.837 44.4583 65.0264 44.4583 62.7954C44.4583 60.5644 46.269 58.7537 48.5 58.7537ZM8.08333 8.08333V48.5H88.9167V8.08333H8.08333Z"
+                                fill="#2B97FB" />
+                        </svg>
+                    </div>
+                    <div class="options">
+                        <label>
+                            <h3>How many pages does your site need (roughly)?</h3>
+                            <input style="width: 10%" id="pages" type="number" name="pages" min="1" value="5"
+                                onchange="updatePrice()" placeholder="5">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- DESIGN -->
+                <div class="item">
+                    <div class="icon">
+                        <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M35.2381 54.7742C35.2773 59.0982 31.7914 62.6389 27.4596 62.6663C23.1317 62.7015 19.6067 59.2196 19.5832 54.8956C19.544 50.5677 23.0259 47.0427 27.346 46.9996C31.6779 46.9722 35.2146 50.458 35.2381 54.7742ZM31.4076 39.1624C27.0836 39.1937 23.5429 35.7157 23.5155 31.38C23.4803 27.0599 26.9504 23.531 31.2862 23.5035C35.6024 23.4644 39.1509 26.9385 39.1665 31.2664C39.2135 35.6021 35.7199 39.1232 31.4076 39.1624ZM62.6665 23.4409C62.6822 27.757 59.2159 31.3055 54.8919 31.333C50.5601 31.3721 47.0273 27.8902 46.9999 23.5662C46.9568 19.2344 50.4387 15.7094 54.7744 15.6741C59.0867 15.6506 62.6274 19.1247 62.6665 23.4409ZM15.6665 85.5083C33.6323 86.9966 27.1972 67.9146 43.8195 67.7384L51.0184 73.7465C52.8122 95.4331 26.2846 100.27 15.6665 85.5083ZM70.7544 57.6412C76.3435 48.8718 93.6513 19.4615 93.6513 19.4615C95.0339 17.0215 91.971 14.4756 89.8325 16.2773C89.8325 16.2773 64.0922 38.6571 56.4978 45.7502C50.4974 51.3589 50.47 53.9204 48.5274 63.1676L55.1074 68.651C63.8298 65.0672 66.3404 64.5776 70.7544 57.6412ZM21.3183 76.4647C13.1559 69.3364 7.92328 58.922 7.83319 47.2973C7.66086 25.7165 25.09 8.01313 46.6865 7.83687C61.7187 7.75462 72.0626 15.2981 72.1292 21.3376L78.6426 15.635C74.6868 6.92821 62.2631 -0.207957 46.6199 -0.000374057C20.6799 0.215043 -0.203807 21.4081 -0.000140324 47.36C0.089943 58.7653 4.24161 69.1758 11.0566 77.2637C14.8088 79.1907 19.3717 78.5523 21.3183 76.4647ZM71.4399 68.9995C75.5876 76.7154 66.1484 82.1987 57.5553 84.6349C56.3646 88.2069 54.4102 91.3755 52.1738 93.6863C72.7559 91.3715 87.6627 76.829 76.7156 62.7877C74.9179 65.4706 73.2024 67.476 71.4399 68.9995Z"
+                                    fill="#FBA82B" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="94" height="94" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="options">
+                        <h3>Would you prefer a template or a custom design?</h3>
+                        <select name="design" id="design" onchange="updatePrice()">
+                            <option value="custom">Custom Design</option>
+                            <option value="template">Template</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- ECOMMERCE -->
+                <div class="item">
+                    <div class="icon">
+                        <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M38.0995 0L34.5 19.0555V23.2645C34.5 27.3508 30.9197 30.6667 26.8333 30.6667C22.747 30.6667 19.1667 27.3508 19.1667 23.2607V19.0555L30.6513 0H38.0995ZM26.4002 0L15.3333 19.0555V23.2645C15.3333 27.3508 11.753 30.6667 7.66667 30.6667C3.58033 30.6667 0 27.3508 0 23.2607V19.0555L18.6798 0H26.4002ZM92 23.2607C92 27.3508 88.4197 30.6667 84.3333 30.6667C80.247 30.6667 76.6667 27.0902 76.6667 23V18.791L65.5998 0H73.3202L92 19.0555V23.2607ZM53.6667 18.7833V22.9923C53.6667 27.0787 50.0863 30.6667 46 30.6667C41.9137 30.6667 38.3333 27.0902 38.3333 23V18.791L42.3468 0H49.6532L53.6667 18.7833ZM61.3487 0L72.8257 19.1743V23.3833C72.8257 27.4735 69.253 30.6667 65.1667 30.6667C61.0803 30.6667 57.5 27.0902 57.5 23V18.791L53.9005 0H61.3487V0ZM80.5 46V72.8333H11.5V46H80.5ZM88.1667 38.3333H3.83333V92H88.1667V38.3333ZM17.25 60.7047C16.7593 60.7047 16.2687 60.5168 15.893 60.145C15.1455 59.3975 15.1455 58.1823 15.893 57.4348L22.931 50.3968C23.6785 49.6493 24.8937 49.6493 25.6412 50.3968C26.3887 51.1443 26.3887 52.3595 25.6412 53.107L18.6032 60.145C18.2313 60.5168 17.7407 60.7047 17.25 60.7047ZM19.2357 68.4403L34.6073 53.0687C35.3548 52.3212 35.3548 51.106 34.6073 50.3585C33.8598 49.611 32.6447 49.611 31.8972 50.3585L16.5255 65.7302C15.778 66.4777 15.778 67.6928 16.5255 68.4403C16.8973 68.8122 17.388 69 17.8787 69C18.3693 69 18.86 68.8122 19.2357 68.4403Z"
+                                    fill="#FB2B2B" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="92" height="92" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="options">
+                        <h3>Will you be selling any products online?</h3>
+                        <select name="ecommerce" id="ecommerce" onchange="updatePrice()">
+                            <option value="no">No, I won’t be selling anything</option>
+                            <option value="yes">Yes, I'll need an online store</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <!-- EXTRAS -->
+                <div class="item">
+                    <div class="icon">
+                        <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 46.4447L7.86983 39.1728C17.0737 43.6272 22.9118 47.012 33.2542 54.3873C52.7007 32.3188 65.5538 21.1217 89.4393 6.25982L92 12.1478C72.3005 29.3365 57.8757 48.484 37.1028 85.7402C24.288 70.6522 15.7358 61.0305 0 46.4447Z"
+                                fill="#5D9F52" />
+                        </svg>
+
+                    </div>
+                    <div class="options">
+                        <h3>Tick all that you’d like</h3>
+                        <div class="tick">
+                            <label>
+                                Search Engine Optimisation (SEO)
+                                <label class="switch">
+                                    <input type="checkbox" id="seo" name="seo" value="yes" onchange="updatePrice()">
+                                </label>
+                            </label>
+
+                            <label>
+                                Social Media Integration
+                                <label class="switch">
+                                    <input type="checkbox" id="social" name="social" value="yes" onchange="updatePrice()">
+                                </label>
+                            </label>
+
+                            <label>
+                                Live Chat
+                                <label class="switch">
+                                    <input type="checkbox" id="live-chat" name="live-chat" value="yes" onchange="updatePrice()">
+                                </label>
+                            </label>
+
+                            <label>
+                                Google Analytics
+                                <label class="switch">
+                                    <input type="checkbox" id="analytics" name="analytics" value="yes" onchange="updatePrice()">
+                                </label>
+                            </label>
+
+                            <label>
+                                Easily add, edit, and delete content
+                                <label class="switch">
+                                    <input type="checkbox" id="editable" name="editable" value="yes" onchange="updatePrice()">
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ABOUT YOU -->
+                <div class="item">
+                    <div class="icon">
+                        <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M78.9504 68.614C65.9109 65.6034 53.7737 62.9644 59.6508 51.8624C77.5475 18.0711 64.3942 0 45.5003 0C26.2311 0 13.4076 18.765 31.3498 51.8624C37.4051 63.0289 24.8092 65.6679 12.0502 68.614C0.398442 71.3061 -0.0375997 77.0922 0.000316937 87.2083L0.0154836 91H90.9776L90.9927 87.3259C91.0382 77.1339 90.6439 71.3175 78.9504 68.614Z"
+                                    fill="#838383" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="91" height="91" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="options">
+                        <h3>About you</h3>
+                        <label>
+                            Your name*
+                            <input type="text" name="fullname" placeholder="John Smith">
+                        </label>
+
+                        <label>
+                            Your email*
+                            <input type="email" name="_replyto" required placeholder="johnsmith@email.com">
+                        </label>
+
+                        <label>
+                            Your current website (if applicable)
+                            <input type="text" name="website" placeholder="yourwebsite.com">
+                        </label>
+
+                        <label for="message">Is there anything else you’d like me to know?</label>
+                        <textarea rows="5" name="message" id="message"
+                            placeholder="Please write any additional information here" required=""></textarea>
+                    </div>
+                </div>
+
+                <input type="text" name="_gotcha" style="display:none" />
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <div id="footer__links">
+            <div><a href="/services">Services</a></div>
+            <div><a href="/portfolio">Portfolio</a></div>
+            <div><a href="/about">About</a></div>
+            <div><a href="/contact">Contact</a></div>
+            <div id="footer__contact">
+                <a href="mailto:hi@ashley.how">hi@ashley.how</a>
+                <a href="tel:+447709282684">07709282684</a>
+            </div>
+        </div>
+
+        <div id="footer__message">
+            <span>Let's work together</span>
+            <span><a href="/contact">Drop me a message</a></span>
+        </div>
+
+        <div id="footer__legal">
+            <a href="/policies/terms">Terms & Conditions</a> | <a href="/policies/privacy">Privacy Policy</a>
+        </div>
+
+        <div id="footer__bottom">
+            <div id="copy">&copy;
+                <script defer type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> Ashley Howard. All rights reserved.</div>
+            <div id="footer__palette">
+                <div title="#ffffff"></div>
+                <div title="#000000"></div>
+                <div title="#2b97fb"></div>
+            </div>
+            <div id="footer__social">
+                <ul>
+                    <li><a href="https://m.me/shleyhoward" rel="noopener noreferrer" target="_blank">Messenger</a></li>
+                    <li><a href="https://twitter.com/shleyhow" rel="noopener noreferrer" target="_blank">Twitter</a>
+                    </li>
+                    <li><a href="https://www.instagram.com/shley.how" rel="noopener noreferrer"
+                            target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="/scripts/typed.js"></script>
+    <script src="/scripts/password.js"></script>
+    <script src="/scripts/dark.js"></script>
+    <script src="/scripts/quote.js"></script>
+</body>
+
+</html>

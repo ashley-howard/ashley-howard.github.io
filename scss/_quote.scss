@@ -1,0 +1,99 @@
+#quote-page {
+
+    .quote {
+        text-align: center;
+
+        input {
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+
+        svg {
+            width: 80px;
+            height: 80px;
+            padding-right: 15px;
+        }
+
+        button {
+            background: $primary-colour;
+            color: white;
+            border-radius: 30px;
+            padding: 12px 18px;
+            font-size: 1em;
+            border: 0;
+            box-shadow: 4px 4px 5px #adadad;
+        }
+    }
+
+    select {
+        font-size: 1em;
+        font-family: $primary-font;
+        margin-top: 7px;
+    }
+
+    h3 {
+        margin: 0;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    
+
+    label {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+
+        svg {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    #total {
+        border: 0;
+        pointer-events: none;
+        cursor: default;
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0;
+        font-weight: 600;
+    }
+
+    .tick {
+        label {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+
+            .switch {
+                width: 22px;
+            }
+        }
+    }
+
+    .item {
+        display: flex;
+        padding: 12px;
+        border-bottom: 1px solid #dad8d8;
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            input {
+                align-self: flex-start;
+            }
+
+
+        }
+    }
+}
