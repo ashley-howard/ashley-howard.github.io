@@ -63,12 +63,14 @@ function updatePrice() {
         editableCost = 150;
     } else {
         editableCost = 0;
-    }  
+    }
 
-    if (ecommerce.value == "yes") {
-      ecommerceCost = 500;
+    if (ecommerce.value.includes("blog")) {
+        ecommerceCost = 250;
+    } else if (ecommerce.value.includes("store")) {
+        ecommerceCost = 500;
     } else {
-      ecommerceCost = 0;
+        ecommerceCost = 0;
     }
 
     var totalCost =

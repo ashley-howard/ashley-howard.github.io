@@ -103,20 +103,15 @@
 
     <div class="container">
 
-        <form action="https://formspree.io/mpzynbpg" method="POST">
+        <form action="https://formspree.io/mpzynbpg" method="POST" onchange="updatePrice()">
             <div class="quote">
                 Estimated Total:
-                <!-- <div id="total"></div> -->
-
                 <input id="total" type="text" name="estimated-total" readonly />
-
                 <br><br>
-
                 <button type="submit">Submit Quote</button>
             </div>
 
             <div class="form-items">
-
                 <!-- PAGES -->
                 <div class="item">
                     <div class="icon">
@@ -130,7 +125,7 @@
                         <label>
                             <h3>How many pages does your site need (roughly)?</h3>
                             <input style="width: 10%" id="pages" type="number" name="pages" min="1" value="5"
-                                onchange="updatePrice()" placeholder="5">
+                                placeholder="5">
                         </label>
                     </div>
                 </div>
@@ -153,8 +148,8 @@
 
                     </div>
                     <div class="options">
-                        <h3>Would you prefer a template or a custom design?</h3>
-                        <select name="design" id="design" onchange="updatePrice()">
+                        <h3>Would you prefer a custom design or template?</h3>
+                        <select name="design" id="design">
                             <option value="custom">Custom Design</option>
                             <option value="template">Template</option>
                         </select>
@@ -180,9 +175,10 @@
                     </div>
                     <div class="options">
                         <h3>Will you be selling any products online?</h3>
-                        <select name="ecommerce" id="ecommerce" onchange="updatePrice()">
+                        <select name="ecommerce" id="ecommerce">
                             <option value="no">No, I won’t be selling anything</option>
-                            <option value="yes">Yes, I'll need an online store</option>
+                            <option value="yes-blog">Yes, for a blog</option>
+                            <option value="yes-store">Yes, for a dedicated online store</option>
                         </select>
 
                     </div>
@@ -204,35 +200,35 @@
                             <label>
                                 Search Engine Optimisation (SEO)
                                 <label class="switch">
-                                    <input type="checkbox" id="seo" name="seo" value="yes" onchange="updatePrice()">
+                                    <input type="checkbox" id="seo" name="seo" value="yes">
                                 </label>
                             </label>
 
                             <label>
                                 Social Media Integration
                                 <label class="switch">
-                                    <input type="checkbox" id="social" name="social" value="yes" onchange="updatePrice()">
+                                    <input type="checkbox" id="social" name="social" value="yes">
                                 </label>
                             </label>
 
                             <label>
                                 Live Chat
                                 <label class="switch">
-                                    <input type="checkbox" id="live-chat" name="live-chat" value="yes" onchange="updatePrice()">
+                                    <input type="checkbox" id="live-chat" name="live-chat" value="yes">
                                 </label>
                             </label>
 
                             <label>
                                 Google Analytics
                                 <label class="switch">
-                                    <input type="checkbox" id="analytics" name="analytics" value="yes" onchange="updatePrice()">
+                                    <input type="checkbox" id="analytics" name="analytics" value="yes">
                                 </label>
                             </label>
 
                             <label>
                                 Easily add, edit, and delete content
                                 <label class="switch">
-                                    <input type="checkbox" id="editable" name="editable" value="yes" onchange="updatePrice()">
+                                    <input type="checkbox" id="editable" name="editable" value="yes">
                                 </label>
                             </label>
                         </div>
@@ -260,12 +256,12 @@
                         <h3>About you</h3>
                         <label>
                             Your name*
-                            <input type="text" name="fullname" placeholder="John Smith">
+                            <input type="text" name="full_name" placeholder="John Smith" required="">
                         </label>
 
                         <label>
                             Your email*
-                            <input type="email" name="_replyto" required placeholder="johnsmith@email.com">
+                            <input type="email" name="_replyto" required="" placeholder="johnsmith@email.com">
                         </label>
 
                         <label>
@@ -275,7 +271,7 @@
 
                         <label for="message">Is there anything else you’d like me to know?</label>
                         <textarea rows="5" name="message" id="message"
-                            placeholder="Please write any additional information here" required=""></textarea>
+                            placeholder="Please write any additional information here"></textarea>
                     </div>
                 </div>
 
