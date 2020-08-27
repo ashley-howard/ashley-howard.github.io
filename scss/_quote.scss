@@ -50,17 +50,9 @@
         font-weight: 600;
     }
 
-
-
     label {
         display: flex;
         flex-direction: column;
-        // align-items: center;
-
-        svg {
-            width: 100px;
-            height: 100px;
-        }
     }
 
     #total {
@@ -90,6 +82,10 @@
         padding: 12px;
         border-bottom: 1px solid #dad8d8;
 
+        &.about {
+            border-bottom: 0;
+        }
+
         .options {
             display: flex;
             flex-direction: column;
@@ -98,8 +94,6 @@
             input {
                 align-self: flex-start;
             }
-
-
         }
     }
 
@@ -122,15 +116,32 @@
                 width: 50px;
                 height: 50px;
             }
+
+            .form-items:nth-last-child(1) {
+                margin-bottom: 125px;
+            }
+
+            button {
+                margin-top: -10px;
+            }
         }
 
         .quote {
             width: 100%;
-            padding: 30px 0;
+            padding: 7px 0;
+            position: fixed;
+            bottom: 0;
+            background: white;
+            border-top: 1px solid #d2d2d2;
+            font-size: 0.9em;
 
             button {
                 width: 200px;
             }
+        }
+
+        footer {
+            display: none;
         }
     }
 

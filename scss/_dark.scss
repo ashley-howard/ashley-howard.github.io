@@ -33,4 +33,17 @@ body.dark {
         color: $darkcolor;
         background-color: $darkbg;
     }
+
+
+    .quote {
+        background: $darkbg !important;
+
+        button {
+            box-shadow: 4px 4px 5px #1b1b1b !important;
+        }
+    }
+
+
+
+
 }
