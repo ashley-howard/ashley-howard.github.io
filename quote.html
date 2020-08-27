@@ -107,7 +107,19 @@
             <div class="quote">
                 Estimated Total:
                 <input id="total" type="text" name="estimated-total" readonly />
-                <br><br>
+
+                <ul>
+                    <li>+ Responsive Design (included)</li>
+                    <li>+ Custom Design (included)</li>
+                    <li id="quote-pages"></li>
+                    <li id="quote-ecommerce">+ Blog</li>
+                    <li id="quote-seo">+ SEO</li>
+                    <li id="quote-social">+ Social Media Integration</li>
+                    <li id="quote-chat">+ Live Chat</li>
+                    <li id="quote-analytics">+ Google Analytics</li>
+                    <li id="quote-editable">+ Easily Editable</li>
+                </ul>
+
                 <button type="submit">Submit Quote</button>
             </div>
 
@@ -127,32 +139,6 @@
                             <input style="width: 10%" id="pages" type="number" name="pages" min="1" value="5"
                                 placeholder="5">
                         </label>
-                    </div>
-                </div>
-
-                <!-- DESIGN -->
-                <div class="item">
-                    <div class="icon">
-                        <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0)">
-                                <path
-                                    d="M35.2381 54.7742C35.2773 59.0982 31.7914 62.6389 27.4596 62.6663C23.1317 62.7015 19.6067 59.2196 19.5832 54.8956C19.544 50.5677 23.0259 47.0427 27.346 46.9996C31.6779 46.9722 35.2146 50.458 35.2381 54.7742ZM31.4076 39.1624C27.0836 39.1937 23.5429 35.7157 23.5155 31.38C23.4803 27.0599 26.9504 23.531 31.2862 23.5035C35.6024 23.4644 39.1509 26.9385 39.1665 31.2664C39.2135 35.6021 35.7199 39.1232 31.4076 39.1624ZM62.6665 23.4409C62.6822 27.757 59.2159 31.3055 54.8919 31.333C50.5601 31.3721 47.0273 27.8902 46.9999 23.5662C46.9568 19.2344 50.4387 15.7094 54.7744 15.6741C59.0867 15.6506 62.6274 19.1247 62.6665 23.4409ZM15.6665 85.5083C33.6323 86.9966 27.1972 67.9146 43.8195 67.7384L51.0184 73.7465C52.8122 95.4331 26.2846 100.27 15.6665 85.5083ZM70.7544 57.6412C76.3435 48.8718 93.6513 19.4615 93.6513 19.4615C95.0339 17.0215 91.971 14.4756 89.8325 16.2773C89.8325 16.2773 64.0922 38.6571 56.4978 45.7502C50.4974 51.3589 50.47 53.9204 48.5274 63.1676L55.1074 68.651C63.8298 65.0672 66.3404 64.5776 70.7544 57.6412ZM21.3183 76.4647C13.1559 69.3364 7.92328 58.922 7.83319 47.2973C7.66086 25.7165 25.09 8.01313 46.6865 7.83687C61.7187 7.75462 72.0626 15.2981 72.1292 21.3376L78.6426 15.635C74.6868 6.92821 62.2631 -0.207957 46.6199 -0.000374057C20.6799 0.215043 -0.203807 21.4081 -0.000140324 47.36C0.089943 58.7653 4.24161 69.1758 11.0566 77.2637C14.8088 79.1907 19.3717 78.5523 21.3183 76.4647ZM71.4399 68.9995C75.5876 76.7154 66.1484 82.1987 57.5553 84.6349C56.3646 88.2069 54.4102 91.3755 52.1738 93.6863C72.7559 91.3715 87.6627 76.829 76.7156 62.7877C74.9179 65.4706 73.2024 67.476 71.4399 68.9995Z"
-                                    fill="#FBA82B" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0">
-                                    <rect width="94" height="94" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </div>
-                    <div class="options">
-                        <h3>Would you prefer a custom design or template?</h3>
-                        <select name="design" id="design">
-                            <option value="custom">Custom Design</option>
-                            <option value="template">Template</option>
-                        </select>
                     </div>
                 </div>
 
@@ -225,7 +211,7 @@
                                 </label>
                             </label>
 
-                            <label>
+                            <label id="label-editable">
                                 Easily add, edit, and delete content
                                 <label>
                                     <input type="checkbox" id="editable" name="editable" value="yes">

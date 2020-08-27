@@ -1,5 +1,4 @@
 const pages = document.getElementById("pages");
-const design = document.getElementById("design");
 const seo = document.getElementById("seo");
 const social = document.getElementById("social");
 const liveChat = document.getElementById("live-chat");
@@ -7,76 +6,89 @@ const editable = document.getElementById("editable");
 const ecommerce = document.getElementById("ecommerce");
 const analytics = document.getElementById("analytics");
 const total = document.getElementById("total");
+const quotePages = document.getElementById("quote-pages");
+const quoteEcommerce = document.getElementById("quote-ecommerce");
+const quoteSocial = document.getElementById("quote-social");
+const quoteSeo = document.getElementById("quote-seo");
+const quoteChat = document.getElementById("quote-chat");
+const quoteAnalytics = document.getElementById("quote-analytics");
+const quoteEditable = document.getElementById("quote-editable");
+const labelEditable = document.getElementById("label-editable");
 
-var baseCost = 150;
-var pageCost = 0;
-var designCost = 0;
-var ecommerceCost = 0;
-var seoCost = 0;
-var socialCost = 0;
-var editableCost = 0;
-var analyticsCost = 0;
-var liveChatCost = 0;
+var pageCost = 0,
+    ecommerceCost = 0,
+    seoCost = 0,
+    socialCost = 0,
+    editableCost = 0,
+    analyticsCost = 0,
+    liveChatCost = 0,
+    totalCost;
 
 function updatePrice() {
-    if (+pages.value <= 10) {
-        pageCost = 100;
-    } else if (+pages.value >= 11 && +pages.value <= 49) {
-        pageCost = 200;
-    } else if (+pages.value >= 50 && +pages.value <= 149) {
-        pageCost = 500;
-    } else {
-        pageCost = 1000;
-    }
+    pageCost = +pages.value * 100;
+    quotePages.innerText = `+ ${+pages.value} Pages`
 
-    if (design.value == "custom") {
-        designCost = 500;
+    if (ecommerce.value.includes("blog")) {
+        ecommerceCost = 750;
+        quoteEcommerce.innerText = "+ Blog";
+        labelEditable.style.display = "none";
+        editable.checked = false;
+    } else if (ecommerce.value.includes("store")) {
+        ecommerceCost = 1000;
+        quoteEcommerce.innerText = "+ Online Store";
+        labelEditable.style.display = "none";
+        editable.checked = false;
     } else {
-        designCost = 200;
+        ecommerceCost = 500;
+        quoteEcommerce.innerText = "+ Static Website";
+        labelEditable.style.display = "flex";
     }
 
     if (seo.checked) {
         seoCost = 200;
+        quoteSeo.style.display = "block";
     } else {
         seoCost = 0;
+        quoteSeo.style.display = "none";
     }
 
     if (social.checked) {
         socialCost = 50;
+        quoteSocial.style.display = "block";
     } else {
         socialCost = 0;
+        quoteSocial.style.display = "none";
     }
 
     if (liveChat.checked) {
-        liveChatCost = 100;
+        liveChatCost = 250;
+        quoteChat.style.display = "block";
     } else {
         liveChatCost = 0;
+        quoteChat.style.display = "none";
     }
 
     if (analytics.checked) {
-        analyticsCost = 100;
+        analyticsCost = 25;
+        quoteAnalytics.style.display = "block";
     } else {
         analyticsCost = 0;
+        quoteAnalytics.style.display = "none";
     }
 
-    if (editable.checked) {
+    if (ecommerce.value.includes("yes") && editable.checked) {
+        editableCost = 0;
+        quoteEditable.style.display = "none";
+    } else if (ecommerce.value.includes("no") && editable.checked) {
         editableCost = 150;
+        quoteEditable.style.display = "block";
     } else {
         editableCost = 0;
+        quoteEditable.style.display = "none";
     }
 
-    if (ecommerce.value.includes("blog")) {
-        ecommerceCost = 250;
-    } else if (ecommerce.value.includes("store")) {
-        ecommerceCost = 500;
-    } else {
-        ecommerceCost = 0;
-    }
-
-    var totalCost =
-        baseCost +
+    totalCost =
         pageCost +
-        designCost +
         seoCost +
         socialCost +
         liveChatCost +
