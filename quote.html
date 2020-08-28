@@ -82,6 +82,7 @@
     <nav>
         <a href="/">Home</a>
         <a href="/services">Services</a>
+        <a href="/quote">Get a quote</a>
         <a href="/portfolio">Portfolio</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
@@ -112,7 +113,7 @@
                     <li>+ Responsive Design (included)</li>
                     <li>+ Custom Design (included)</li>
                     <li id="quote-pages"></li>
-                    <li id="quote-ecommerce"></li>
+                    <li id="quote-type"></li>
                     <li id="quote-seo">+ SEO</li>
                     <li id="quote-social">+ Social Media Integration</li>
                     <li id="quote-chat">+ Live Chat</li>
@@ -142,7 +143,7 @@
                     </div>
                 </div>
 
-                <!-- ECOMMERCE -->
+                <!-- TYPE -->
                 <div class="item">
                     <div class="icon">
                         <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,11 +161,11 @@
 
                     </div>
                     <div class="options">
-                        <h3>Will you be selling any products online?</h3>
-                        <select name="ecommerce" id="ecommerce">
-                            <option value="no">No, I won’t be selling anything</option>
-                            <option value="yes-blog">Yes, for a blog</option>
-                            <option value="yes-store">Yes, for a dedicated online store</option>
+                        <h3>Do you require a blog or online store?</h3>
+                        <select name="type" id="type">
+                            <option value="static">No, just a simple static website</option>
+                            <option value="yes, blog">Yes, I need a blog</option>
+                            <option value="yes, store">Yes, I need an online store</option>
                         </select>
 
                     </div>
@@ -183,6 +184,14 @@
                     <div class="options">
                         <h3>Tick all that you’d like</h3>
                         <div class="tick">
+
+                            <label id="label-editable">
+                                Easily add, edit, and delete content
+                                <label>
+                                    <input type="checkbox" id="editable" name="editable" value="yes">
+                                </label>
+                            </label>
+
                             <label>
                                 Search Engine Optimisation (SEO)
                                 <label>
@@ -208,13 +217,6 @@
                                 Google Analytics
                                 <label>
                                     <input type="checkbox" id="analytics" name="analytics" value="yes">
-                                </label>
-                            </label>
-
-                            <label id="label-editable">
-                                Easily add, edit, and delete content
-                                <label>
-                                    <input type="checkbox" id="editable" name="editable" value="yes">
                                 </label>
                             </label>
                         </div>
