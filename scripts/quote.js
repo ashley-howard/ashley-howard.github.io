@@ -25,8 +25,19 @@ var pageCost = 0,
     totalCost;
 
 function updatePrice() {
+
+    // 1-5
+    // 6-10
+
+
     pageCost = +pages.value * 100;
-    quotePages.innerText = `+ ${+pages.value} Pages`
+
+    if (+pages.value > 1) {
+        quotePages.innerText = `+ ${+pages.value} Pages`
+    } else {
+        quotePages.innerText = `+ ${+pages.value} Page`
+    }
+
 
     if (ecommerce.value.includes("blog")) {
         ecommerceCost = 750;
