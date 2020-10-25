@@ -27,8 +27,6 @@ var pageCost = 0,
 
 function updatePrice() {
 
-    pageCost = +pages.value * 100;
-
     if (+pages.value > 1) {
         quotePages.innerText = `+ ${+pages.value} Pages`
     } else {
@@ -36,23 +34,26 @@ function updatePrice() {
     }
 
     if (type.value.includes("blog")) {
-        typeCost = 750;
+        typeCost = 500;
+        pageCost = +pages.value * 75;
         quoteType.innerText = "+ Blog";
         labelEditable.style.display = "none";
         editable.checked = false;
     } else if (type.value.includes("store")) {
-        typeCost = 1000;
+        typeCost = 650;
+        pageCost = +pages.value * 75;
         quoteType.innerText = "+ Online Store";
         labelEditable.style.display = "none";
         editable.checked = false;
     } else {
-        typeCost = 500;
+        typeCost = 400;
+        pageCost = +pages.value * 50;
         quoteType.innerText = "+ Static Website";
         labelEditable.style.display = "flex";
     }
 
     if (seo.checked) {
-        seoCost = 200;
+        seoCost = 150;
         quoteSeo.style.display = "block";
     } else {
         seoCost = 0;
@@ -68,7 +69,7 @@ function updatePrice() {
     }
 
     if (liveChat.checked) {
-        liveChatCost = 250;
+        liveChatCost = 150;
         quoteChat.style.display = "block";
     } else {
         liveChatCost = 0;
@@ -76,7 +77,7 @@ function updatePrice() {
     }
 
     if (analytics.checked) {
-        analyticsCost = 25;
+        analyticsCost = 50;
         quoteAnalytics.style.display = "block";
     } else {
         analyticsCost = 0;
