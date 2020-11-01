@@ -316,10 +316,10 @@ div#typed-strings {
         flex-direction: column;
     }
 
-    .content {
-        width: 90% !important;
-        padding: 15px;
-    }
+    // .content {
+    //     width: 90% !important;
+    //     padding: 15px;
+    // }
 }
 
 @media (orientation: portrait),
@@ -356,6 +356,11 @@ div#typed-strings {
 
     #dark-mode {
         padding: 8px;
+    }
+
+    .content {
+        width: 90% !important;
+        padding: 15px;
     }
 }
 
