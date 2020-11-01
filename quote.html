@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CTXCXVG32"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CTXCXVG32"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-7CTXCXVG32');
-</script>
+        gtag('config', 'G-7CTXCXVG32');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -109,8 +109,30 @@
                 <input id="total" type="text" name="estimated-total" readonly />
 
                 <ul>
-                    <li>+ Responsive Design (included)</li>
-                    <li>+ Custom Design (included)</li>
+                    <li>+ Responsive Design (included)
+                        <svg onclick="tooltip('responsive')" class="tooltip" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24">
+                            <title>Click for more info</title>
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.033 16.01c.564-1.789 1.632-3.932 1.821-4.474.273-.787-.211-1.136-1.74.209l-.34-.64c1.744-1.897 5.335-2.326 4.113.613-.763 1.835-1.309 3.074-1.621 4.03-.455 1.393.694.828 1.819-.211.153.25.203.331.356.619-2.498 2.378-5.271 2.588-4.408-.146zm4.742-8.169c-.532.453-1.32.443-1.761-.022-.441-.465-.367-1.208.164-1.661.532-.453 1.32-.442 1.761.022.439.466.367 1.209-.164 1.661z" />
+                        </svg>
+
+                        <div id="popup-responsive" class="hidden">
+                            <p>Your website will look great on any screen and device.</p>
+                        </div>
+                    </li>
+                    <li>+ Custom Design (included)
+                        <svg onclick="tooltip('custom')" class="tooltip" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24">
+                            <title>Click for more info</title>
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.033 16.01c.564-1.789 1.632-3.932 1.821-4.474.273-.787-.211-1.136-1.74.209l-.34-.64c1.744-1.897 5.335-2.326 4.113.613-.763 1.835-1.309 3.074-1.621 4.03-.455 1.393.694.828 1.819-.211.153.25.203.331.356.619-2.498 2.378-5.271 2.588-4.408-.146zm4.742-8.169c-.532.453-1.32.443-1.761-.022-.441-.465-.367-1.208.164-1.661.532-.453 1.32-.442 1.761.022.439.466.367 1.209-.164 1.661z" />
+                        </svg>
+
+                        <div id="popup-custom" class="hidden">
+                            <p>Your website will be built from scratch, no templates used.</p>
+                        </div>
+                    </li>
                     <li id="quote-pages"></li>
                     <li id="quote-type"></li>
                     <li id="quote-editable">+ Easily Editable</li>
@@ -310,6 +332,9 @@
         </div>
 
     </footer>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="/scripts/typed.js"></script>
     <script src="/scripts/password.js"></script>

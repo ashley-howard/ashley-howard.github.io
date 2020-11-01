@@ -108,3 +108,27 @@ function updatePrice() {
 }
 
 updatePrice();
+
+const popupResponsive = document.getElementById('popup-responsive');
+const popupCustom = document.getElementById('popup-custom');
+
+function tooltip(tip) {
+    if (tip == 'responsive' && popupResponsive.classList.contains('hidden')) {
+        popupResponsive.style.display = 'flex';
+        popupResponsive.classList.add("active");
+        popupResponsive.classList.remove("hidden");
+    } else if (tip == 'responsive' && popupResponsive.classList.contains('active')) {
+        popupResponsive.style.display = 'none';
+        popupResponsive.classList.add("hidden");
+        popupResponsive.classList.remove("active");
+    }
+    if (tip == 'custom' && popupCustom.classList.contains('hidden')) {
+        popupCustom.style.display = 'flex';
+        popupCustom.classList.add("active");
+        popupCustom.classList.remove("hidden");
+    } else if (tip == 'custom' && popupCustom.classList.contains('active')) {
+        popupCustom.style.display = 'none';
+        popupCustom.classList.add("hidden");
+        popupCustom.classList.remove("active");
+    }
+}
