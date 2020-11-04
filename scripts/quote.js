@@ -34,13 +34,13 @@ function updatePrice() {
   }
 
   if (type.value.includes("blog")) {
-    typeCost = 200;
+    typeCost = 150;
     pageCost = +pages.value * 75;
     quoteType.innerText = "+ Blog";
     labelEditable.style.display = "none";
     editable.checked = false;
   } else if (type.value.includes("store")) {
-    typeCost = 250;
+    typeCost = 200;
     pageCost = +pages.value * 75;
     quoteType.innerText = "+ Online Store";
     labelEditable.style.display = "none";
