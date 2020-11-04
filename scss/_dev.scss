@@ -19,31 +19,31 @@
 // }
 
 // ---------PASSWORD SCREEN-------------- //
-body {
-    overflow: hidden;
-}
+// body {
+//     overflow: hidden;
+// }
 
-#password {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    z-index: 99;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+// #password {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: black;
+//     z-index: 99;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
 
-    &>* {
-        padding: 7px;
-        margin: 5px;
-    }
+//     &>* {
+//         padding: 7px;
+//         margin: 5px;
+//     }
 
-    input {
-        width: 200px;
-    }
+//     input {
+//         width: 200px;
+//     }
 
-    label {
-        display: none;
-    }
-}
+//     label {
+//         display: none;
+//     }
+// }
