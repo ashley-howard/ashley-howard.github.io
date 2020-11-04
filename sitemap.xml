@@ -9,47 +9,52 @@
 
 <url>
   <loc>https://ashley.how/</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://ashley.how/services</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ashley.how/portfolio</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ashley.how/about</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ashley.how/contact</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ashley.how/quote</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ashley.how/policies/terms</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ashley.how/policies/privacy</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://ashley.how/aftercare</loc>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://ashley.how/work/a-kin</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -58,13 +63,23 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://ashley.how/work/noteconvert</loc>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ashley.how/musician-1/</loc>
+  <lastmod>2020-10-01T15:25:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://ashley.how/work/dogs-as-humans</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ashley.how/work/desk</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -73,8 +88,13 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://ashley.how/work/inner-animal</loc>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://ashley.how/work/jack-daniels</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -84,42 +104,27 @@
 </url>
 <url>
   <loc>https://ashley.how/work/outings</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ashley.how/work/hotchoco</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://ashley.how/work/noteconvert</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ashley.how/work/art-festival</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ashley.how/work/easybook</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://ashley.how/work/wearmeout</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://ashley.how/work/cofi</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ashley.how/policies/subprocessors</loc>
-  <lastmod>2020-08-03T15:38:11+00:00</lastmod>
+  <lastmod>2020-11-04T14:24:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -154,7 +159,7 @@
 </url>
 <url>
   <loc>https://ashley.how/ribbit-app/</loc>
-  <lastmod>2020-02-13T20:12:57+00:00</lastmod>
+  <lastmod>2020-09-30T10:21:22+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
@@ -189,7 +194,7 @@
 </url>
 <url>
   <loc>https://ashley.how/ribbit-app/about</loc>
-  <lastmod>2020-02-13T20:12:57+00:00</lastmod>
+  <lastmod>2020-09-30T10:21:22+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 
