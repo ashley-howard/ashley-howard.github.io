@@ -86,6 +86,14 @@ input[type="submit"] {
     ul {
         display: block;
     }
+
+    a {
+        color: $primary-colour;
+
+        &:hover, &:active {
+            color: darken($primary-colour, 20%)
+        }
+    }
 }
 
 @media (orientation: portrait),
