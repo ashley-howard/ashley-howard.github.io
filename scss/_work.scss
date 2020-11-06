@@ -52,7 +52,8 @@
     }
 
     .project {
-        width: 560px;
+        width: 32%;
+        min-width: 300px;
         margin: 0.4% 0.5%;
         box-shadow: 7px 6px 13px 0px #949494;
 
@@ -182,6 +183,7 @@ div#myBtnContainer {
         }
 
         .project {
+            width: auto;
             box-shadow: none;
             border: 2px solid #dedede;
 
