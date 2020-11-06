@@ -1,6 +1,11 @@
 #services-page {
     @extend %container-type-1;
 
+    &.dark {
+        h4 {
+            color: #b3b3b3 !important;
+        }
+    }
 
     #website-types {
         display: flex;
