@@ -3,14 +3,14 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36937888-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36937888-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-36937888-3');
-</script>
+        gtag('config', 'UA-36937888-3');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -62,8 +62,6 @@
         <span>Ashley Howard // London Web Designer</span>
     </div>
 
-    
-
     <div id="dark-mode" class="light" title="Toggle dark mode" onclick="toggleDarkMode()">
         <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24">
             <path
@@ -99,35 +97,19 @@
         </div>
     </div>
 
-    <div class="example-types">
-        <div>
-            <img src="/img/stock/static-frame.png">
-            <span>an illustrated representation of a static website</span>
-        </div>
-
-        <div>
-            <img src="/img/stock/cms-frame.png">
-            <span>an illustrated representation of a CMS-based website</span>
-        </div>
-
-        <div>
-            <img src="/img/stock/e-commerce-frame.png">
-            <span>an illustrated representation of an e-commerce website</span>
-        </div>
-    </div>
-
-    <div class="container" id="type">
-        <div class="sidebar">
-            <span>Static, CMS, or e-commerce?</span>
-        </div>
-        <div class="content">
-            <div class="section">
-                <p>Depending on your needs, I can create either a static, CMS-based, or e-commerce website. Below I'll
-                    explain each one and list their pros and cons. And below that I'll outline the steps.</p>
-
-                <h2>Static website - simplest option for content that doesn't need updating often</h2>
-
-                <span>Pros</span>
+    <div class="container" id="website-types">
+        <!-- STATIC -->
+        <div class="container item">
+            <div class="col-img">
+                <div class="col-img__overflow">
+                    <img src="/img/services/website-static.svg" alt="">
+                </div>
+            </div>
+            <div class="col-content">
+                <h2>STATIC WEBSITES</h2>
+                <h4>simplest option for content that doesn't need updating often</h4>
+                <p>
+                    <span>Pros</span>
                 <ul>
                     <li>Great for simple websites, if you just want to show off some info about your business or project
                     </li>
@@ -144,9 +126,17 @@
                     <li>Not as friendly to edit as a CMS; you may need me to update text if necessary (we can chat about
                         that)</li>
                 </ul>
+                </p>
+            </div>
+        </div>
 
-                <h2>CMS (content management system) - manage your website easily without too much technical skill</h2>
-                <span>Pros</span>
+        <!-- CMS -->
+        <div class="container item">
+            <div class="col-content">
+                <h2>CMS WEBSITES</h2>
+                <h4>manage your website easily without too much technical skill</h4>
+                <p>
+                    <span>Pros</span>
                 <ul>
                     <li>Recommended for bloggers, and those who’d like to update their website regularly</li>
                     <li>Can be integrated with e-commerce features; but not as elaborate as using an e-commerce website
@@ -158,9 +148,27 @@
                     <li>Unlike static websites, you’ll pay for hosting and/or membership fees</li>
                     <li>Making sure to update plug-ins and install security updates regularly</li>
                 </ul>
+                </p>
+            </div>
+            <div class="col-img">
+                <div class="col-img__overflow">
+                    <img src="/img/services/website-cms.svg" alt="">
+                </div>
+            </div>
+        </div>
 
-                <h2>E-commerce - manage your online shop</h2>
-                <span>Pros</span>
+        <!-- E-COMMERCE -->
+        <div class="container item">
+            <div class="col-img">
+                <div class="col-img__overflow">
+                    <img src="/img/shop.svg" alt="">
+                </div>
+            </div>
+            <div class="col-content">
+                <h2>E-COMMERCE WEBSITES</h2>
+                <h4>manage your online shop</h4>
+                <p>
+                    <span>Pros</span>
                 <ul>
                     <li><a href="https://www.shopify.co.uk/" target="_blank" rel="noopener noreferrer">Shopify</a> for
                         example, has many useful (and free) video tutorials to help you get started</li>
@@ -173,78 +181,94 @@
                     <li>Anything out of my expertise (e.g. marketing) needs to be dealt with on
                         your own accord or through a 3rd-party company</li>
                 </ul>
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- steps -->
-    <div class="container" id="steps">
-        <div class="sidebar">
-            <span>My six stage approach</span>
-        </div>
-        <div class="content">
-            <div class="section">
-                <h2>1) Chat + Planning</h2>
-                <p>First we'll talk as much as possible about your business or project and any ideas you may already
-                    have for it - including your goals and the main functions of your website.
-                    The better understanding we have with one another, the better the outcome will be!
-                    <br><br>
-                    I'll need as many details as possible in order to give you a quotation and an approximate
-                    time of completion.
-                    <br><br>
-                    If you decide to go ahead with our collaboration, I'll send you an invoice asking for an initial
-                    payment of 35% (of the approximated agreed total). When
-                    it's been made I'll be ready to begin working on your project.</p>
+    <h1 style="text-align: center;
+    margin-top: 100px;">MY SIX STAGE APPROACH</h1>
 
-                <h2>2) Research</h2>
-                <p>
-                    The next step is research into your business. Looking at other similar businesses will give me an
-                    idea
-                    of how to structure your website and most importantly how to make it stand out.
-                    <br><br>
-                    Meanwhile, I'll expect you to provide the content (text, photos, etc.) for your website. If you need
-                    some
-                    help in creating content, I can liaise with a relevant professional.</p>
+    <div class="container" id="approach">
 
-                <h2>3) Design</h2>
-                <p>
-                    Now we're onto the design stage.
-                    Depending on the project, I'll either create static or interactive mockups to let you see my
-                    progress, and ask for your feedback. Being constructive allows us to keep moving forward creatively.
-                    <br><br>
-                    Once you're happy with the initial design, we can move onto the development stage. All the while,
-                    communicating regularly and giving feedback on the project.
-                </p>
-
-                <h2>4) Development</h2>
-                <p>This is the fun part, but also the most time-consuming. I'll grab all the designs and build it out.
-                    I'll show you (or let you interactive with) the website regularly.
-                    <br><br>
-                    I'll deal with all the copywriting, photography, illustrations and videos (that we previously
-                    discussed). You can contact me at any point if you'd like me to change or add something.</p>
-
-                <h2>5) Finalising + Deployment</h2>
-                <p>
-                    Next I'll test your website on various devices, screen sizes, and browsers, to make sure
-                    everything looks okay.
-                    <br><br>
-                    When all our hard work is done, we can then deploy your website to the world! If necessary,
-                    especially
-                    for CMS or e-commerce websites, I can train and help you get familiar with your new website so you
-                    can add/edit/etc. content with ease.
-                </p>
-
-                <h2>6) Aftercare + Maintenance</h2>
-                <p>
-                    A website is never a 100% complete product. It should keep up with the market and trends.
-                    <br><br>
-                    That's why I offer extra services to help your business stay competitive, even after completing your
-                    website.
-                    <br><br>
-                    More on my <a href="aftercare"> aftercare</a>.                    
-                </p>
+        <div class="stage">
+            <div class="stage__img--overflow">
+                <img src="/img/services/stage-1-chat.svg" alt="">
             </div>
+            <h2>1) Chat & Planning</h2>
+            <p>First we'll talk as much as possible about your business or project and any ideas you may already have
+                for it - including your goals and the main functions of your website. The better understanding we have
+                with one another, the better the outcome will be!
+                <br><br>
+                I'll need as many details as possible in order to give you a quotation and an approximate time of
+                completion.</p>
         </div>
+
+        <div class="stage">
+            <div class="stage__img--overflow">
+                <img src="/img/services/stage-2-research.svg" alt="">
+            </div>
+            <h2>2) Research</h2>
+            <p>The next step is research into your business. Looking at other similar businesses will give me an idea of
+                how to structure your website and most importantly how to make it stand out.
+                <br><br>
+                Meanwhile, I'll expect you to provide the content (text, photos, etc.) for your website. If you need
+                some help in creating content, I can liaise with a relevant professional.</p>
+        </div>
+
+        <div class="stage">
+            <div class="stage__img--overflow">
+                <img src="/img/services/stage-3-design.svg" alt="">
+            </div>
+            <h2>3) Design</h2>
+            <p>Now we're onto the design stage. Depending on the project, I'll either create static or interactive
+                mock-ups to let you see my progress, and ask for your feedback. Being constructive allows us to keep
+                moving forward creatively.
+                <br><br>
+                Once you're happy with the initial design, we can move onto the development stage. All the while,
+                communicating regularly and giving feedback on the project.</p>
+        </div>
+
+        <div class="stage">
+            <div class="stage__img--overflow">
+                <img src="/img/services/stage-4-development.svg" alt="">
+            </div>
+            <h2>4) Development</h2>
+            <p>This is the fun part, but also the most time-consuming. I'll grab all the designs and build it out. I'll
+                show you (or let you interactive with) the website regularly.
+                <br><br>
+                I'll deal with all the copywriting, photography, illustrations and videos (that we previously
+                discussed). You can contact me at any point if you'd like me to change or add something.</p>
+        </div>
+
+        <div class="stage">
+            <div class="stage__img--overflow">
+                <img src="/img/services/stage-5-deploy.svg" alt="">
+            </div>
+            <h2>5) Finalising & Deployment</h2>
+            <p>Next I'll test your website on various devices, screen sizes, and browsers, to make sure everything looks
+                okay.
+                <br><br>
+                When all our hard work is done, we can then deploy your website to the world! If necessary, especially
+                for CMS or e-commerce websites, I can train and help you get familiar with your new website so you can
+                add/edit/etc. content with ease.</p>
+        </div>
+
+        <div class="stage">
+            <div class="stage__img--overflow">
+                <img src="/img/services/stage-6-aftercare.svg" alt="">
+            </div>
+            <h2>6) Aftercare & Maintenance</h2>
+            <p>A website is never a 100% complete product. It should keep up with the market and trends.
+                <br><br>
+                That's why I offer extra services to help your business stay competitive, even after completing your
+                website.
+                <br><br>
+                <a href="aftercare">Read more about my aftercare</a>
+            </p>
+        </div>
+
+        <img style="margin-bottom: 70px;max-width: 100%;" src="/img/services/stages.png" alt="">
     </div>
 
     <footer>
@@ -289,7 +313,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="/scripts/typed.js"></script>
-    
+
     <script src="/scripts/dark.js"></script>
 </body>
 
