@@ -45,10 +45,10 @@ function updatePrice() {
     quoteType.innerText = "+ Online Store";
     labelEditable.style.display = "none";
     editable.checked = false;
-  } else if (type.value.includes("not sure")) {
+  } else if (type.value.includes("other")) {
     typeCost = 100;
     pageCost = +pages.value * 50;
-    quoteType.innerText = "+ Not sure";
+    quoteType.innerText = "+ Other / Not sure";
     labelEditable.style.display = "flex";
   } else {
     typeCost = 100;
