@@ -1,18 +1,24 @@
 const pages = document.getElementById("pages");
+const updating = document.getElementById("updating");
+const login = document.getElementById("login");
 const seo = document.getElementById("seo");
 const social = document.getElementById("social");
 const liveChat = document.getElementById("live-chat");
 const editable = document.getElementById("editable");
 const type = document.getElementById("type");
 const analytics = document.getElementById("analytics");
+const maps = document.getElementById("maps");
 const total = document.getElementById("total");
 const estimatePrev = document.getElementById("estimate-prev");
 const quotePages = document.getElementById("quote-pages");
+const quoteUpdating = document.getElementById("quote-updating");
 const quoteType = document.getElementById("quote-type");
+const quoteLogin = document.getElementById("quote-login");
 const quoteSocial = document.getElementById("quote-social");
 const quoteSeo = document.getElementById("quote-seo");
 const quoteChat = document.getElementById("quote-chat");
 const quoteAnalytics = document.getElementById("quote-analytics");
+const quoteMaps = document.getElementById("quote-maps");
 const quoteEditable = document.getElementById("quote-editable");
 const labelEditable = document.getElementById("label-editable");
 const labelBlog = document.getElementById("label-blog");
@@ -20,6 +26,9 @@ const labelBlog = document.getElementById("label-blog");
 var pageCost = 0,
   typeCost = 0,
   seoCost = 0,
+  updatingCost = 0,
+  loginCost = 0,
+  mapsCost = 0,
   socialCost = 0,
   editableCost = 0,
   analyticsCost = 0,
@@ -34,31 +43,47 @@ function updatePrice() {
   }
 
   if (type.value.includes("blog")) {
-    typeCost = 150;
-    pageCost = +pages.value * 75;
+    typeCost = 0;
+    pageCost = +pages.value * 0;
     quoteType.innerText = "+ Blog";
     labelEditable.style.display = "none";
     editable.checked = false;
   } else if (type.value.includes("store")) {
-    typeCost = 200;
-    pageCost = +pages.value * 75;
+    typeCost = 0;
+    pageCost = +pages.value * 0;
     quoteType.innerText = "+ Online Store";
     labelEditable.style.display = "none";
     editable.checked = false;
   } else if (type.value.includes("other")) {
-    typeCost = 100;
-    pageCost = +pages.value * 50;
+    typeCost = 0;
+    pageCost = +pages.value * 0;
     quoteType.innerText = "+ Other / Not sure";
     labelEditable.style.display = "flex";
   } else {
-    typeCost = 100;
-    pageCost = +pages.value * 50;
+    typeCost = 0;
+    pageCost = +pages.value * 0;
     quoteType.innerText = "+ Static Website";
     labelEditable.style.display = "flex";
   }
 
+  if (updating.value.includes("occasionally")) {
+    updatingCost = 0;
+    quoteUpdating.innerText = "+ Update Occasionally";
+  } else {
+    updatingCost = 0;
+    quoteUpdating.innerText = "+ Update Regularly";
+  }
+
+  if (login.checked) {
+    loginCost = 0;
+    quoteLogin.style.display = "block";
+  } else {
+    loginCost = 0;
+    quoteLogin.style.display = "none";
+  }
+
   if (seo.checked) {
-    seoCost = 100;
+    seoCost = 0;
     quoteSeo.style.display = "block";
   } else {
     seoCost = 0;
@@ -66,7 +91,7 @@ function updatePrice() {
   }
 
   if (social.checked) {
-    socialCost = 50;
+    socialCost = 0;
     quoteSocial.style.display = "block";
   } else {
     socialCost = 0;
@@ -74,7 +99,7 @@ function updatePrice() {
   }
 
   if (liveChat.checked) {
-    liveChatCost = 50;
+    liveChatCost = 0;
     quoteChat.style.display = "block";
   } else {
     liveChatCost = 0;
@@ -82,18 +107,26 @@ function updatePrice() {
   }
 
   if (analytics.checked) {
-    analyticsCost = 50;
+    analyticsCost = 0;
     quoteAnalytics.style.display = "block";
   } else {
     analyticsCost = 0;
     quoteAnalytics.style.display = "none";
   }
 
+  if (maps.checked) {
+    mapsCost = 0;
+    quoteMaps.style.display = "block";
+  } else {
+    mapsCost = 0;
+    quoteMaps.style.display = "none";
+  }
+
   if (type.value.includes("yes") && editable.checked) {
     editableCost = 0;
     quoteEditable.style.display = "none";
   } else if (!type.value.includes("yes") && editable.checked) {
-    editableCost = 50;
+    editableCost = 0;
     quoteEditable.style.display = "block";
   } else {
     editableCost = 0;

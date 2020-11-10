@@ -88,14 +88,14 @@
 
   <div class="header">
     <div id="typed-strings">
-      <h1>Quote</h1>
+      <h1>Get a quote</h1>
     </div>
     <h1 id="typed"></h1>
   </div>
 
   <div class="container">
     <div class="title">
-      <h1>Submit a quote</h1>
+      <h1>Get a quote</h1>
       <p>Receive a response within 24 hours.</p>
     </div>
   </div>
@@ -103,20 +103,6 @@
   <div class="container">
     <form action="https://formspree.io/mpzynbpg" method="POST" onchange="updatePrice()">
       <div class="quote">
-        <!-- Estimated Total:
-
-        <svg onclick="tooltip('estimate')" class="tooltip" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-          viewBox="0 0 24 24">
-          <title>Click for more info</title>
-          <path
-            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.033 16.01c.564-1.789 1.632-3.932 1.821-4.474.273-.787-.211-1.136-1.74.209l-.34-.64c1.744-1.897 5.335-2.326 4.113.613-.763 1.835-1.309 3.074-1.621 4.03-.455 1.393.694.828 1.819-.211.153.25.203.331.356.619-2.498 2.378-5.271 2.588-4.408-.146zm4.742-8.169c-.532.453-1.32.443-1.761-.022-.441-.465-.367-1.208.164-1.661.532-.453 1.32-.442 1.761.022.439.466.367 1.209-.164 1.661z" />
-        </svg>
-
-        <div id="popup-estimate" class="hidden">
-          <p>This is only an estimate. Every website is different and needs different tools and services.</p>
-        </div>
-
-        <input id="total" type="text" name="estimated-total" readonly /> -->
 
         <h3>Overview:</h3>
 
@@ -150,15 +136,18 @@
             </div>
           </li>
           <li id="quote-pages"></li>
+          <li id="quote-updating"></li>
           <li id="quote-type"></li>
           <li id="quote-editable">+ Easily Editable</li>
+          <li id="quote-login">+ Login Area</li>
           <li id="quote-seo">+ SEO</li>
           <li id="quote-social">+ Social Media Integration</li>
           <li id="quote-chat">+ Live Chat</li>
           <li id="quote-analytics">+ Google Analytics</li>
+          <li id="quote-maps">+ Google Maps</li>
         </ul>
 
-        <button type="submit">Submit Quote</button>
+        <button type="submit">Submit</button>
       </div>
 
       <div class="form-items">
@@ -176,6 +165,24 @@
               <h3>How many pages does your site need (roughly)?</h3>
               <input style="width: 10%" id="pages" type="number" name="pages" min="1" value="5" placeholder="5" />
             </label>
+          </div>
+        </div>
+
+        <!-- UPDATING -->
+        <div class="item">
+          <div class="icon">
+            <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.75 45L17.0138 63.6337L0 45H11.25C11.25 26.3625 26.3625 11.25 45 11.25C53.9812 11.25 62.1188 14.7825 68.1713 20.505L60.6562 28.8712C56.6025 24.9337 51.0825 22.5 45 22.5C32.5912 22.5 22.5 32.5912 22.5 45H33.75ZM72.9862 26.3663L56.25 45H67.5C67.5 57.4088 57.4088 67.5 45 67.5C38.9137 67.5 33.3975 65.0625 29.3437 61.1288L21.8288 69.495C27.8775 75.2175 36.0188 78.75 45 78.75C63.6375 78.75 78.75 63.6375 78.75 45H90L72.9862 26.3663V26.3663Z"
+                fill="#F4B95F" />
+            </svg>
+          </div>
+          <div class="options">
+            <h3>How often will you need to update the content on your site? </h3>
+            <select name="updating" id="updating">
+              <option value="occasionally">Occasionally</option>
+              <option value="regularly">Regularly</option>
+            </select>
           </div>
         </div>
 
@@ -201,7 +208,7 @@
               <option value="static">No, just a simple static website</option>
               <option value="yes, blog">Yes, I need a blog</option>
               <option value="yes, store">Yes, I need an online store</option>
-              <option value="other">Other / Not sure (please write more below)</option>
+              <option value="other">Other (please write more below)</option>
             </select>
           </div>
         </div>
@@ -222,6 +229,13 @@
                 Easily add, edit, and delete content
                 <label>
                   <input type="checkbox" id="editable" name="editable" value="yes" />
+                </label>
+              </label>
+
+              <label>
+                Log-in area
+                <label>
+                  <input type="checkbox" id="login" name="login" value="yes" />
                 </label>
               </label>
 
@@ -250,6 +264,13 @@
                 Google Analytics
                 <label>
                   <input type="checkbox" id="analytics" name="analytics" value="yes" />
+                </label>
+              </label>
+
+              <label>
+                Google Maps
+                <label>
+                  <input type="checkbox" id="maps" name="maps" value="yes" />
                 </label>
               </label>
             </div>
@@ -296,7 +317,6 @@
         </div>
 
         <input type="text" name="_gotcha" style="display: none" />
-        <!-- <input id="total" type="text" name="estimated-total" style="display: none" readonly /> -->
       </div>
     </form>
   </div>
@@ -351,7 +371,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <script src="/scripts/typed.js"></script>
-  
+
   <script src="/scripts/dark.js"></script>
   <script src="/scripts/quote.js"></script>
 </body>
