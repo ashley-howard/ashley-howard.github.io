@@ -22,3 +22,15 @@ function toggleDarkMode() {
         localStorage.setItem('isDark', 'no');
     }
 }
+
+const cookieWarning = document.getElementById('cookie-warning');
+var acceptCookies = localStorage.getItem('acceptCookies') ? localStorage.getItem('acceptCookies') : 'no';
+
+if (acceptCookies == 'yes') {
+    cookieWarning.style.display = 'none';
+}
+
+function acceptCookieWarning() {
+    localStorage.setItem('acceptCookies', 'yes');
+    cookieWarning.style.display = 'none';
+}

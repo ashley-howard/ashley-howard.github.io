@@ -267,6 +267,24 @@ div#typed-strings {
     }
 }
 
+#cookie-warning {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #f1f1f1d9;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    z-index: 99;
+
+    svg {
+        width: 13px;
+        height: 13px;
+        cursor: pointer;
+    }
+}
+
 // IE
 @media screen and (-ms-high-contrast: active),
 (-ms-high-contrast: none) {
@@ -314,6 +332,14 @@ div#typed-strings {
 
     .container {
         flex-direction: column;
+    }
+
+    #cookie-warning {
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 10px;
+        width: 90%;
     }
 }
 
