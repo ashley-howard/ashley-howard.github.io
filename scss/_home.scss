@@ -33,41 +33,27 @@
     }
 }
 
-#schedule {
-    // font-size: 0.4em;
-    font-size: 14px;    
-}
-
 @media (orientation: portrait),
 (max-width: 780px) {
     #hero {
-        font-size: 11.5vw !important;
 
         .column {
             text-align: center !important;
             width: 100%;
+            left: 0;
 
             &.text {
                 z-index: 1;
             }
         }
-    }
 
-    .fullscreen {
-        height: 100% !important;
+        video {
+            height: 100vh;
+        }
     }
 
     .container {
         flex-direction: column;
-    }
-
-    #hero {
-        margin-top: 115px;
-    }
-
-    .special {
-        font-size: 6vw;
-        text-align: center;
     }
 
     .column {
