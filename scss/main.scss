@@ -362,6 +362,10 @@ div#typed-strings {
         position: absolute;
         left: 0;
         right: 0;
+
+        &.mobile {
+            display: none;
+        }
     }
 }
 
@@ -407,6 +411,9 @@ div#typed-strings {
             &.mobile {
                 display: block !important;
                 object-fit: contain;
+            }
+            &.web {
+                display: none !important;
             }
         }
     }
@@ -527,6 +534,9 @@ div#typed-strings {
     video {
         &.web {
             display: block !important;
+        }
+        &.mobile {
+            display: none !important;
         }
     }
 }
