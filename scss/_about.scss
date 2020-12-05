@@ -9,11 +9,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-image: url(../img/me-in-florence.jpg);
 
-        img {
-            width: 500px;
-            border-radius: 50%;
-        }
+        // img {
+        //     width: 500px;
+        //     border-radius: 50%;
+        // }
 
         span {
             color: #a6a6a6;
