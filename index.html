@@ -1,379 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36937888-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-36937888-3');
-    </script>
-
-    <!-- Hotjar Tracking Code for https://ashley.how -->
-    <script>
-        (function (h, o, t, j, a, r) {
-            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-            h._hjSettings = { hjid: 2282912, hjsv: 6 };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script'); r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="Description"
-        content="A London-based web designer and developer, creating modern and mobile-friendly bespoke websites for small businesses.">
-
-    <meta name="keywords"
-        content="bespoke, web, modern, mobile, developer, development, designer, designing, east, london, essex, front, end" />
-
-    <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="Ashley Howard Front-end Web Developer">
-    <meta itemprop="description"
-        content="A London-based web designer and developer, creating modern and mobile-friendly bespoke websites for small businesses.">
-    <meta itemprop="image" content="https://ashley.how/apple-touch-icon-180x180.png">
-
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="product">
-    <meta name="twitter:site" content="@shleyhoward">
-    <meta name="twitter:title" content="Ashley Howard Front-end Web Developer">
-    <meta name="twitter:description"
-        content="A London-based web designer and developer, creating modern and mobile-friendly bespoke websites for small businesses.">
-    <meta name="twitter:creator" content="@shleyhow">
-    <meta name="twitter:image" content="https://ashley.how/apple-touch-icon-180x180.png">
-
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Ashley Howard Front-end Web Developer" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ashley.how" />
-    <meta property="og:image" content="https://ashley.how/apple-touch-icon-180x180.png" />
-    <meta property="og:description"
-        content="A London-based web designer and developer, creating modern and mobile-friendly bespoke websites for small businesses." />
-    <meta property="og:site_name" content="Ashley Howard" />
-
-    <!-- Shortcut icons -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
-
-    <meta name="theme-color" content="#2b97fb">
-    <title>Web Designer East London | Ashley Howard | Bespoke Web Design and Development</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Kalam:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.min.css">
-</head>
-
-<body id="index">
-    <div class="logo">
-        <span>Ashley Howard // London Web Designer</span>
-    </div>
-
-    <div id="dark-mode" class="light" title="Toggle dark mode" onclick="toggleDarkMode()">
-        <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24">
-            <path
-                d="M12 10.999c1.437.438 2.562 1.564 2.999 3.001.44-1.437 1.565-2.562 3.001-3-1.436-.439-2.561-1.563-3.001-3-.437 1.436-1.562 2.561-2.999 2.999zm8.001.001c.958.293 1.707 1.042 2 2.001.291-.959 1.042-1.709 1.999-2.001-.957-.292-1.707-1.042-2-2-.293.958-1.042 1.708-1.999 2zm-1-9c-.437 1.437-1.563 2.562-2.998 3.001 1.438.44 2.561 1.564 3.001 3.002.437-1.438 1.563-2.563 2.996-3.002-1.433-.437-2.559-1.564-2.999-3.001zm-7.001 22c-6.617 0-12-5.383-12-12s5.383-12 12-12c1.894 0 3.63.497 5.37 1.179-2.948.504-9.37 3.266-9.37 10.821 0 7.454 5.917 10.208 9.37 10.821-1.5.846-3.476 1.179-5.37 1.179z" />
-        </svg>
-
-        <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-            <path
-                d="M4.069 13h-4.069v-2h4.069c-.041.328-.069.661-.069 1s.028.672.069 1zm3.034-7.312l-2.881-2.881-1.414 1.414 2.881 2.881c.411-.529.885-1.003 1.414-1.414zm11.209 1.414l2.881-2.881-1.414-1.414-2.881 2.881c.528.411 1.002.886 1.414 1.414zm-6.312-3.102c.339 0 .672.028 1 .069v-4.069h-2v4.069c.328-.041.661-.069 1-.069zm0 16c-.339 0-.672-.028-1-.069v4.069h2v-4.069c-.328.041-.661.069-1 .069zm7.931-9c.041.328.069.661.069 1s-.028.672-.069 1h4.069v-2h-4.069zm-3.033 7.312l2.88 2.88 1.415-1.414-2.88-2.88c-.412.528-.886 1.002-1.415 1.414zm-11.21-1.415l-2.88 2.88 1.414 1.414 2.88-2.88c-.528-.411-1.003-.885-1.414-1.414zm6.312-10.897c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6z" />
-        </svg>
-    </div>
-
-    <nav>
-        <a href="/" class="active">Home</a>
-        <a href="/services">Services</a>
-        <a href="/portfolio">Portfolio</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-    </nav>
-
-    <div id="hero" class="container fullscreen">
-        <div class="video-container">
-            <video class="mobile" loop autoplay muted>
-                <source src="/img/videos/web-design-sm.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <video class="web" loop autoplay muted>
-                <source src="/img/videos/web-design.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <div class="column">
-            <div>
-                <div class="location">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
-                    </svg>
-                    East London
-                </div>
-
-                <h2>Small business web design
-                    <br>and development
-                </h2>
-                <p>I create bespoke websites from scratch that are
-                    <br> modern, mobile-friendly, and affordable.
-                </p>
-
-                <div class="btns">
-                    <a href="/contact">Get in touch</a> <a class="quote" href="/quote">Get a quote</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- what I do -->
-    <div class="container" id="what-i-do">
-        <div class="sidebar">
-            <span>What I do</span>
+---
+layout: default
+class: index
+---
+<section class="section hero bg-blue">
+    <div class="container">
+        <h1 class="heading-1">I create websites that help small businesses thrive.</h1>
+        <div class="img-container">
+            <img src="assets/images/portraits/portrait.jpg" width="640" height="960"
+                alt="A portrait shot with one hand on my chin">
         </div>
         <div class="content">
-            <div class="section">
-                <h1>Web design & development</h1>
-                <p>I design and develop modern, clean, and mobile-friendly bespoke websites for small businesses and
-                    individuals,
-                    from scratch, to fit your needs.
+            <ul class="ticks__heading">
+                <li>
+                    <h2 class="heading">I use modern design methodologies</h2>
+                    <p>Great design boils down to psychology, typography, and finding colours that not only complement
+                        one another, but provoke certain emotions to your given audience. </p>
+                </li>
 
-                    I also work with businesses who have been affected by
-                    COVID and help them grow their business by creating a price plan that works for them.
-                    <br><br>
+                <li>
+                    <h2 class="heading">I build with accessibility in mind</h2>
+                    <p>Having a website that is accessible to everyone is extremely important. From colour contrast and
+                        legible fonts, to code that screen readers can easily understand.</p>
+                </li>
 
-                    At the moment I only offer completely bespoke services for static sites, Wordpress, and certain
-                    frameworks. Get in touch to find out if I'm the right fit for your project.
+                <li>
+                    <h2 class="heading">Let’s build a better future together</h2>
+                    <p>I am currently reducing the cost of packages for businesses whose primary goal relates to
+                        eco-friendliness, education, human rights, or equality.</p>
+                </li>
+            </ul>
 
-                    <br><br>
-                    If you're interested in working with me, feel free to submit a <a href="/quote">free quote</a>.
-
-                    You can also read more on my <a href="/services">services</a>.
-                </p>
-
-                <div class="browser-gif">
-                    <img src="/img/browser.gif" alt="illustration of a responsive browser">
-                </div>
-
-                <div class="column-browser">
-                    <div class="browser browser-transform">
-                        <div class="browser__nav">
-                            <div class="browser__brand">
-                                <div class="browser__logo"></div>
-                            </div>
-                        </div>
-                        <div class="browser__main">
-                            <div class="browser__hero">
-                                <div class="browser__hero--img"></div>
-                            </div>
-                            <div class="browser__columns columns-transform">
-                                <div class="browser__column column-transform">
-                                    <div class="browser__column--img img-transform"></div>
-                                    <div class="browser__column--text text-transform"></div>
-                                </div>
-                                <div class="browser__column column-transform column-remove">
-                                    <div class="browser__column--img img-transform"></div>
-                                    <div class="browser__column--text text-transform"></div>
-                                </div>
-                                <div class="browser__column column-transform">
-                                    <div class="browser__column--img img-transform"></div>
-                                    <div class="browser__column--text text-transform"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h1>CMSs (e.g. Wordpress)</h1>
-                <p>Content management systems. What are they? They enable you to take control of your website easily,
-                    even when you're on the go. WordPress is one of the most popular CMSs. You'll be able to add, edit,
-                    and
-                    delete content at ease. Don't worry if you've never used one before, when I've finished your
-                    website I'll show you how to use it. More on my <a href="/services">services</a>.
-                </p>
-
-            </div>
-
-            <div class="section">
-                <h1>E-commerce (e.g. WooCommerce)</h1>
-                <p>In 2019, e-retail sales accounted for 14.1% of
-                    all retail sales worldwide. This figure is expected to reach 22% in 2023 (<a
-                        href="https://www.statista.com/statistics/534123/e-commerce-share-of-retail-sales-worldwide/"
-                        target="_blank" rel="noopener noreferrer">Statista</a>). So it's no wonder many businesses are
-                    moving/extending their business online. Many people love buying things from the
-                    comfort of their home, and it should be a rather simple process. That's why I'd recommend using
-                    either <a href="https://woocommerce.com/" target="_blank" rel="noopener noreferrer">WooCommerce</a>
-                    or <a href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer">Shopify</a>.
-
-                    They both have great tools and online resources to help you continue learning, whether it be how to
-                    use the site, or how to
-                    increase sales or reach, and I can help you at the start if need be.
-                    <br><br>
-                    COVID-19: While businesses everywhere are taking precautions to make sure everyone stays safe,
-                    creating
-                    an online store helps you to continue your sales, even without a physical store front.
-                </p>
-
-
-                <img src="/img/shop.svg" alt="illustration of a e-commerce website">
-            </div>
-
-            <div class="section">
-                <h1>Aftercare & Maintenance</h1>
-                <p>
-                    Maintaining a website can be a challenge or even time-consuming, that's why I offer extra services
-                    bespoke for your needs.
-
-                    I have PAYG (Pay As You Go) and Pay Monthly options so you can choose the best fit for you. Only
-                    need something updated once a month? My PAYG plan is great for that. Or do you need me to have
-                    control of
-                    many aspects of your website, or regularly update things? You may be better suited to my Pay
-                    Monthly option.
-
-                    <br><br>
-                    Or do you already have a website and need just some extra help? I can help you get started or help
-                    you with any problems
-                    you may be having.
-
-                    <br><br>
-                    More on my <a href="/aftercare">aftercare</a>.
-                </p>
-            </div>
-
+            <a class="btn btn--primary" href="#section-1">Read more</a>
+            <a class="btn btn--secondary" href="/about">Learn more about me</a>
         </div>
     </div>
+</section>
 
-    <!-- what I use -->
-    <div class="container" id="what-i-use">
-        <div class="sidebar">
-            <span>What I use</span>
-        </div>
-        <div class="content">
-            <div class="section">
-                <h1>Modern technologies</h1>
-                <p>
-                    <!-- html5, css, js -->
-                    I always keep up-to-date with the latest trends and documentation that HTML, CSS, and JavaScript
-                    have to offer. I also build websites from scratch, to
-                    give you everything you need, no more no less. Your website isn't weighed down by tools you don't
-                    need. This means your
-                    website will be light and load super fast. I also code semantically, which means browsers can better
-                    understand your content (and also easier to read for humans).
+<section id="section-1" class="section section__card accent--aqua">
+    <div class="container">
+        <div class="row">
 
-                    <br><br>
-                    If you'd like something
-                    with a bit more functionality and ease of use,
-                    I'd recommend using a service like Wordpress or Shopify, or even a web builder may fit your needs.
-                    <br><br>
-                    So whether you’re a
-                    blogger, small business or something a little bigger, I’m here to get you up
-                    and running. If need something in particular, let's chat about it.
-                </p>
+            <div class="col col-6 image">
+                <img src="/assets/images/closet-shot.jpg" alt="a laptop showing a clothing website" height="962" width="1920">
             </div>
 
-            <div class="section">
-                <h1>Analytics</h1>
-                <p> Why end there? I can add Google Analytics to your website so you can see information about your
-                    visitors or customers in real time. You'll know more about their location, age, much more
-                    configurable data.
-                    Read more over at <a href="https://marketingplatform.google.com/intl/en_uk/about/analytics/"
-                        target="_blank" rel="noopener noreferrer">Google Analytics</a>.
+            <div class="col col-6 content">
+                <h2 class="heading-1 line--top">I help you get your
+                    shop online in style</h2>
+                <p>Having an online store couldn’t be easier. With the addition of built-in analytics, you can update
+                    your site to suit the needs of your customers.
                 </p>
 
-                <img src="/img/charts.svg" alt="illustration of mockup charts">
-            </div>
-
-            <div class="section">
-                <h1>Beautiful high-res media</h1>
-                <p>Tight budget? Why not take a look at some royalty-free options, such as <a
-                        href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a> and <a
-                        href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">Pexels</a> which have
-                    got you sorted with over 1,000,000
-                    HD photos and videos to jazz up your website at a low low price of free.
-                    You’d be surprised how much of a difference a few images make.</p>
-
-                <div class="stock-images">
-                    <img src="/img/stock/mobile.jpg" alt="phone in hand">
-                    <img src="/img/stock/flats.jpg" alt="yellow apartments">
-                    <img src="/img/stock/study.jpg" alt="a woman apparently studying">
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <footer>
-        <div id="footer__links">
-            <div><a href="/services">Services</a></div>
-            <div><a href="/quote">Get a quote</a></div>
-            <div><a href="/portfolio">Portfolio</a></div>
-            <div><a href="/about">About</a></div>
-            <div><a href="/contact">Contact</a></div>
-        </div>
-
-        <div id="footer__message">
-            <span>Let's work together</span>
-            <span><a href="/contact">Drop me a message</a></span>
-        </div>
-
-        <div id="footer__legal">
-            <a href="/policies/terms">Terms & Conditions</a> | <a href="/policies/privacy">Privacy Policy</a>
-        </div>
-
-        <div id="footer__bottom">
-            <div id="copy">&copy;
-                <script defer type="text/javascript">
-                    document.write(new Date().getFullYear());
-                </script> Ashley Howard. All rights reserved.
-            </div>
-            <div id="footer__palette">
-                <div title="#ffffff"></div>
-                <div title="#000000"></div>
-                <div title="#2b97fb"></div>
-            </div>
-            <div id="footer__social">
-                <ul>
-                    <li><a href="https://m.me/shleyhoward" rel="noopener noreferrer" target="_blank">Messenger</a></li>
-                    <li><a href="https://twitter.com/shleyhow" rel="noopener noreferrer" target="_blank">Twitter</a>
+                <ul class="ticks__heading">
+                    <li>
+                        <h3 class="heading">Manage your online shop easily</h3>
+                        <p>I typically use WooCommerce or Shopify, which both have mobile apps to run your store easily
+                            no matter where you are.
+                        </p>
                     </li>
-                    <li><a href="https://www.instagram.com/shley.how" rel="noopener noreferrer"
-                            target="_blank">Instagram</a></li>
+
+                    <li>
+                        <h3 class="heading">Perfecting your CTAs</h3>
+                        <p>Call-to-actions prompt your customers to take a certain action and I’ll advise you on how to
+                            improve upon them, as naming and placement are important, to generate more leads or
+                            purchases.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3 class="heading">Built-in Analytics</h3>
+                        <p>Knowing your audience is important, which is why I’ll connect your site to Google Analytics,
+                            which gives you a breakdown of everyone visiting your site, from their location, to their
+                            age and gender, and much more.
+
+                        </p>
+                    </li>
                 </ul>
+
+                <a class="btn btn--secondary" href="/services">View my services</a>
             </div>
-        </div>
 
-    </footer>
-
-    <div id="cookie-warning" onclick="acceptCookieWarning()">
-        <div>
-            By using this website, you agree to my use of <a href="/policies/privacy.html">cookies</a>. I use cookies
-            to
-            provide you with a great experience
-            and to help my website run effectively.
-        </div>
-
-        <div title="Click to hide this notice">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-            </svg>
         </div>
     </div>
+</section>
 
-    <script src="/scripts/main.js"></script>
-</body>
+<section id="communication" class="section section__card accent--aqua reversed">
+    <div class="container">
+        <div class="row">
 
-</html>
+            <div class="col col-6 image">
+                <img src="/assets/images/laptop-and-notes.jpg" alt="a notebook with a pen on top, with a laptop and phone next to it" height="1280" width="1920">
+            </div>
+
+            <div class="col col-6 content">
+                <h2 class="heading-1 line--top">Communication is key</h2>
+                <p>For me, communication is really important, and being on the same page with a client is one of my top
+                    priorities. The more in-depth we talk about your project, the more aligned the result will be to
+                    your expectations.
+                </p>
+
+                <ul class="ticks__heading">
+                    <li>
+                        <h3 class="heading">Let's talk... a lot</h3>
+                        <p>I recommend we talk as much as we can, not only to give feedback and talk about what we like
+                            and what can be improved, but to move through the project smoothly and to stay on the same
+                            page.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3 class="heading">I’m here to bring the best out of your project</h3>
+                        <p>Sometimes it’s hard to put a concept or idea into words, which is why I provide
+                            through-provoking worksheets that we can go through together over a video call.
+                        </p>
+                    </li>
+                </ul>
+
+                <a class="btn btn--secondary" href="/services">View my services</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section section__card accent--aqua">
+    <div class="container">
+        <div class="row">
+            <div class="col col-6 image scale-down">
+                <picture>
+                    <source type="image/webp" srcset="/assets/images/accessible.webp">
+                    <img src="/assets/images/accessible.png" alt="an oversimplified illustration showing a successful colour contrast"
+                        width="2014" height="1422" />
+                </picture>
+            </div>
+
+            <div class="col col-6 content">
+                <h2 class="heading-1 line--top">I build with accessibility in mind</h2>
+                <p>Have you ever looked at a website and squinted at the text? Maybe the font was too small, or maybe
+                    the colour of the text was too similar to the background. I’m here to prevent that from happening.
+                </p>
+
+                <ul class="ticks__heading">
+                    <li>
+                        <h3 class="heading">I create accessible styles</h3>
+                        <p>I’ll help you pick out the best colours and fonts that not only suit your company’s branding,
+                            but are also legible and contrast well.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3 class="heading">I use semantic and SEO-friendly code</h3>
+                        <p>Google prioritises websites whose code is easily readable and uses modern practises. I’ll
+                            help you with that.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3 class="heading">Finalising a project</h3>
+                        <p>Before I finish up, I always do tests to make sure your website is accessible. It must pass
+                            legibility and contrast tests, but also has to work well for screen readers and disabled
+                            users.
+                        </p>
+                    </li>
+                </ul>
+
+                <a class="btn btn--secondary" href="/services">View my services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include reviews.html %}
+
+<section class="section section__card accent--aqua reversed">
+    <div class="container">
+        <div class="row">
+
+            <div class="col col-6 image scale-down">
+                <!-- <img class="lets-create" src="/assets/images/lets-create-something-awesome.gif" alt="a GIF that stacks the words: Let's create something awesome" height="200" width="400"> -->
+
+                <video class="lets-create" autoplay muted loop height="200" width="400">
+                    <source src="/assets/images/lets-create.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="col col-6 content">
+                <h2 class="heading-1 line--top">An optimistic future</h2>
+                <p>I am currently reducing the cost of packages by 20% for businesses whose <strong>primary</strong>
+                    goal relates to eco-friendliness, education, human rights, or equality.
+                </p>
+
+                <a class="btn btn--secondary" href="/contact">Let's chat</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% include latest-project.html %}

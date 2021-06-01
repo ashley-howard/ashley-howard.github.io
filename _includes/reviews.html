@@ -1,0 +1,24 @@
+<section class="section banner banner__reviews">
+    <div class="container">
+        <h2 class="heading-2 line--top">What they said</h2>
+        {%- for review in site.data.reviews limit:3 -%}
+        
+        <figure>
+            <figcaption class="heading-3">
+                {{ review.name }}
+            </figcaption>
+                      
+            <blockquote class="banner__review" 
+            {% if review.cite %} cite="{{review.cite}}" {% endif %}>                           
+                <p>{{ review.excerpt }}</p>
+            </blockquote>
+            
+            {%- if review.case -%}
+            <a href="/case-study/{{review.case}}" class="btn btn--secondary">View case study</a>
+            {%- elsif review.site -%}
+            <a href="{{review.site}}" class="btn btn--secondary">View site</a>
+            {%- endif -%}
+        </figure>
+        {%- endfor -%}
+    </div>
+</section>

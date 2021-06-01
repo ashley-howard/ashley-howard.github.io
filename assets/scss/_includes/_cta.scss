@@ -1,0 +1,27 @@
+@use "../_dependencies/colours";
+
+.banner__cta {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h2 {
+        padding: 0;
+        color: white !important;
+        margin-top: 0;
+    }
+
+    .btn {
+        margin-bottom: 0;
+        padding: 9px 12px;
+        background: white;
+        color: colours.$blue-600;
+        min-width: 14em;
+
+        &::before {
+            background: colours.$aqua-400;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@use "../_dependencies/assets";
+@use "../_dependencies/colours";
+@use "../_dependencies/dimensions";
+
+.services {
+    counter-reset: h2;
+
+    article {
+        h2::before {
+            counter-increment: h2;
+            content: counter(h2) ". ";
+        }
+    }
+
+    h3 {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 0.1em;
+    }
+
+    article ul {
+
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media only screen and (min-width: dimensions.$mq-m) {
+            display: flex;
+        }
+
+        li {
+            flex-basis: 47%;
+        }
+
+    }
+
+
+    @media only screen and (max-width: dimensions.$mq-l) {
+        .service .row {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .service {
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 52vw;
+
+            @media only screen and (min-width: dimensions.$mq-l) {
+                height: 100%;
+            }
+        }
+    }
+
+}
+
+.six-steps {
+    ul {
+        counter-reset: li;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+
+        @media only screen and (min-width: dimensions.$mq-m) {
+            flex-direction: row;
+            margin-top: 6em;
+        }
+
+        .step {
+            list-style: none;
+            position: relative;
+            margin-bottom: 2em;
+
+            @media only screen and (min-width: dimensions.$mq-m) {
+                flex-basis: 49%;
+            }
+
+            @media only screen and (min-width: dimensions.$mq-l) {
+                flex-basis: 32%;
+            }
+        }
+
+        p {
+            position: relative;
+        }
+
+        p::before {
+            position: absolute;
+            font-family: "Yeseva One", cursive;
+            font-size: 5em;
+            color: var(--primary);
+            opacity: 0.12;
+            top: -33px;
+            left: 0;
+            counter-increment: li;
+            content: counter(li);
+        }
+
+        li:nth-child(1) p::before {
+            left: 6px;
+        }
+
+        h2,
+        p {
+            padding-left: 4rem;
+        }
+
+        h2 {
+            @media only screen and (min-width: dimensions.$mq-m) {
+                margin-bottom: 0.5em;
+            }
+
+            @media only screen and (min-width: dimensions.$mq-l) {
+                padding-left: 0;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}

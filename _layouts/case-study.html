@@ -1,0 +1,99 @@
+---
+layout: default
+class: case-study
+---
+<article class="section">
+    <div class="container">
+        <header class="header">
+            <h1 class="title line--top">{{ page.title }}</h1>
+        </header>
+
+        <section class="content">
+            {{ content }}
+        </section>
+
+        <section class="review">
+            {%- for review in site.data.reviews -%}
+            {%- if page.slug==review.case -%}
+            <h2>
+                What
+
+                {% if review.pronoun %}
+                {{ review.pronoun }}
+                {% else %}
+                they
+                {% endif %}
+
+                said
+            </h2>
+            <blockquote {% if review.cite %} cite="{{review.cite}}" {% endif %}>
+                <p>{{ review.content }}</p>
+            </blockquote>
+            {%- endif -%}
+            {%- endfor -%}
+        </section>
+
+        <section>
+            <h2>More Information</h2>
+            <ul>
+                {%- if page.framework -%}
+                <li>Framework: {{ page.framework }}</li>
+                {%- endif -%}
+
+                {%- if page.languages -%}
+                <li>Languages: {{ page.languages | array_to_sentence_string }}</li>
+                {%- endif -%}
+
+                {%- if page.tools -%}
+                <li>Tools: {{ page.tools }}</li>
+                {%- endif -%}
+
+                <li>Completed: {{ page.date | date: "%B %Y" }}</li>
+
+                {%- if page.link -%}
+                <li><a href="{{ page.link }}">Live site</a> (may have been modified since)</li>
+                {%- endif -%}
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div class="banner banner__case-studies">
+            <div class="container">
+                <h2 class="heading-2 line--top">Other case studies</h2>
+                {%- assign case-studies = site.case-studies | where_exp:"case-study",
+                "case-study.type == 'main'" | sort:"date" | reverse -%}
+                {%- for case-study in case-studies limit:3 -%}
+                <article class="banner__case-study">
+                    <a href="{{ case-study.url }}" class="case-study-link">
+                        <img src="/assets/images/case-studies/{{ case-study.thumbnail }}" alt="">
+                        <h3 class="heading-3">{{ case-study.title }}</h3>
+                    </a>
+                </article>
+                {%- endfor -%}
+            </div>
+        </div>
+    </footer>
+</article>
+
+{% comment %}
+To use in the future - it excludes current page
+<footer>
+    <div class="banner banner__case-studies">
+        <div class="container">
+            <h2 class="heading-2 line--top">Other case studies</h2>
+            {%- assign case-studies = site.case-studies | where_exp:"case-study","case-study.url != page.url" |
+            where_exp:"case-study",
+            "case-study.type == 'main'" | sort:"date" | reverse -%}
+            {%- for case-study in case-studies limit:3 -%}
+            <article class="banner__case-study">
+                <a href="{{ case-study.url }}" class="case-study-link">
+                    <img src="/assets/images/case-studies/{{ case-study.thumbnail }}" alt="">
+                    <h3 class="heading-3">{{ case-study.type | capitalize }} | {{ case-study.title }}</h3>
+                </a>
+            </article>
+            {%- endfor -%}
+        </div>
+    </div>
+</footer>
+{% endcomment %}

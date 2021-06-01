@@ -1,0 +1,34 @@
+# sort: newest descending
+
+# To add a button for reviews add the line:
+# case: name-of-case-study
+
+- name: Max, Amigo Tech
+  rating: 5
+  pronoun: he
+  excerpt: Ashley did a great job helping out with Amigo Technology's website redesign and redevelopment. I would recommend him 👍
+  content: Ashley did a great job helping out with Amigo Technology's website redesign and redevelopment. I would recommend him 👍
+  cite: https://goo.gl/maps/LsfMFGQoTNamhJoJA
+  case: amigo-tech
+
+- name: Tina, Closet 23
+  rating: 5
+  pronoun: she
+  excerpt: Ashley always knew how to work around the coding system! No design was impossible. The level understanding of the softwares and the amount of experience he has was a faultless combination for a great website.
+  content: Not sure where to start! From the initial contact, to the concept, design, ideas, everything - I could not fault Ashley at all. The service I received was the most professional I had come across but he also worked on my website like it was his own! He was as meticulous with his level of detail as I would have been! When I put across ideas for our website, he would make those ideas come to life but always provided me with alternatives too (just in case) which proved to be the best approach as often what I thought I wanted was not the case - I ended up preferring other concepts that was put forward to me. Another thing I think is important to point out is that Ashley always knew how to work around the coding system! No design was impossible. The level understanding of the softwares and the amount of experience he has was a faultless combination for a great website. Thank you to Ashley for your patience and dedication to our website.
+  cite: https://goo.gl/maps/ni8BLpNVUwi7XBs47
+  case: closet-23
+
+- name: Undisclosed
+  rating: 5
+  excerpt: Ashley is very a knowledgable web designer, with a good eye for details. He followed the project from start to finish and I had a great experience throughout. He was able to provide sleek solutions to various things in a very proactive and professional way. Truly recommended!!!
+  content: Ashley is very a knowledgable web designer, with a good eye for details. He followed the project from start to finish and I had a great experience throughout. He was able to provide sleek solutions to various things in a very proactive and professional way. Truly recommended!!!
+  cite: https://goo.gl/maps/MhGLFgWCJBs2C6Gd8
+  case: one-page-portfolio
+
+- name: Dee, A-kin
+  pronoun: she
+  rating: 5
+  excerpt: Amazing professional service and a real eye for web design!
+  content: Amazing professional service and a real eye for creative fun Web design!
+  cite: https://goo.gl/maps/j2Yoaw5HH1iSp7F1A
