@@ -1,0 +1,83 @@
+@use "../_dependencies/assets";
+@use "../_dependencies/dimensions";
+@use "../_dependencies/colours";
+
+.main-header {
+    height: 50px;
+
+    @media only screen and (min-width: 768px) {
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+
+        >* {
+            z-index: 1;
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .branding {
+        display: flex;
+        height: auto;
+
+        &:focus-visible {
+            outline: 1px dotted black;
+        }
+
+        .to-blue &:focus-visible {
+            outline: 1px dotted white;
+        }
+
+        .logo {
+            margin-right: 10px;
+        }
+
+        .meta {
+            font-size: 0.8em;
+            display: flex;
+            flex-direction: column;
+            font-family: assets.$primary-font;
+            justify-content: center;
+        }
+
+        .name {
+            margin-bottom: -5px;
+            color: var(--accent-primary-alt);
+
+            .to-blue & {
+                color: white;
+            }
+        }
+
+
+    }
+}
+
+.job-title {
+    color: #32817a;
+
+    .light & {
+        color: #32817a;
+    }
+
+    .dark & {
+        color: colours.$aqua-400;
+    }
+
+    .to-blue & {
+        color: colours.$aqua-300;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: colours.$aqua-400;
+    }
+}

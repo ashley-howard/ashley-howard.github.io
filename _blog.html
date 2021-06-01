@@ -1,0 +1,20 @@
+---
+title: Blog
+permalink: /blog
+class: blog
+---
+<section class="section">
+    <div class="inner-container">
+        <h1>Latest Posts</h1>
+
+        <ul>
+            {%- for post in site.posts -%}
+            <li style="margin-bottom: 40px;">
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h3>Posted by {{ post.author | capitalize }}</h3>
+                {{ post.excerpt }}
+            </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+</section>

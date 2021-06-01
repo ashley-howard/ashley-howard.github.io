@@ -1,0 +1,85 @@
+---
+title: Contact
+permalink: /contact
+class: contact
+---
+<section class="section intro">
+    <div class="container">
+        <h1 class="heading-1 line--top">Get in touch</h1>
+
+        <p class="description">Click on a heading below to go to the appropriate form. </p>
+
+        <hr>
+
+        <ol>
+            <li>
+                <h2 class="heading-2">
+                    <a href="#contact-form">Interested in working with me?</a>
+                </h2>
+                <p>Make sure you've checked out my <a href="/services">services</a> to see what I offer. I look forward to hearing about your project!</p>
+            </li>
+
+            <li>
+                <h2 class="heading-2">
+                    <a href="#enquiry">A quick enquiry</a>
+                </h2>
+                <p>Whether you just want to make a quick enquiry, say hi, or you’re on your lunch break, this form won’t
+                    take long.</p>
+            </li>
+        </ol>
+
+        <hr>
+
+    </div>
+</section>
+
+{% include contact-form.html type="full" %}
+
+<section id="enquiry" class="section section__card contact-form accent--aqua">
+    <div class="container">
+        <div class="row">
+            <div class="col col-6">
+                <h2 class="heading-1 line--top">A quick enquiry</h2>
+
+                <p>If you want to say hi or have a quick question, let me know here.</p>
+
+                <p>Or, you can directly reach me:</p>
+
+                <ul>
+                    <li>Phone: <a href="tel:{{site.telephone}}">{{site.telephone}}</a></li>
+                    <li>Email: <a href="mailto:{{site.email}}">{{site.email}}</a></li>
+                </ul>
+
+                <h3 class="heading-3">Availability</h3>
+
+                <ul>
+                    <li>Monday - Friday</li>
+                    <li>10am to 6pm</li>
+                </ul>
+
+                <p>Unfortunately I can’t answer all calls straight away, so please leave a voicemail or WhatsApp message
+                    and I'll try to
+                    get back to you as soon as possible.</p>
+            </div>
+
+            <div class="col col-6 form">
+                <form id="enquiry-form" name="enquiry-form" accept-charset="utf-8"
+                    action="https://formspree.io/f/{{site.formspree_enquiry}}" method="post">
+                    <fieldset class="fs-frm-inputs">
+                        <label class="label" for="enquiry-full-name">Your name*</label>
+                        <input type="text" name="name" id="enquiry-full-name" placeholder="John Smith" required="">
+                        <label class="label" for="enquiry-email-address">Your email address*</label>
+                        <input type="email" name="_replyto" id="enquiry-email-address" placeholder="johnsmith@gmail.com"
+                            required="">
+                        <label class="label" for="enquiry-message">Your message*</label>
+                        <textarea rows="5" name="message" id="enquiry-message"
+                            placeholder="Hi there, I would like to know more about..." required=""></textarea>
+                        <input type="hidden" name="_subject" id="enquiry-email-subject" value="Quick enquiry">
+                    </fieldset>
+                    <button value="Submit" class="btn btn--primary">Send message</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>

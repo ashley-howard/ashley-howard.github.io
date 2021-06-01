@@ -1,0 +1,94 @@
+---
+title: Portfolio
+permalink: /portfolio
+class: portfolio
+---
+<section class="section projects projects--main">
+  <div class="container">
+    <h1 class="title line--top">Main projects</h1>
+    <div class="projects--list">
+      {%- assign case-study = site.case-studies | sort: 'date' -%}
+      {%- for case-study in site.case-studies reversed -%}
+      {%- if case-study.type == "main" -%}
+      <article class="project">
+        <div class="row">
+          <div class="col col-6">
+            <h2 class="heading-2">{{ case-study.title }}</h2>
+
+            <p>{{ case-study.description }}</p>
+
+            <ul class="project--details">
+              {%- if case-study.framework -%}
+              <li>Framework: {{ case-study.framework }}</li>
+              {%- endif -%}
+
+              {%- if case-study.languages -%}
+              <li>Languages: {{ case-study.languages | array_to_sentence_string: "" }}</li>
+              {%- endif -%}
+
+              {%- if case-study.tools -%}
+              <li>Tools: {{ case-study.tools }}</li>
+              {%- endif -%}
+            </ul>
+
+            {% if case-study.draft %}
+            <a class="btn btn--secondary" href="{{ case-study.link }}">View site</a>
+            {% else %}
+            <a class="btn btn--secondary" href="{{ case-study.url }}">View case study</a>
+            {% endif %}
+          </div>
+
+          <div class="col col-6 image">
+            <img src="/assets/images/case-studies/{{ case-study.thumbnail }}" alt="a homepage screenshot of {{ case-study.title }}" height="{{ case-study.height }}" width="{{ case-study.width }}">
+          </div>
+        </div>
+      </article>
+      {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% comment %}
+<section class="section projects projects--side">
+  <div class="container">
+    <h1 class="title line--top">Side projects</h1>
+    <div class="projects--list">
+      {%- assign case-study = site.case-studies | sort: 'date' -%}
+      {%- for case-study in site.case-studies reversed -%}
+      {%- if case-study.type == "side" -%}
+      <article class="project">
+        <div class="row">
+          <div class="col col-6">
+            <img src="assets/images/case-studies/{{ case-study.thumbnail }}" alt="">
+          </div>
+
+          <div class="col col-6">
+            <h2 class="heading-2"><a href="{{ case-study.url }}">{{ case-study.title }}</a></h2>
+
+            <p>{{ case-study.description }}</p>
+
+            <ul class="project--details">
+              {%- if case-study.framework -%}
+              <li>Framework: {{ case-study.framework }}</li>
+              {%- endif -%}
+
+              {%- if case-study.languages -%}
+              <li>Languages: {{ case-study.languages | array_to_sentence_string: "" }}</li>
+              {%- endif -%}
+
+              {%- if case-study.tools -%}
+              <li>Tools: {{ case-study.tools }}</li>
+              {%- endif -%}
+            </ul>
+
+            <a class="btn btn--secondary" href="{{ case-study.url }}">View case study</a>
+          </div>
+        </div>
+      </article>
+      {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% endcomment %}

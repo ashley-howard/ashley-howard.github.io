@@ -1,0 +1,95 @@
+<section {% if include.type=="full" %} id="contact-form" {% else %} id="enquiry-form" {% endif %}
+    class="section section__card contact-form accent--aqua">
+    <div class="container">
+        <div class="row">
+
+            <div class="col col-6">
+                <h2 class="heading-1 line--top">Interested in working with me?</h2>
+
+                {% if include.type == "full" %}
+
+                <p>Every business deserves a fresh, modern website, that
+                    fits their business.</p>
+
+                {% else %}
+
+                <p>Use this form to say hi or for a quick enquiry. </p>
+
+                <p>If instead you're interested in working with me, make sure you've checked
+                    out my <a href="/services">services</a> which has a more in-depth form at the bottom of the
+                    page.
+                </p>
+
+                {% endif %}
+
+                <ul class="ticks__heading">
+                    <li>
+                        <h3 class="heading">Let's chat in depth</h3>
+                        <p>I offer a free consultation by phone/video call, to see if we're a good fit and if I'm able
+                            to help you.</p>
+                    </li>
+
+                    <li>
+                        <h3 class="heading">Get a quote</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nemo?</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col col-6 form">
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" {%- if include.type=="full" -%}
+                    action="https://formspree.io/f/{{site.formspree_full}}" {%- else -%}
+                    action="https://formspree.io/f/{{site.formspree_enquiry}}" {%- endif -%} method="post">
+                    <fieldset id="fs-frm-inputs">
+
+                        <label class="label" for="full-name">Your name*</label>
+                        <input type="text" name="name" id="full-name" placeholder="John Smith" required="">
+
+                        <label class="label" for="email-address">Your email address*</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="johnsmith@gmail.com"
+                            required="">
+
+                        {% if include.type == "full" %}
+                        <label class="label" for="business-name">Your business name</label>
+                        <input type="text" name="business-name" id="business-name" placeholder="John Smith's Business">
+
+                        <label class="label" for="website">Your
+                            website / social media url</label>
+                        <input type="text" name="website" id="website" placeholder="johnsmith.co.uk">
+                    </fieldset>
+
+                    <fieldset id="fs-frm-selects">
+                        <legend class="label" style="margin-bottom: 1em;">Which service(s) are you interested in?
+                        </legend>
+
+                        {%- for service in site.services -%}
+                        <input type="checkbox" name="service" value="{{ service.title }}" id="form-{{ service.link }}">
+                        <label for="form-{{ service.link }}">{{ service.title }}</label><br>
+                        {%- endfor -%}
+
+                        <input type="checkbox" name="service" value="Something else" id="form-other">
+                        <label for="form-other">Something else (write below)</label><br>
+                    </fieldset>
+
+                    <label class="label" for="message">Can you tell me a bit about you and your project?*</label>
+                    <textarea rows="5" name="message" id="message"
+                        placeholder="Tell me a bit about yourself, your business and your project idea here"
+                        required=""></textarea>
+
+                    {% else %}
+                    <label class="label" for="message">Your message*</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Write your message here"
+                        required=""></textarea>
+                    {% endif %}
+
+                    <input type="hidden" name="_subject" id="email-subject" {% if include.type=="full" %}
+                        value="Services enquiry" {% else %} value="Quick enquiry" {% endif %}>
+
+
+                    <button value="Submit" class="btn btn--primary">Send message</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
