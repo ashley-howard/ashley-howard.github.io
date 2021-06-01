@@ -1,0 +1,169 @@
+@use "../_dependencies/colours";
+@use "../_dependencies/dimensions";
+
+.about section:first-of-type {
+    .container {
+        @media only screen and (max-width: dimensions.$mq-m) {
+            position: relative;
+            z-index: 0;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background: rgba(#7AACB3, 0.21);
+                height: 450px;
+                width: 450px;
+                top: 3em;
+                right: -3em;
+                transform: rotate(-9deg);
+                z-index: -1;
+            }
+        }
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+        grid-template-areas: "h1"
+        "img"
+        "p";
+
+        h1 {
+            grid-area: h1;
+            display: block;
+        }
+
+        picture {
+            grid-area: img;
+        }
+
+        picture img {
+            height: auto;
+
+            @media only screen and (min-width: dimensions.$mq-m) {
+                width: 100%;
+                height: 670px;
+                object-fit: cover;
+                object-position: 47%;
+                --bs-colour: #7AACB3;
+                box-shadow: 7px 7px 10px var(--bs-colour);
+                margin-left: initial;
+                margin-right: initial;
+                max-width: initial;
+
+                .light & {
+                    --bs-colour: #7AACB3;
+                }
+
+                .dark & {
+                    --bs-colour: #00000042;
+                }
+
+                @media (prefers-color-scheme: dark) {
+                    --bs-colour: #00000042;
+                }
+            }
+        }
+
+        .content {
+            grid-area: p;
+        }
+
+        @media only screen and (min-width: dimensions.$mq-m) {
+            grid-template-columns: 47% 47%;
+            grid-template-rows: auto 1fr;
+            gap: 0px 4%;
+            grid-template-areas:
+                "img h1"
+                "img p";
+        }
+
+        @media only screen and (max-width: dimensions.$mq-m) {
+
+            h1,
+            img {
+                margin-bottom: 1em;
+            }
+
+            h1 {
+                text-align: center;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            .wave {
+                font-size: 0.8em;
+                display: block;
+            }
+        }
+    }
+
+}
+
+.about {
+    @media only screen and (min-width: dimensions.$mq-m) {
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .landscape {
+            .row {
+                flex-direction: column;
+            }
+
+            .content {
+                margin-bottom: 1rem;
+            }
+
+            .image img {
+                height: 490px;
+            }
+        }
+
+        .col {
+            flex-basis: 47%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+        }
+    }
+
+    .content {
+        margin-top: 0;
+
+        @media only screen and (min-width: dimensions.$mq-l) {
+            margin-top: 0;
+        }
+    }
+
+    .image img {
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+
+        @media only screen and (min-width: dimensions.$mq-m) {
+            // height: 786px;
+            height: 700px;
+        }
+    }
+
+    &__socials {
+        svg {
+            width: 17px;
+            height: 17px;
+            fill: var(--primary);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a+a {
+            margin-left: 0.5em;
+        }
+    }
+
+}

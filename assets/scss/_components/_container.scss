@@ -1,0 +1,30 @@
+@use "../_dependencies/dimensions";
+@use "../_dependencies/colours";
+
+.wrapper {
+    border-radius: 0px;
+    overflow: hidden;
+    position: relative;
+    background: var(--body);
+    color: var(--primary);
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+
+    &.open {
+        transform: translate(- dimensions.$wrapper-w, dimensions.$wrapper-h);
+        border-radius: 15px;
+    }
+
+    &.to-blue {
+        background: var(--body-alt);
+        color: white;
+    }
+}
+
+.container {
+    max-width: dimensions.$max-width;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100vw - #{dimensions.$padding * 2});
+}

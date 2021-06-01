@@ -1,0 +1,102 @@
+@use "../_dependencies/colours";
+@use "../_dependencies/dimensions";
+@use "../_mixins/shapes";
+
+.banner {
+    background: var(--body-alt);
+    max-width: initial !important;
+    --border: 5px solid #{colours.$aqua-300};
+    border-top: var(--border);
+    border-bottom: var(--border);
+    padding: 2em 0 2em 0 !important;
+    margin-top: 3em;
+    overflow: hidden;
+    @include shapes.square;
+    transition: background 1s;
+    // z-index: -1;
+
+    @media only screen and (min-width: dimensions.$mq-l) {
+        padding: 5em 0 4em 0 !important;
+        margin-top: 4em;
+    }
+
+    h2 {
+        color: colours.$aqua-300 !important;
+        margin-bottom: 1em !important;
+        padding-right: 2em;
+        margin-top: dimensions.$padding;
+
+        &::before {
+            background: colours.$aqua-300;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media only screen and (min-width: dimensions.$mq-l) {
+            flex-direction: row;
+        }
+
+        &>* {
+            flex-basis: 23%;
+            margin-bottom: 3rem;
+
+            @media only screen and (min-width: dimensions.$mq-l) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .container>* {
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            height: 175px;
+            width: 100%;
+            object-fit: cover;
+
+            @media only screen and (min-width: dimensions.$mq-l) {
+                height: 160px;
+            }
+        }
+
+        h3,
+        figcaption {
+            margin-top: 0;
+            color: colours.$aqua-300 !important;
+        }
+
+        p {
+            color: white;
+        }
+
+        .btn {
+            color: white;
+        }
+    }
+
+    &__case-studies {
+        .banner__case-study {
+            transition: transform .2s;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+
+    a:not([class]) {
+        color: colours.$aqua-300;
+        text-decoration: underline;
+    }
+
+    li {
+        color: white;
+    }
+}

@@ -1,0 +1,88 @@
+@use "../_dependencies/colours";
+@use "../_dependencies/assets";
+@use "../_dependencies/dimensions";
+
+.footer {
+    text-align: center;
+    font-family: assets.$primary-font;
+    margin-top: 3em;
+    padding-bottom: 1em;
+
+    .name {
+        margin: -5px 0;
+        color: var(--accent-primary-alt);
+
+        .to-blue & {
+            color: white;
+        }
+    }
+
+    .job-title {
+        margin-bottom: 15px;
+        // color: #32817a;
+
+        // .to-blue & {
+        //     color: white;
+        // }
+    }
+
+    &--socials {
+        margin-top: 5px;
+
+        & svg {
+            width: 20px;
+            height: 20px;
+            margin: 0 4px;
+
+            .to-blue & {
+                fill: white;
+            }
+        }
+    }
+
+    hr {
+        height: 2px;
+        width: 24px;
+        border-width: 0;
+        background-color: colours.$aqua-400;
+
+        .to-blue & {
+            background-color: colours.$blue-400;
+        }
+    }
+
+    .copyright {
+        font-size: 0.8em;
+        font-family: assets.$body-font;
+        margin-top: 30px;
+        color: var(--accent-primary-alt);
+    }
+
+    .settings {
+        border: 0;
+        padding: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    a,
+    button {
+        text-decoration: none;
+        color: var(--accent-primary-alt);
+        fill: var(--accent-primary-alt);
+    }
+
+    .to-blue & {
+
+        a,
+        p,
+        button {
+            color: white;
+        }
+    }
+
+}

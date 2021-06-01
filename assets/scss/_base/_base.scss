@@ -1,0 +1,94 @@
+@use "../_dependencies/assets";
+@use "../_dependencies/colours";
+
+:root {
+    font-size: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+::selection {
+    background: var(--accent-primary);
+    color: var(--body);
+}
+
+body {
+    background: var(--secondary);
+    min-height: 100vh;
+    width: 100%;
+    font-family: assets.$body-font;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    font-weight: normal;
+    transition: background 1s;
+}
+
+a {
+    color: var(--accent-secondary-alt);
+
+    .light .accent--gold &:not([class]) {
+        color: var(--accent-secondary-alt);
+    }
+
+    .dark .accent--gold &:not([class]) {
+        color: colours.$gold-500;
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+        .accent--gold &:not([class]) {
+            color: colours.$gold-500;
+        }
+
+    }
+}
+
+a[target="_blank"]::after {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    margin: 0 3px 0 6px;
+}
+
+figure.important {
+    border-left: 4px solid #7aacb3;
+    padding-left: 1em;
+    margin: 2em;
+
+    figcaption {
+        margin-top: 1em;
+        font-size: 0.9em;
+    }
+}
+
+p,
+blockquote {
+    &+p {
+        margin-top: .833334em;
+    }
+
+    &+.btn {
+        margin-top: 1em;
+    }
+}
+
+blockquote p {
+    &::before {
+        content: "“";
+    }
+
+    &::after {
+        content: "”";
+    }
+}
+
+.logo {
+    fill: var(--accent-primary-alt);
+    width: 50px;
+    height: 50px;
+
+    .to-blue & {
+        fill: white;
+    }
+}

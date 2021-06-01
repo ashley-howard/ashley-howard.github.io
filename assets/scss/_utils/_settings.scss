@@ -1,0 +1,51 @@
+@use "../_dependencies/colours";
+@use "../_dependencies/dimensions";
+
+#settings-menu {
+    display: none;
+    position: fixed;
+    background: var(--body);
+    bottom: 0;
+    z-index: 999;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.888888em;
+    left: 0;
+    right: 0;
+    border: 1px solid #7aacb3;
+    width: min(calc(100vw - #{dimensions.$padding}), 500px);
+    color: var(--primary);
+
+    .container {
+        width: inherit;
+        padding: 1.6rem 1rem 1rem 1rem;
+    }
+
+    .option {
+        margin-bottom: 1em;
+    }
+
+    input {
+        position: fixed;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    label {
+        padding: .3em .5em;
+        cursor: pointer;
+        color: var(--primary);
+        font-weight: 600;
+    }
+
+    input:checked+label,
+    label:hover {
+        background: var(--accent-secondary-alt-darker);
+        color: var(--body);
+    }
+
+    p {
+        margin-bottom: 0.5em;
+    }
+}
