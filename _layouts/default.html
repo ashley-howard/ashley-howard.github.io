@@ -36,6 +36,10 @@
     {%- if site.google_analytics and jekyll.environment == 'production' -%}
     {%- include analytics.html -%}
     {%- endif -%}
+    
+    {%- if jekyll.environment == 'production' -%}
+    {%- include hotjar.html -%}
+    {%- endif -%}
 </head>
 
 {% if page.class %}
