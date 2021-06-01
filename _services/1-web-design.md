@@ -2,7 +2,7 @@
 title: Web design & development
 link: web-design
 description: Bespoke websites from scratch. From static sites, to blogging and e-commerce platforms.
-image: /assets/images/photoshop.jpg
+image: /assets-copy/images/photoshop.jpg
 image_alt: a computer screen showing designs in photoshop
 accent: teal
 starting_at:

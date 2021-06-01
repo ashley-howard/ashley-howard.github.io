@@ -6,13 +6,13 @@
         {
             "label": "Jekyll: Watch SASS",
             "type": "shell",
-            "command": "sass assets/scss/main.scss assets/styles/main.min.css --watch --style=compressed",
+            "command": "sass assets-copy/scss/main.scss assets-copy/styles/main.min.css --watch --style=compressed",
             "problemMatcher": []
         },
         {
             "label": "Jekyll: Build SASS + PostCSS",
             "type": "shell",
-            "command": "sass assets/scss/main.scss assets/styles/main.min.css --style=compressed && postcss assets/styles/main.min.css --replace --use autoprefixer",
+            "command": "sass assets-copy/scss/main.scss assets-copy/styles/main.min.css --style=compressed && postcss assets-copy/styles/main.min.css --replace --use autoprefixer",
             "problemMatcher": []
         }
     ]

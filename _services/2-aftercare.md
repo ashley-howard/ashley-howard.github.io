@@ -2,7 +2,7 @@
 title: Aftercare
 link: aftercare
 description: PAYG and monthly maintenance to keep your site up-to-date and efficient.
-image: /assets/images/desk-3.jpg
+image: /assets-copy/images/desk-3.jpg
 image_alt: a blurred shot showing a mouse and keyboard in front of a computer
 accent: blue
 starting_at:

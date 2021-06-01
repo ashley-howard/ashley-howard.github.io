@@ -36,8 +36,8 @@ My client wanted the content to appear on scroll, so I ended up creating a "lazy
 My client wanted the content to appear on scroll, so I ended up making use of getBoundingClientRect().top and onscroll. When the content reaches a certain point on the page, it adds a CSS class which fades in the content smoothly. Shown below:
 {% endcomment %}
 
-<video controls preload="none" width="1200" height="694" loop="" poster="/assets/images/case-studies/one-page-portfolio/scrolling.png">
-    <source src="/assets/images/case-studies/one-page-portfolio/scrolling.mp4" type="video/mp4">
+<video controls preload="none" width="1200" height="694" loop="" poster="/assets-copy/images/case-studies/one-page-portfolio/scrolling.png">
+    <source src="/assets-copy/images/case-studies/one-page-portfolio/scrolling.mp4" type="video/mp4">
 </video>
 
 {% comment %}
@@ -116,8 +116,8 @@ updateProjectUrl()
 
 On mobile (and tablets), the sidebar takes up the full width of the screen. The content is then loaded upon clicking on a project. A back arrow at the top-left allows the user to easily head back to the main menu.
 
-<video controls preload="none" width="352" height="694" loop="" poster="/assets/images/case-studies/one-page-portfolio/mobile.png"  style="max-width: min-content;">
-    <source src="/assets/images/case-studies/one-page-portfolio/mobile.mp4" type="video/mp4">
+<video controls preload="none" width="352" height="694" loop="" poster="/assets-copy/images/case-studies/one-page-portfolio/mobile.png"  style="max-width: min-content;">
+    <source src="/assets-copy/images/case-studies/one-page-portfolio/mobile.mp4" type="video/mp4">
 </video>
 
 {% comment %}

@@ -76,7 +76,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/branding/put-logo-here.png
+      image: /assets-copy/img/branding/put-logo-here.png
 
 # kramdown:
   # auto_ids: false ## why was this on?

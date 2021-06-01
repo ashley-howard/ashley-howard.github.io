@@ -2,7 +2,7 @@
 title: Web help & advice
 link: web-help
 description: A one-to-one chat about anything web design or development related.
-image: /assets/images/desk.jpg
+image: /assets-copy/images/desk.jpg
 image_alt: a notebook next to coffee and a keyboard
 accent: teal
 starting_at:

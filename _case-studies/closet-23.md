@@ -23,9 +23,9 @@ Tina came to me asking for a redesign of her current Wix site. She needed a fres
 
 {% include picture.html img="closet-23-after" ext="jpg" alt="the homepage of a clothing site" width="1920" height="1080" %}
 
-<img src="/assets/images/case-studies/closet-23/closet-23-boys.jpg" alt="the boys page of a clothing site" height="1080" width="1920">
+<img src="/assets-copy/images/case-studies/closet-23/closet-23-boys.jpg" alt="the boys page of a clothing site" height="1080" width="1920">
 
-<img src="/assets/images/case-studies/closet-23/closet-23-girls.jpg" alt="the girls page of a clothing site" height="1080" width="1920">
+<img src="/assets-copy/images/case-studies/closet-23/closet-23-girls.jpg" alt="the girls page of a clothing site" height="1080" width="1920">
 
 ### The theme
 

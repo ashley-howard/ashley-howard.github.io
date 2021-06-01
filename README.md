@@ -11,5 +11,5 @@
 - Gold: `section__card--gold`
 
 ## SASS + Autoprefixer
-- Only PostCSS: `postcss assets/styles/main.min.css --replace --use autoprefixer`
-- SASS & PostCSS: `sass assets/scss/main.scss assets/styles/main.min.css --style=compressed && postcss assets/styles/main.min.css --replace --use autoprefixer`
+- Only PostCSS: `postcss assets-copy/styles/main.min.css --replace --use autoprefixer`
+- SASS & PostCSS: `sass assets-copy/scss/main.scss assets-copy/styles/main.min.css --style=compressed && postcss assets-copy/styles/main.min.css --replace --use autoprefixer`
