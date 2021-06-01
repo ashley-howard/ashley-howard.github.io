@@ -1,0 +1,97 @@
+@use "../_dependencies/colours";
+@use "../_dependencies/dimensions";
+
+ul {
+    padding: 0;
+
+    .heading {
+        color: var(--accent-secondary-alt-darker);
+        font-weight: 700;
+        font-size: 0.95em;
+
+        @media only screen and (min-width: dimensions.$mq-m) {
+            padding-left: 25px;
+        }
+
+        .light & {
+            color: var(--accent-secondary-alt-darker);
+        }
+
+        .light .accent--gold & {
+            color: var(--accent-secondary-alt-darker);
+        }
+
+        .dark .accent--gold & {
+            color: #d4a345;
+        }
+
+        .light .accent--blue & {
+            color: var(--accent-secondary-alt-darker);
+        }
+
+        .dark .accent--blue & {
+            color: white;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            color: colours.$aqua-400;
+
+            .accent--gold & {
+                color: #d4a345;
+            }
+
+            .accent--blue & {
+                color: white;
+            }
+        }
+
+
+    }
+
+    li>p {
+        @media only screen and (min-width: dimensions.$mq-m) {
+            padding-left: 25px;
+        }
+    }
+
+    &:not([class]) li {
+        padding-left: 1em;
+        padding-bottom: 0.1em;
+
+        &::before {
+            content: "\2022";
+            color: colours.$aqua-400;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            margin-left: -1em;
+        }
+    }
+}
+
+.ticks__heading {
+    .to-blue & .heading {
+        color: rgb(186, 241, 247);
+    }
+}
+
+li {
+    list-style: none;
+}
+
+.ticks__heading li {
+    margin-bottom: 1em;
+}
+
+.ticks__li li::before,
+.ticks__heading .heading::before {
+    margin-right: 10px;
+
+    @media only screen and (min-width: dimensions.$mq-m) {
+        margin-left: -25px;
+    }
+}
+
+ol {
+    padding: 0;
+}
