@@ -76,7 +76,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets-copy/img/branding/put-logo-here.png
+      image: /assets-copy/images/apple-touch-icons/apple-touch-icon-180x180.png
 
 # kramdown:
   # auto_ids: false ## why was this on?
