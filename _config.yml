@@ -81,7 +81,7 @@ defaults:
   # auto_ids: false ## why was this on?
 
 exclude:
-  - /assets/scss/
+  - /assets-copy/scss/
   - README.md
 # Exclude from processing.
 # The following items will not be processed, by default.
