@@ -14,6 +14,10 @@
     &.open {
         transform: translate(- dimensions.$wrapper-w, dimensions.$wrapper-h);
         border-radius: 15px;
+
+        .left-handed & {
+            transform: translate(dimensions.$wrapper-w, dimensions.$wrapper-h);
+        }
     }
 
     &.to-blue {

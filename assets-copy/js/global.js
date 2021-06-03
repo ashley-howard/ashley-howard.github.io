@@ -76,7 +76,7 @@ bgBlue.forEach(section => {
 
 // -------- Settings menu ------------
 localStorage.getItem('colour-scheme') ? localStorage.getItem('colour-scheme') : localStorage.setItem('colour-scheme', 'system');
-// localStorage.getItem('left-handed-mode') ? localStorage.getItem('left-handed-mode') : localStorage.setItem('left-handed-mode', 'off');
+localStorage.getItem('left-handed-mode') ? localStorage.getItem('left-handed-mode') : localStorage.setItem('left-handed-mode', 'off');
 
 const settingsMenu = document.getElementById('settings-menu')
 const settingsBtn = document.getElementById('settings-btn')
@@ -101,15 +101,15 @@ else if (localStorage.getItem("colour-scheme") === 'dark') {
     colourSchemeDark.checked = 'true'
 }
 
-// const leftHandedModeOff = document.getElementById('left-handed-mode-off');
-// const leftHandedModeOn = document.getElementById('left-handed-mode-on');
+const leftHandedModeOff = document.getElementById('left-handed-mode-off');
+const leftHandedModeOn = document.getElementById('left-handed-mode-on');
 
-// if (localStorage.getItem("left-handed-mode") === 'off') {
-//     leftHandedModeOff.checked = 'true'
-// }
-// else if (localStorage.getItem("left-handed-mode") === 'on') {
-//     leftHandedModeOn.checked = 'true'
-// }
+if (localStorage.getItem("left-handed-mode") === 'off') {
+    leftHandedModeOff.checked = 'true'
+}
+else if (localStorage.getItem("left-handed-mode") === 'on') {
+    leftHandedModeOn.checked = 'true'
+}
 
 function openSettingsMenu() {
     settingsMenu.style.display = "block";
@@ -119,7 +119,7 @@ function saveSettingsMenu() {
     settingsMenu.style.display = "none";
 
     localStorage.setItem('colour-scheme', document.querySelector('input[name="colour-scheme"]:checked').value);
-    // localStorage.setItem('left-handed-mode', document.querySelector('input[name="left-handed-mode"]:checked').value);
+    localStorage.setItem('left-handed-mode', document.querySelector('input[name="left-handed-mode"]:checked').value);
 
     if (document.querySelector('input[name="colour-scheme"]:checked').value === 'light') {
         body.classList.add('light')
@@ -131,6 +131,13 @@ function saveSettingsMenu() {
     }
     else if (document.querySelector('input[name="colour-scheme"]:checked').value === 'system') {
         body.classList.remove("light", "dark")
+    }
+
+    if (document.querySelector('input[name="left-handed-mode"]:checked').value === 'off') {
+        body.classList.remove("left-handed")
+    }
+    else if (document.querySelector('input[name="left-handed-mode"]:checked').value === 'on') {
+        body.classList.add("left-handed")
     }
 }
 

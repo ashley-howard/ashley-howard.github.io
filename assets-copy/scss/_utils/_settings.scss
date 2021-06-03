@@ -48,4 +48,14 @@
     p {
         margin-bottom: 0.5em;
     }
+
+    .left-handed & {
+        position: absolute;
+    }
+
+    @media only screen and (min-width: dimensions.$mq-m) {
+        #left-handed-mode {
+            display: none;
+        }
+    }
 }

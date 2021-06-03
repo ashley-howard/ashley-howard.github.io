@@ -127,10 +127,11 @@ $trans: 0.75s;
 }
 
 #scrollTop {
+    --inset-x: 1rem;
     display: block;
     position: fixed;
     bottom: 1rem;
-    right: 1rem;
+    right: var(--inset-x);
     z-index: 1;
     border: 0;
     padding: 0;
@@ -138,6 +139,10 @@ $trans: 0.75s;
     background: transparent;
     cursor: pointer;
     opacity: 0;
+
+    .left-handed & {
+        left: var(--inset-x);
+    }
 
     svg {
         fill: colours.$aqua-400;

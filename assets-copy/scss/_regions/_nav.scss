@@ -45,6 +45,10 @@
         transform-origin: left;
         --margin-y: 10px;
 
+        .left-handed & {
+            left: 0;
+        }
+
         a,
         button {
             margin: var(--margin-y) 15px;
@@ -55,6 +59,10 @@
             &.current::before {
                 background-color: white;
             }
+
+            // .left-handed & {
+            //     transform: translate(5em, -2em);
+            // }
         }
 
         button {
