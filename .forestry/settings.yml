@@ -20,7 +20,6 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
-  match: "**/*"
 upload_dir: assets-copy/images
 public_path: "/assets-copy/images"
 front_matter_path: ''
