@@ -9,24 +9,21 @@ class: 404
             <h1 class="title line--top">{{ page.title }}</h1>
         </header>
 
-        <p>Can't find what you're looking for? Why not get in touch below:</p>
+        <p>Can't find what you're looking for? Get in touch directly at <a href="mailto:{{site.email}}">{{site.email}}</a>.</p>
 
-        <ul>
-            <li>Phone: <a href="tel:{{site.telephone}}">{{site.telephone}}</a></li>
-            <li>Email: <a href="mailto:{{site.email}}">{{site.email}}</a></li>
-        </ul>
     </div>
 
     <footer>
         <div class="banner banner__case-studies">
             <div class="container">
-                <h2 class="heading-2 line--top">Other case studies</h2>
+                <h2 class="heading-2 line--top">Recent case studies</h2>
                 {%- assign case-studies = site.case-studies | where_exp:"case-study",
                 "case-study.type == 'main'" | sort:"date" | reverse -%}
                 {%- for case-study in case-studies limit:3 -%}
                 <article class="banner__case-study">
                     <a href="{{ case-study.url }}" class="case-study-link">
-                        <img src="/assets-copy/images/case-studies/{{ case-study.thumbnail }}" alt="a screenshot of {{ case-study.title }}">
+                        <img src="/assets-copy/images/case-studies/{{ case-study.thumbnail }}"
+                            alt="a screenshot of {{ case-study.title }}">
                         <h3 class="heading-3">{{ case-study.title }}</h3>
                     </a>
                 </article>
