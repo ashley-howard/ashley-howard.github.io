@@ -55,9 +55,16 @@ collections:
     permalink: /case-study/:title/
   posts:
     output: true
-    permalink: /post/:title/
+    permalink: /writing/:title/
+  tags:
+    output: true
+    permalink: tags/:path/
 
 defaults:
+  - scope:
+      path: "_tags"
+    values:
+      layout: "tags"
   - scope:
       path: ""
       type: "posts"

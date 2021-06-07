@@ -1,17 +1,54 @@
 ---
 layout: default
+class: post markdown
 ---
-<div class="inner-container">
-    <h1>{{ page.title }}</h1>
+<article class="section">
+    <div class="container">
+        <header class="header">
+            <p class="post-date">
+                {% assign day = page.date | date: "%A, %-d" %}
+                {% case day %}
+                {% when '1' or '21' or '31' %}{{ day }}st
+                {% when '2' or '22' %}{{ day }}nd
+                {% when '3' or '23' %}{{ day }}rd
+                {% else %}{{ day }}th
+                {% endcase %}
 
-    <p>
-        {{ page.date | date_to_string }}
-        {%- assign author = site.authors | where: 'short_name', page.author | first -%}
-        {%- if author -%}
-        - <a class="staff-name" href="{{ author.url }}">{{ author.name }}</a>
-        {%- endif -%}
-    </p>
+                {{ page.date | date: "%B %Y" }}
+            </p>
 
-    {{ content }}
+            <h1 class="title">{{ page.title }}</h1>
 
-</div>
+            <div class="tag-group">
+                {% for tag in page.tags %}
+                {% assign tag_slug = tag | slugify: "raw" %}
+                <a class="tag-link tag-{{ tag_slug }}" href={{ site.baseurl | append: "/tags/" | append: tag_slug |
+                    append: "/" }} rel="category tag">
+                    {{ tag }}
+                </a>
+                {% endfor %}
+            </div>
+            <!-- <p>{% include reading-time.html %}</p> -->
+        </header>
+
+        <section class="content">
+            {{ content }}
+        </section>
+
+        <footer>
+            <!-- about me -->
+            <div class="about-me">
+                <div class="img-container">
+                    <img src="/assets-copy/images/portraits/portrait-thumbnail.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h6 class="about-me-title">About me</h6>
+                    <p>
+                        Vestibulum viverra sit mi nunc volutpat viverra eleifend. Dictum in imperdiet nunc aliquam
+                        aliquet nulla nunc adipiscing. Pellentesque.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</article>
