@@ -44,25 +44,6 @@
     {%- include analytics.html -%}
     {%- endif -%}
 
-    {%- if page.gconversion and jekyll.environment == 'production' -%}
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
-                'value': 1.0,
-                'currency': 'GBP',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
-    {%- endif -%}
-
     {%- if jekyll.environment == 'production' -%}
     {%- include hotjar.html -%}
     {%- endif -%}

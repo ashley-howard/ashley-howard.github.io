@@ -31,8 +31,7 @@
 
                     <li>
                         <h3 class="heading">Get a quote</h3>
-                        <p>After having understood as much as possible about your project, I'll be able to give you a
-                            quote and tell you the next steps.</p>
+                        <p>After having understood as much as possible about your project, I'll be able to give you a quote and tell you the next steps.</p>
                     </li>
                 </ul>
             </div>
@@ -86,11 +85,8 @@
                     <input type="hidden" name="_subject" id="email-subject" {% if include.type=="full" %}
                         value="Services enquiry" {% else %} value="Quick enquiry" {% endif %}>
 
-                    {% if include.type == "full" %}
-                    <button value="Submit" class="btn btn--primary" onclick="return gtag_report_conversion('https://formspree.io/f/{{site.formspree_full}}')">Send message</button>
-                    {% else %}
+
                     <button value="Submit" class="btn btn--primary">Send message</button>
-                    {% endif %}
                 </form>
             </div>
 
