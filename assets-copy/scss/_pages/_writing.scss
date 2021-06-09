@@ -1,3 +1,6 @@
+@use "../_dependencies/colours";
+@use "../_dependencies/dimensions";
+
 .post h1 {
     margin-bottom: 1em;
 }
@@ -34,10 +37,11 @@
     &::after {
         position: absolute;
         content: "";
-        background: rgba(0, 0, 0, 0.13);
+        background: var(--primary);
         bottom: 0;
         height: 1px;
         width: 100%;
+        opacity: 0.13;
     }
 }
 
@@ -71,7 +75,8 @@
 
 .post-date {
     font-size: .888888em;
-    color: #737373;
+    color: var(--primary);
+    opacity: 0.55;
 }
 
 .post article .container {
@@ -81,28 +86,56 @@
 .about-me {
     display: flex;
     align-items: center;
-    // background: red;
     margin: 2em 0;
     padding: 2em 0;
-    --border: 1px solid rgba(0, 0, 0, 0.13);
-    border-top: var(--border);
-    border-bottom: var(--border);
+    position: relative;
+    flex-direction: column;
+
+    @media only screen and (min-width: dimensions.$mq-m) {
+        flex-direction: row;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background: var(--primary);
+        opacity: 0.13;
+        height: 1px;
+        width: 100%;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
 
     div:nth-child(1) {
-        width: 20%;
-        padding-right: 1em;
+        // width: 100%;
+        padding-bottom: 1em;
         display: flex;
         justify-content: center;
+
+        @media only screen and (min-width: dimensions.$mq-m) {
+            width: 20%;
+            padding-bottom: 0;
+            padding-right: 1em;
+        }
     }
 
     div:nth-child(2) {
-        width: 80%;
+        @media only screen and (min-width: dimensions.$mq-m) {
+            width: 80%;
+        }
     }
 
     &-title {
         margin: 0;
+        font-weight: 600;
     }
-
 
     img {
         border-radius: 50%;

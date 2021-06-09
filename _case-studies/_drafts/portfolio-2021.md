@@ -1,5 +1,5 @@
 ---
-type: side
+type: portfolio
 title: Portfolio 2021
 date: 2021-05-12 12:00:00 +0000
 framework: Jekyll

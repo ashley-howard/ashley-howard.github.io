@@ -91,11 +91,23 @@
 }
 
 .heading-3,
-.markdown h3,
-.markdown h4,
 .services article h3 {
-    margin-top: 12px;
+    margin-top: 0.66666em;
 }
+
+.markdown {
+
+    h3,
+    h4 {
+        margin-top: 2em;
+    }
+
+    h2+h3,
+    h3+h4 {
+        margin-top: 1em;
+    }
+}
+
 
 .heading-3,
 .markdown h3 {

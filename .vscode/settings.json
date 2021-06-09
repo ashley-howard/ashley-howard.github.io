@@ -4,6 +4,8 @@
     ],
     "spellright.documentTypes": [
         "latex",
-        "plaintext"
+        "plaintext",
+        "markdown",
+        "html"
     ]
 }
