@@ -18,9 +18,19 @@ Mobile apps for example, have options such as dark mode, reduced data, and being
 
 Throughout this article I talk about code and include code snippets. I tried my best to add context, to help non-developers get the gist.
 
-## Creating the dark mode
+## The origin of the idea
 
-The first setting I created was a system-level dark mode, which follows the user's device's colour scheme. I ended up implementing three choices:
+You see dark mode everywhere these days. It's trending - and for a good reason too! I hate looking at a bright website in the dark, don't you? I think everyone deserves the option at least to toggle between the theme which best suits them (and their eyes of course!).
+
+My previous site had a dark mode - a toggle at the top right. I tried replicating it on my current site but I felt like it just stuck out like a sore thumb.
+
+That's where my idea for a settings menu actually came about. Just a total collection of settings in one place, that could be easily accessed through the main menu (and the footer).
+
+### Creating a system-level dark mode
+
+The first setting I created was a system-level dark mode, which follows the user's device's colour scheme. That's actually an important point, as it "listens" to what theme your device is using, and follows that.
+
+I ended up implementing three choices:
 
 - System: Follow the user's device's light/dark mode
 - Light: Emulate the light mode (e.g. for devices with the dark mode always on)
@@ -141,12 +151,14 @@ As it's using a fixed position, all I had to do was change it from right to left
     <source src="/assets-copy/images/posts/why-did-i-implement/left-handed-mode.mp4" type="video/mp4">
 </video>
 
-Altogether, creating the left-handed mode took about **10 minutes** to implement (which I understand will totally depend on the complexity of the site). 
+Altogether, creating the left-handed mode took about **10 minutes** to implement (which I understand totally depends on the complexity of the site). I mention this as I feel like something that can take such little time can actually make a huge impact on someone's life.
 
-I'm not recommending everyone to go away to implement a settings menu, but to at least consider it.
+Now that I've got two settings, what do you think should be next?
 
 ## On that note...
 
 While we wait for phones and browsers to better work together in order to create system-level personalisation options, I absolutely feel that a settings menu is an invaluable tool for providing a great user experience.
 
-Are there any features or settings that you'd like to see implemented more in websites? Or did I miss something? Get in touch at [blog@ashley.how](mailto:blog@ashley.how).
+I'm not recommending everyone to go away to implement a settings menu, but to at least take inspiration from it to go on to create better web experiences for everyone.
+
+Are there any features or settings that you'd like to see implemented more in websites? Get in touch at [blog@ashley.how](mailto:blog@ashley.how).
