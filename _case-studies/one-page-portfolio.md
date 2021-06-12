@@ -1,5 +1,4 @@
 ---
-type: main
 title: One-page portfolio
 date: 2021-01-08 12:00:00 +0000
 framework: None

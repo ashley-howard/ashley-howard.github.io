@@ -1,5 +1,4 @@
 ---
-type: main
 title: Closet 23
 date: 2021-02-07 12:00:00 +0000
 framework: Wix

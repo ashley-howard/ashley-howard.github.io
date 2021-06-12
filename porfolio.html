@@ -9,7 +9,6 @@ class: portfolio
     <div class="projects--list">
       {%- assign case-study = site.case-studies | sort: 'date' -%}
       {%- for case-study in site.case-studies reversed -%}
-      {%- if case-study.type == "main" -%}
       <article class="project">
         <div class="row">
           <div class="col col-6">
@@ -43,46 +42,44 @@ class: portfolio
           </div>
         </div>
       </article>
-      {%- endif -%}
       {%- endfor -%}
     </div>
   </div>
 </section>
 
-{% comment %}
-<section class="section projects projects--side">
+<section class="section projects projects--side bg-blue">
   <div class="container">
-    <h1 class="title line--top">Side projects</h1>
+    <h1 class="title line--top">Websites</h1>
     <div class="projects--list">
-      {%- assign case-study = site.case-studies | sort: 'date' -%}
-      {%- for case-study in site.case-studies reversed -%}
-      {%- if case-study.type == "side" -%}
+      {%- assign project = site.projects | sort: 'date' -%}
+      {%- for project in site.projects reversed -%}
+      {%- if project.type == "website" -%}
       <article class="project">
         <div class="row">
           <div class="col col-6">
-            <img src="assets-copy/images/case-studies/{{ case-study.thumbnail }}" alt="">
+            <img src="/assets-copy/images/projects/{{ project.slug }}/{{ project.slug }}-thumbnail.jpg" alt="a homepage screenshot of {{ project.title }}">
           </div>
 
           <div class="col col-6">
-            <h2 class="heading-2"><a href="{{ case-study.url }}">{{ case-study.title }}</a></h2>
+            <h2 class="heading-2">{{ project.title }}</h2>
 
-            <p>{{ case-study.description }}</p>
+            <p>{{ project.description }}</p>
 
             <ul class="project--details">
-              {%- if case-study.framework -%}
-              <li>Framework: {{ case-study.framework }}</li>
+              {%- if project.framework -%}
+              <li>Framework: {{ project.framework }}</li>
               {%- endif -%}
 
-              {%- if case-study.languages -%}
-              <li>Languages: {{ case-study.languages | array_to_sentence_string: "" }}</li>
+              {%- if project.languages -%}
+              <li>Languages: {{project.languages | array_to_sentence_string: "" }}</li>
               {%- endif -%}
 
-              {%- if case-study.tools -%}
-              <li>Tools: {{ case-study.tools }}</li>
+              {%- if project.tools -%}
+              <li>Tools: {{ project.tools }}</li>
               {%- endif -%}
             </ul>
 
-            <a class="btn btn--secondary" href="{{ case-study.url }}">View case study</a>
+            <a class="btn btn--secondary" href="{{ project.link }}">View site</a>
           </div>
         </div>
       </article>
@@ -91,4 +88,3 @@ class: portfolio
     </div>
   </div>
 </section>
-{% endcomment %}

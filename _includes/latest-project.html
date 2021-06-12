@@ -4,7 +4,6 @@
 
         {% assign items = site.case-studies | sort: 'date' | reverse %}
         {% for item in items limit:1 %}
-        {%- if item.type == "main" -%}
         <article class="project">
             <div class="row">
                 <div class="col col-6">
@@ -37,9 +36,8 @@
                     <a class="btn btn--primary" href="{{ item.url }}">View case study</a>
                     {% endif %}
 
-                    <a class="btn btn--secondary" href="/portfolio">See all projects</a>
+                    <a class="btn btn--secondary" href="/portfolio">View portfolio</a>
                 </div>
-                {% endif %}
                 {% endfor %}
             </div>
         </article>

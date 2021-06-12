@@ -50,6 +50,7 @@ future: true # allow future dates in posts
 
 collections:
   services:
+  projects:
   case-studies:
     output: true
     permalink: /case-study/:title/

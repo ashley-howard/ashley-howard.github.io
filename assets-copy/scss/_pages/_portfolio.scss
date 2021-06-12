@@ -55,11 +55,26 @@
 
     .project--details,
     p.coming-soon {
-        color: var(--accent-secondary-alt-darker);
+        color: var(--accent-primary);
 
         .to-blue & {
             color: white;
         }
+
+        // .dark {
+        //     .to-blue & {
+        //         color: var(--accent-secondary-alt-darker);
+        //     }
+        // }
+
+        // @media (prefers-color-scheme: dark) {
+        //     .to-blue & {
+        //         color: var(--accent-secondary-alt-darker);
+        //     }
+        // }
+
+
+
 
     }
 
@@ -83,7 +98,12 @@
                 width: 28px;
                 top: -20px;
 
-                .to-blue & {
+                .to-blue &,
+                .dark & {
+                    background: colours.$aqua-400;
+                }
+
+                @media (prefers-color-scheme: dark) {
                     background: colours.$aqua-400;
                 }
             }
@@ -100,7 +120,12 @@
                 left: 35px;
                 font-size: 0.9rem;
 
-                .to-blue & {
+                .to-blue &,
+                .dark & {
+                    color: colours.$aqua-400;
+                }
+
+                @media (prefers-color-scheme: dark) {
                     color: colours.$aqua-400;
                 }
             }
@@ -156,10 +181,10 @@
     }
 
     h2 {
-        color: var(--accent-secondary-alt);
+        color: var(--accent-primary);
     }
 
-    .to-blue & h2 a {
+    .to-blue & h2 {
         color: white;
     }
 

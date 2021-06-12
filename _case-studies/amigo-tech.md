@@ -1,5 +1,4 @@
 ---
-type: main
 title: Amigo Technology
 date: 2021-05-01 12:00:00 +0000
 framework: Jekyll

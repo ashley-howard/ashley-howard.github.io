@@ -17,8 +17,7 @@ class: 404
         <div class="banner banner__case-studies">
             <div class="container">
                 <h2 class="heading-2 line--top">Recent case studies</h2>
-                {%- assign case-studies = site.case-studies | where_exp:"case-study",
-                "case-study.type == 'main'" | sort:"date" | reverse -%}
+                {%- assign case-studies = site.case-studies | sort:"date" | reverse -%}
                 {%- for case-study in case-studies limit:3 -%}
                 <article class="banner__case-study">
                     <a href="{{ case-study.url }}" class="case-study-link">
