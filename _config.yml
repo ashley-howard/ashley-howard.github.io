@@ -26,11 +26,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   A London-based web designer and developer, creating modern and mobile-friendly bespoke websites for small businesses.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ashley.how" # the base hostname & protocol for your site, e.g. http://example.com
-facebook_username: ahwebdev
-github_username: ashley-howard
-linkedin_username: ashlward
-instagram_username: shley.how
-codepen_username: shley
+facebook_username: 
+github_username: 
+linkedin_username: 
+instagram_username: 
+codepen_username: 
 theme_colour: 35698A # the hex value
 
 twitter:
